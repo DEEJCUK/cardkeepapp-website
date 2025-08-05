@@ -402,41 +402,6 @@ window.addEventListener('load', () => {
     }, 100);
 });
 
-// Enhanced Easter egg: Konami code with cute effects
-let konamiCode = [];
-const konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
-
-document.addEventListener('keydown', (e) => {
-    konamiCode.push(e.keyCode);
-    
-    if (konamiCode.length > konami.length) {
-        konamiCode.shift();
-    }
-    
-    if (konamiCode.length === konami.length && 
-        konamiCode.every((key, index) => key === konami[index])) {
-        // Cute rainbow mode activated!
-        document.body.style.filter = 'hue-rotate(0deg) saturate(1.5) brightness(1.1)';
-        
-        // Create rainbow hearts everywhere
-        createRainbowCelebration();
-        
-        // Animate through rainbow colors
-        let hue = 0;
-        const rainbowInterval = setInterval(() => {
-            hue += 10;
-            document.body.style.filter = `hue-rotate(${hue}deg) saturate(1.5) brightness(1.1)`;
-            if (hue >= 360) {
-                clearInterval(rainbowInterval);
-                setTimeout(() => {
-                    document.body.style.filter = 'none';
-                }, 1000);
-            }
-        }, 100);
-        
-        konamiCode = [];
-    }
-});
 
 // Create rainbow celebration effect
 function createRainbowCelebration() {

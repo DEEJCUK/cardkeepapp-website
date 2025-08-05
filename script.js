@@ -500,6 +500,8 @@ function trapFocus(element) {
                 closeDemoModal();
             } else if (element.id === 'privacyModal') {
                 closePrivacyModal();
+            } else if (element.id === 'termsModal') {
+                closeTermsModal();
             }
         }
     });
@@ -618,15 +620,36 @@ function closePrivacyModal() {
     document.getElementById('privacyModal').style.display = 'none';
 }
 
+// Terms Modal Functions
+function showTermsModal() {
+    const modal = document.getElementById('termsModal');
+    modal.style.display = 'block';
+    
+    // Focus management for accessibility
+    const closeButton = modal.querySelector('.terms-close');
+    closeButton.focus();
+    
+    // Trap focus within modal
+    trapFocus(modal);
+}
+
+function closeTermsModal() {
+    document.getElementById('termsModal').style.display = 'none';
+}
+
 // Close modals when clicking outside
 window.onclick = function(event) {
     const demoModal = document.getElementById('demoModal');
     const privacyModal = document.getElementById('privacyModal');
+    const termsModal = document.getElementById('termsModal');
     
     if (event.target === demoModal) {
         closeDemoModal();
     }
     if (event.target === privacyModal) {
         closePrivacyModal();
+    }
+    if (event.target === termsModal) {
+        closeTermsModal();
     }
 }

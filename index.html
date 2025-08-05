@@ -175,23 +175,20 @@
                 <div class="card-stack">
                     <div class="card card-1">
                         <div class="card-content">
-                            <div class="card-header">🎂 Birthday</div>
-                            <div class="card-image">🎉</div>
-                            <div class="card-name">From Mom</div>
+                            <img src="Front-congratulations.png" alt="Congratulations card with colorful balloons" class="card-image-real">
+                            <div class="card-name">Congratulations</div>
                         </div>
                     </div>
                     <div class="card card-2">
                         <div class="card-content">
-                            <div class="card-header">💒 Wedding</div>
-                            <div class="card-image">💍</div>
-                            <div class="card-name">Congratulations</div>
+                            <img src="Front-thank-you.png" alt="Thank you card with watercolor balloon letters" class="card-image-real">
+                            <div class="card-name">Thank You</div>
                         </div>
                     </div>
                     <div class="card card-3">
                         <div class="card-content">
-                            <div class="card-header">💌 Thank You</div>
-                            <div class="card-image">🌸</div>
-                            <div class="card-name">With Gratitude</div>
+                            <img src="Simulator Screenshot - iPhone 16 - 2025-08-05 at 08.01.21.png" alt="CardKeep app welcome screen" class="card-image-real app-preview">
+                            <div class="card-name">Your Memory Box</div>
                         </div>
                     </div>
                 </div>
@@ -228,14 +225,14 @@
                         <p>Your memories stay yours! All data is stored locally on your device with no cloud sync required. Complete privacy for your personal cards. 🛡️</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🎂🎄</div>
+                        <div class="feature-icon">🎂💍</div>
                         <h3>Occasion Tracking</h3>
-                        <p>Organize by birthdays, anniversaries, thank you cards, congratulations and more! Perfect for remembering all your special moments. 🎈</p>
+                        <p>Save birthdays, anniversaries, thank you cards, congratulations and more! Perfect for remembering all your special moments. 🎈</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">📲🌙</div>
                         <h3>Beautiful Interface</h3>
-                        <p>Gorgeous design with dark mode support! Portrait-optimized for iPhone with a warm, cozy aesthetic that feels like home. 🌸</p>
+                        <p>Gorgeous design with dark mode support! Portrait-optimised for iPhone with a warm, cozy aesthetic. 🌸</p>
                     </div>
                 </div>
             </div>
@@ -250,25 +247,48 @@
                         <ul class="about-features">
                             <li>✨ Beautiful and intuitive iOS design</li>
                             <li>🔒 Complete privacy - your memories stay on your device</li>
-                            <li>🚀 Portrait-optimized with smooth, responsive interface</li>
+                            <li>🚀 Portrait-optimised with smooth, responsive interface</li>
                             <li>💜 One-time purchase - own it forever, no subscriptions</li>
                             <li>🎂 Perfect for birthday, thank you, and congratulations cards</li>
                             <li>📱 Made specifically for iPhone with love and care</li>
+                            <li>🌍 Fully localised interface available in multiple languages</li>
+                            <li>📅 Smart date handling that adapts to your region's format</li>
                         </ul>
                     </div>
                     <div class="about-visual">
-                        <div class="phone-mockup">
-                            <div class="phone-screen">
-                                <div class="app-interface">
-                                    <div class="app-header"></div>
-                                    <div class="app-cards">
-                                        <div class="mini-card"></div>
-                                        <div class="mini-card"></div>
-                                        <div class="mini-card"></div>
-                                        <div class="mini-card"></div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="screenshot-showcase">
+                            <img src="Simulator Screenshot - iPhone 16 - 2025-08-05 at 08.12.57.png" alt="CardKeep app showing saved greeting cards including congratulations and thank you cards" class="app-screenshot main-screenshot">
+                            <img src="Simulator Screenshot - iPhone 16 - 2025-08-05 at 08.01.35.png" alt="CardKeep add new card interface with photo capture and details form" class="app-screenshot secondary-screenshot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="app-preview" aria-labelledby="preview-title">
+            <div class="container">
+                <h2 class="section-title" id="preview-title">See CardKeep in Action 📱</h2>
+                <p class="preview-subtitle">Real screenshots from the actual app - beautifully designed for your precious memories</p>
+                <div class="screenshot-gallery">
+                    <div class="screenshot-item">
+                        <img src="Simulator Screenshot - iPhone 16 - 2025-08-05 at 08.01.21.png" alt="CardKeep welcome screen - Your Memory Box" class="gallery-screenshot">
+                        <div class="screenshot-caption">
+                            <h4>Welcome Screen</h4>
+                            <p>Clean, inviting interface to start your memory collection</p>
+                        </div>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="Simulator Screenshot - iPhone 16 - 2025-08-05 at 08.01.35.png" alt="Add new card form with photo capture and details" class="gallery-screenshot">
+                        <div class="screenshot-caption">
+                            <h4>Add New Card</h4>
+                            <p>Simple form to capture photos and add meaningful details</p>
+                        </div>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="Simulator Screenshot - iPhone 16 - 2025-08-05 at 08.12.57.png" alt="Card collection view showing saved greeting cards" class="gallery-screenshot">
+                        <div class="screenshot-caption">
+                            <h4>Your Collection</h4>
+                            <p>Beautiful grid view of all your saved greeting cards</p>
                         </div>
                     </div>
                 </div>
@@ -322,7 +342,7 @@
                         <ul>
                             <li><a href="mailto:memories@cardkeep.app">Contact Us</a></li>
                             <li><a href="#privacy" onclick="showPrivacyModal()">Privacy Policy</a></li>
-                            <li><a href="#terms">Terms of Service</a></li>
+                            <li><a href="#terms" onclick="showTermsModal()">Terms of Service</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
@@ -364,6 +384,83 @@
                 <p>CardKeep only requests camera and photo library permissions to save your card photos. These are essential for the app's functionality.</p>
                 
                 <p><strong>Last updated:</strong> 2024</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms of Service Modal -->
+    <div id="termsModal" class="terms-modal" style="display: none;" role="dialog" aria-labelledby="terms-title" aria-modal="true">
+        <div class="terms-modal-content">
+            <div class="terms-header">
+                <h3 id="terms-title">Terms of Service</h3>
+                <button class="terms-close" onclick="closeTermsModal()" aria-label="Close terms of service modal">&times;</button>
+            </div>
+            <div class="terms-content">
+                <p><strong>Effective Date:</strong> August 2024</p>
+                
+                <h4>1. Acceptance of Terms</h4>
+                <p>By downloading, installing, or using the CardKeep mobile application ("App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.</p>
+                
+                <h4>2. Description of Service</h4>
+                <p>CardKeep is a mobile application that allows users to digitally store, organize, and manage photos and information about their greeting cards and personal memories. The App is designed for personal, non-commercial use.</p>
+                
+                <h4>3. License to Use</h4>
+                <p>Subject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to use the App for your personal, non-commercial purposes. This license does not include the right to:</p>
+                <ul>
+                    <li>Distribute, sell, or transfer the App</li>
+                    <li>Modify, reverse engineer, or create derivative works</li>
+                    <li>Use the App for any commercial purposes</li>
+                    <li>Remove or alter any proprietary notices</li>
+                </ul>
+                
+                <h4>4. User Content and Data</h4>
+                <p>You retain ownership of all content you create, upload, or store in the App ("User Content"). By using the App, you represent that:</p>
+                <ul>
+                    <li>You own or have the right to use all User Content</li>
+                    <li>Your User Content does not violate any third-party rights</li>
+                    <li>Your User Content complies with applicable laws</li>
+                </ul>
+                
+                <h4>5. Privacy and Data Storage</h4>
+                <p>Your privacy is important to us. All data is stored locally on your device. If you enable iCloud Photos, your card photos will sync through Apple's iCloud service according to Apple's terms and our Privacy Policy.</p>
+                
+                <h4>6. Prohibited Uses</h4>
+                <p>You agree not to use the App to:</p>
+                <ul>
+                    <li>Store illegal, harmful, or inappropriate content</li>
+                    <li>Violate any applicable laws or regulations</li>
+                    <li>Infringe on intellectual property rights</li>
+                    <li>Attempt to gain unauthorized access to the App's systems</li>
+                </ul>
+                
+                <h4>7. App Store Terms</h4>
+                <p>Your use of the App is also subject to the terms and conditions of the Apple App Store. In case of conflict between these Terms and the App Store terms, the App Store terms shall prevail regarding your use of the App through the App Store.</p>
+                
+                <h4>8. Updates and Modifications</h4>
+                <p>We may update the App and these Terms from time to time. We will notify you of material changes through the App or other reasonable means. Continued use of the App after changes constitutes acceptance of the updated Terms.</p>
+                
+                <h4>9. Termination</h4>
+                <p>You may stop using the App at any time by deleting it from your device. We may terminate or suspend your access to the App at any time for violation of these Terms or for any other reason.</p>
+                
+                <h4>10. Disclaimers</h4>
+                <p>THE APP IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND. WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+                
+                <h4>11. Limitation of Liability</h4>
+                <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOSS OF DATA, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+                
+                <h4>12. Indemnification</h4>
+                <p>You agree to indemnify and hold us harmless from any claims, damages, or expenses arising from your use of the App or violation of these Terms.</p>
+                
+                <h4>13. Governing Law</h4>
+                <p>These Terms are governed by the laws of the jurisdiction where the App developer is located, without regard to conflict of law principles.</p>
+                
+                <h4>14. Contact Information</h4>
+                <p>If you have questions about these Terms, please contact us at <a href="mailto:memories@cardkeep.app">memories@cardkeep.app</a>.</p>
+                
+                <h4>15. Severability</h4>
+                <p>If any provision of these Terms is found to be unenforceable, the remaining provisions will remain in full force and effect.</p>
+                
+                <p><strong>Last updated:</strong> August 2024</p>
             </div>
         </div>
     </div>

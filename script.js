@@ -116,29 +116,8 @@ function createSparkles(element) {
 // Enhanced download button interactions with cute feedback
 document.querySelectorAll('.download-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
-        // Check if it's the iOS download button (enabled) vs Android (disabled)
-        if (!btn.disabled && btn.classList.contains('ios')) {
-            e.preventDefault();
-            
-            // Add cute loading state with hearts
-            const originalText = btn.innerHTML;
-            btn.innerHTML = '<span style="display: inline-block; animation: spin 1s linear infinite;">💖</span> Getting ready...';
-            btn.style.pointerEvents = 'none';
-            btn.style.transform = 'scale(0.95)';
-            
-            // Create heart explosion effect
-            createHeartExplosion(btn);
-            
-            // Redirect to App Store after animation
-            setTimeout(() => {
-                window.open('https://apps.apple.com/gb/', '_blank');
-                
-                // Reset button state
-                btn.innerHTML = originalText;
-                btn.style.pointerEvents = 'auto';
-                btn.style.transform = 'scale(1)';
-            }, 1000);
-        } else if (btn.disabled) {
+        // Only handle disabled Android button, let iOS anchor link work normally
+        if (btn.disabled && btn.classList.contains('android')) {
             // For disabled Android button, show coming soon message
             e.preventDefault();
             
@@ -161,48 +140,6 @@ document.querySelectorAll('.download-btn').forEach(btn => {
     });
 });
 
-// Create heart explosion effect
-function createHeartExplosion(element) {
-    const hearts = ['💖', '💕', '💗', '💝', '💘'];
-    const rect = element.getBoundingClientRect();
-    
-    for (let i = 0; i < 8; i++) {
-        const heart = document.createElement('div');
-        heart.innerHTML = hearts[Math.floor(Math.random() * hearts.length)];
-        heart.style.position = 'fixed';
-        heart.style.pointerEvents = 'none';
-        heart.style.fontSize = '24px';
-        heart.style.zIndex = '1000';
-        heart.style.left = (rect.left + rect.width / 2) + 'px';
-        heart.style.top = (rect.top + rect.height / 2) + 'px';
-        
-        document.body.appendChild(heart);
-        
-        const angle = (i / 8) * 2 * Math.PI;
-        const distance = 100;
-        const endX = Math.cos(angle) * distance;
-        const endY = Math.sin(angle) * distance;
-        
-        heart.animate([
-            { transform: 'translate(0, 0) scale(0) rotate(0deg)', opacity: 1 },
-            { transform: `translate(${endX}px, ${endY}px) scale(1.5) rotate(360deg)`, opacity: 0.8 },
-            { transform: `translate(${endX * 1.5}px, ${endY * 1.5}px) scale(0) rotate(720deg)`, opacity: 0 }
-        ], {
-            duration: 1200,
-            easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
-        }).onfinish = () => heart.remove();
-    }
-}
-
-// Hero button interactions
-document.querySelectorAll('.hero-buttons .btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        if (btn.textContent.includes('Download')) {
-            e.preventDefault();
-            window.open('https://apps.apple.com/gb/', '_blank');
-        }
-    });
-});
 
 // Parallax effect for hero section
 window.addEventListener('scroll', () => {
@@ -403,39 +340,6 @@ window.addEventListener('load', () => {
 });
 
 
-// Create rainbow celebration effect
-function createRainbowCelebration() {
-    const emojis = ['🌈', '✨', '💖', '💫', '🦄', '🌟', '💕', '🎉'];
-    
-    for (let i = 0; i < 20; i++) {
-        setTimeout(() => {
-            const emoji = document.createElement('div');
-            emoji.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
-            emoji.style.position = 'fixed';
-            emoji.style.left = Math.random() * window.innerWidth + 'px';
-            emoji.style.top = -50 + 'px';
-            emoji.style.fontSize = (20 + Math.random() * 20) + 'px';
-            emoji.style.zIndex = '9999';
-            emoji.style.pointerEvents = 'none';
-            
-            document.body.appendChild(emoji);
-            
-            emoji.animate([
-                { 
-                    transform: 'translateY(0) rotate(0deg)', 
-                    opacity: 1 
-                },
-                { 
-                    transform: `translateY(${window.innerHeight + 100}px) rotate(720deg)`, 
-                    opacity: 0 
-                }
-            ], {
-                duration: 3000 + Math.random() * 2000,
-                easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
-            }).onfinish = () => emoji.remove();
-        }, i * 100);
-    }
-}
 
 // Accessibility helper functions
 function trapFocus(element) {

@@ -131,7 +131,7 @@ document.querySelectorAll('.download-btn').forEach(btn => {
             
             // Redirect to App Store after animation
             setTimeout(() => {
-                window.open('https://apps.apple.com/gb/app/', '_blank');
+                window.open('https://apps.apple.com/gb/', '_blank');
                 
                 // Reset button state
                 btn.innerHTML = originalText;
@@ -199,7 +199,7 @@ document.querySelectorAll('.hero-buttons .btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
         if (btn.textContent.includes('Download')) {
             e.preventDefault();
-            window.open('https://apps.apple.com/gb/app/', '_blank');
+            window.open('https://apps.apple.com/gb/', '_blank');
         }
     });
 });

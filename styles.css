@@ -1007,6 +1007,26 @@ body {
     .card-3 {
         transform: rotate(5deg) translateY(-10px) translateX(10px);
     }
+
+    /* Fix modal positioning on mobile */
+    .privacy-modal,
+    .terms-modal {
+        padding: 0.5rem;
+        align-items: flex-start;
+        padding-top: 2rem;
+    }
+
+    .privacy-modal-content,
+    .terms-modal-content {
+        max-height: calc(100vh - 4rem);
+        margin-top: 0;
+    }
+
+    .privacy-content,
+    .terms-content {
+        padding: 1rem;
+        max-height: calc(100vh - 10rem);
+    }
 }
 
 /* Animations */
@@ -1145,6 +1165,10 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
 }
 
 /* Terms Modal Styles */
@@ -1157,16 +1181,19 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
 }
 
 .privacy-modal-content {
     background-color: white;
-    margin: 5% auto;
     padding: 0;
     border-radius: 20px;
-    width: 90%;
+    width: 100%;
     max-width: 600px;
-    max-height: 80vh;
+    max-height: 90vh;
     overflow: hidden;
     box-shadow: 0 25px 50px rgba(224, 182, 186, 0.3);
 }
@@ -1202,12 +1229,11 @@ body {
 
 .terms-modal-content {
     background-color: white;
-    margin: 5% auto;
     padding: 0;
     border-radius: 20px;
-    width: 90%;
+    width: 100%;
     max-width: 700px;
-    max-height: 85vh;
+    max-height: 90vh;
     overflow: hidden;
     box-shadow: 0 25px 50px rgba(224, 182, 186, 0.3);
 }

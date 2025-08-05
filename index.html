@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CardKeep - The beautiful way to preserve your precious greeting card memories! Digitally store birthday cards, thank you notes, congratulations cards and more. iOS app for organizing card collections.">
+    <meta name="keywords" content="greeting card organizer, birthday card keeper, thank you card collection, card memory app, digital card storage, greeting card photos, card collection app, memory keeper, sentimental cards, congratulations cards">
+    <meta name="author" content="CardKeep Team">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="theme-color" content="#6366f1">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cardkeep.app/">
+    <meta property="og:title" content="CardKeep - Your Digital Card Collection Manager">
+    <meta property="og:description" content="The beautiful way to preserve your precious greeting card memories! Digitally store birthday cards, thank you notes, congratulations cards with photos and memories.">
+    <meta property="og:image" content="https://cardkeep.app/og-image.jpg">
+    <meta property="og:site_name" content="CardKeep">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cardkeep.app/">
+    <meta property="twitter:title" content="CardKeep - Your Digital Card Collection Manager">
+    <meta property="twitter:description" content="The beautiful way to preserve your precious greeting card memories! Digitally store birthday cards, thank you notes, congratulations cards.">
+    <meta property="twitter:image" content="https://cardkeep.app/twitter-card.jpg">
+    
+    <title>CardKeep - Your Digital Card Collection Manager | Free Card Organizer App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="canonical" href="https://cardkeep.app/">
+</head>
+<body role="document">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <!-- Demo Modal -->
+    <div id="demoModal" class="demo-modal" style="display: none;" role="dialog" aria-labelledby="demo-title" aria-modal="true">
+        <div class="demo-modal-content">
+            <div class="demo-header">
+                <h3 id="demo-title">CardKeep Demo</h3>
+                <button class="demo-close" onclick="closeDemoModal()" aria-label="Close demo modal">&times;</button>
+            </div>
+            <div class="demo-container">
+                <div class="demo-phone">
+                    <div class="demo-screen">
+                        <div id="demoStep1" class="demo-step active">
+                            <div class="demo-camera">
+                                <div class="camera-viewfinder">
+                                    <div class="demo-card-preview">💌 Thank You!</div>
+                                    <button class="camera-button" onclick="nextDemoStep()" aria-label="Take photo of greeting card">📸</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="demoStep2" class="demo-step">
+                            <div class="demo-form">
+                                <h4>Add Details</h4>
+                                <div class="demo-field">
+                                    <label>From:</label>
+                                    <input type="text" value="Sarah" readonly>
+                                </div>
+                                <div class="demo-field">
+                                    <label>Occasion:</label>
+                                    <input type="text" value="Thank You" readonly>
+                                </div>
+                                <div class="demo-field">
+                                    <label>Date:</label>
+                                    <input type="text" value="Today" readonly>
+                                </div>
+                                <button class="demo-save-btn" onclick="nextDemoStep()" aria-label="Save card memory with details">💜 Save Memory</button>
+                            </div>
+                        </div>
+                        <div id="demoStep3" class="demo-step">
+                            <div class="demo-success">
+                                <div class="success-animation">✨</div>
+                                <h4>Memory Saved!</h4>
+                                <p>Your precious card is now safely stored</p>
+                                <div class="demo-card-saved">
+                                    <div class="saved-card">
+                                        <div class="card-thumb">💌</div>
+                                        <div class="card-info">
+                                            <div>Thank you card</div>
+                                            <div class="card-from">From Sarah</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="demo-restart-btn" onclick="restartDemo()" aria-label="Restart demo from beginning">Try Again</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-description">
+                    <div id="stepDescription1" class="step-description active">
+                        <h4>1. Snap a Photo</h4>
+                        <p>Take a picture of your greeting card - thank you notes, birthday wishes, congratulations, or any heartfelt message</p>
+                    </div>
+                    <div id="stepDescription2" class="step-description">
+                        <h4>2. Add Details</h4>
+                        <p>Tell CardKeep who sent it, what the occasion was, and when you received it to make it easily searchable</p>
+                    </div>
+                    <div id="stepDescription3" class="step-description">
+                        <h4>3. Save Forever</h4>
+                        <p>Your precious memory is now preserved and easily searchable whenever you want to revisit those special moments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "CardKeep",
+        "description": "The beautiful way to preserve your precious greeting card memories! Digitally store and organize birthday cards, thank you notes, congratulations cards and more with photos and memories.",
+        "url": "https://cardkeep.app/",
+        "downloadUrl": "https://cardkeep.app/#download",
+        "operatingSystem": ["iOS", "Android", "Web"],
+        "applicationCategory": "ProductivityApplication",
+        "offers": {
+            "@type": "Offer",
+            "price": "4.99",
+            "priceCurrency": "USD"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "CardKeep Team"
+        },
+        "screenshot": "https://cardkeep.app/app-screenshot.jpg",
+        "featureList": [
+            "Multi-photo card storage with front, inside, and back views",
+            "Beautiful greeting card organization",
+            "Local data storage with privacy protection",
+            "Advanced search by sender, occasion, date, and tags",
+            "Custom tags and notes for each card",
+            "Portrait-optimized iOS interface"
+        ]
+    }
+    </script>
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-brand">
+                <h1 class="logo" aria-label="CardKeep - Home">CardKeep</h1>
+            </div>
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li role="none"><a href="#features" class="nav-link" role="menuitem">Features</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#download" class="nav-link" role="menuitem">Download</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main role="main" id="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 class="hero-title" id="hero-title">Keep Your <span class="highlight">Precious Memories</span> Forever ✨</h1>
+                <p class="hero-subtitle">The beautiful way to preserve your greeting card memories! Digitally store birthday cards, thank you notes, congratulations cards, and all the heartfelt messages that matter most to you. 💜</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" aria-describedby="download-desc">🎴 Download Free</button>
+                    <button class="btn btn-secondary" aria-describedby="demo-desc">✨ Watch Demo</button>
+                    <div id="download-desc" class="sr-only">Navigate to download section</div>
+                    <div id="demo-desc" class="sr-only">Open interactive demo modal</div>
+                </div>
+            </div>
+            <div class="hero-visual" role="img" aria-label="Stack of greeting cards showing birthday, wedding, and thank you cards">
+                <div class="card-stack">
+                    <div class="card card-1">
+                        <div class="card-content">
+                            <div class="card-header">🎂 Birthday</div>
+                            <div class="card-image">🎉</div>
+                            <div class="card-name">From Mom</div>
+                        </div>
+                    </div>
+                    <div class="card card-2">
+                        <div class="card-content">
+                            <div class="card-header">💒 Wedding</div>
+                            <div class="card-image">💍</div>
+                            <div class="card-name">Congratulations</div>
+                        </div>
+                    </div>
+                    <div class="card card-3">
+                        <div class="card-content">
+                            <div class="card-header">💌 Thank You</div>
+                            <div class="card-image">🌸</div>
+                            <div class="card-name">With Gratitude</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-hearts">
+                    <span class="heart heart-1">💖</span>
+                    <span class="heart heart-2">💕</span>
+                    <span class="heart heart-3">💝</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features" aria-labelledby="features-title">
+            <div class="container">
+                <h2 class="section-title" id="features-title">Beautiful Features for Your Memories 💜</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📱💜</div>
+                        <h3>Multi-Photo Storage</h3>
+                        <p>Capture every detail! Take photos of the front, inside, back and any special parts of your greeting cards. Perfect for preserving memories! ✨</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔍📅</div>
+                        <h3>Smart Search</h3>
+                        <p>Find any card instantly! Search by sender, occasion, date received, or custom tags. Never lose track of precious memories again. 💫</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏷️💝</div>
+                        <h3>Custom Tags & Notes</h3>
+                        <p>Add personal touches with custom tags and notes. Remember who sent it, what the occasion was, and why it's special to you. 🌟</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒🏠</div>
+                        <h3>Private & Secure</h3>
+                        <p>Your memories stay yours! All data is stored locally on your device with no cloud sync required. Complete privacy for your personal cards. 🛡️</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎂🎄</div>
+                        <h3>Occasion Tracking</h3>
+                        <p>Organize by birthdays, anniversaries, thank you cards, congratulations and more! Perfect for remembering all your special moments. 🎈</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📲🌙</div>
+                        <h3>Beautiful Interface</h3>
+                        <p>Gorgeous design with dark mode support! Portrait-optimized for iPhone with a warm, cozy aesthetic that feels like home. 🌸</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about" aria-labelledby="about-title">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 id="about-title">Why CardKeep Touches Hearts? 💜</h2>
+                        <p>CardKeep was born from a love of preserving precious memories! We all have those special greeting cards - birthday wishes from loved ones, thank you notes from friends, congratulations cards that made our day. CardKeep helps you keep these treasured memories safe forever. ✨</p>
+                        <ul class="about-features">
+                            <li>✨ Beautiful and intuitive iOS design</li>
+                            <li>🔒 Complete privacy - your memories stay on your device</li>
+                            <li>🚀 Portrait-optimized with smooth, responsive interface</li>
+                            <li>💜 One-time purchase - own it forever, no subscriptions</li>
+                            <li>🎂 Perfect for birthday, thank you, and congratulations cards</li>
+                            <li>📱 Made specifically for iPhone with love and care</li>
+                        </ul>
+                    </div>
+                    <div class="about-visual">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <div class="app-interface">
+                                    <div class="app-header"></div>
+                                    <div class="app-cards">
+                                        <div class="mini-card"></div>
+                                        <div class="mini-card"></div>
+                                        <div class="mini-card"></div>
+                                        <div class="mini-card"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="download" aria-labelledby="download-title">
+            <div class="container">
+                <h2 class="section-title" id="download-title">Start Preserving Your Memories! 🚀</h2>
+                <p class="download-subtitle">Available for iPhone - one-time purchase, yours forever! 💜</p>
+                <div class="download-buttons">
+                    <button class="download-btn ios" aria-label="Download CardKeep for iOS - $4.99 on App Store">
+                        <span class="download-icon" aria-hidden="true">🍎</span>
+                        <div class="download-text">
+                            <span class="download-label">$4.99 on</span>
+                            <span class="download-platform">App Store</span>
+                        </div>
+                        <div class="download-badge" aria-hidden="true">📱 iOS</div>
+                    </button>
+                    <button class="download-btn android" style="opacity: 0.6; cursor: not-allowed;" aria-label="Coming to Android - Not yet available" disabled>
+                        <span class="download-icon" aria-hidden="true">🤖</span>
+                        <div class="download-text">
+                            <span class="download-label">Coming to</span>
+                            <span class="download-platform">Android</span>
+                        </div>
+                        <div class="download-badge" aria-hidden="true">🔜 Soon</div>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>CardKeep 💖</h3>
+                    <p>Making card collection management simple, beautiful, and absolutely delightful!</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#download">Download</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="mailto:memories@cardkeep.app">Contact Us</a></li>
+                            <li><a href="#privacy" onclick="showPrivacyModal()">Privacy Policy</a></li>
+                            <li><a href="#terms">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CardKeep. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="privacy-modal" style="display: none;" role="dialog" aria-labelledby="privacy-title" aria-modal="true">
+        <div class="privacy-modal-content">
+            <div class="privacy-header">
+                <h3 id="privacy-title">Privacy Policy</h3>
+                <button class="privacy-close" onclick="closePrivacyModal()" aria-label="Close privacy policy modal">&times;</button>
+            </div>
+            <div class="privacy-content">
+                <h4>Your Privacy Matters</h4>
+                <p>CardKeep is designed with your privacy as our top priority. Here's how we handle your precious memories:</p>
+                
+                <h5>Local Storage</h5>
+                <p>All your card data, photos, and personal information are stored locally on your iPhone using Core Data. We never send your data to our servers or any third parties.</p>
+                
+                <h5>iCloud Photo Sync</h5>
+                <p>When you save cards to CardKeep, the photos are automatically added to your device's photo library in an album called "CardKeep". If you have iCloud Photos enabled in your device settings, these photos will sync to your iCloud account as part of your normal photo backup - this is handled entirely by Apple, not by us.</p>
+                
+                <h5>No Data Collection</h5>
+                <p>We don't collect analytics, crash reports, or any personal information. Your memories are yours alone.</p>
+                
+                <h5>Permissions</h5>
+                <p>CardKeep only requests camera and photo library permissions to save your card photos. These are essential for the app's functionality.</p>
+                
+                <p><strong>Last updated:</strong> 2024</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

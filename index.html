@@ -37,78 +37,6 @@
 </head>
 <body role="document">
     <a href="#main" class="skip-link">Skip to main content</a>
-    <!-- Demo Modal -->
-    <div id="demoModal" class="demo-modal" style="display: none;" role="dialog" aria-labelledby="demo-title" aria-modal="true">
-        <div class="demo-modal-content">
-            <div class="demo-header">
-                <h3 id="demo-title">CardKeep Demo</h3>
-                <button class="demo-close" onclick="closeDemoModal()" aria-label="Close demo modal">&times;</button>
-            </div>
-            <div class="demo-container">
-                <div class="demo-phone">
-                    <div class="demo-screen">
-                        <div id="demoStep1" class="demo-step active">
-                            <div class="demo-camera">
-                                <div class="camera-viewfinder">
-                                    <div class="demo-card-preview">💌 Thank You!</div>
-                                    <button class="camera-button" onclick="nextDemoStep()" aria-label="Take photo of greeting card">📸</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="demoStep2" class="demo-step">
-                            <div class="demo-form">
-                                <h4>Add Details</h4>
-                                <div class="demo-field">
-                                    <label>From:</label>
-                                    <input type="text" value="Sarah" readonly>
-                                </div>
-                                <div class="demo-field">
-                                    <label>Occasion:</label>
-                                    <input type="text" value="Thank You" readonly>
-                                </div>
-                                <div class="demo-field">
-                                    <label>Date:</label>
-                                    <input type="text" value="Today" readonly>
-                                </div>
-                                <button class="demo-save-btn" onclick="nextDemoStep()" aria-label="Save card memory with details">💜 Save Memory</button>
-                            </div>
-                        </div>
-                        <div id="demoStep3" class="demo-step">
-                            <div class="demo-success">
-                                <div class="success-animation">✨</div>
-                                <h4>Memory Saved!</h4>
-                                <p>Your precious card is now safely stored</p>
-                                <div class="demo-card-saved">
-                                    <div class="saved-card">
-                                        <div class="card-thumb">💌</div>
-                                        <div class="card-info">
-                                            <div>Thank you card</div>
-                                            <div class="card-from">From Sarah</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="demo-restart-btn" onclick="restartDemo()" aria-label="Restart demo from beginning">Try Again</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="demo-description">
-                    <div id="stepDescription1" class="step-description active">
-                        <h4>1. Snap a Photo</h4>
-                        <p>Take a picture of your greeting card - thank you notes, birthday wishes, congratulations, or any heartfelt message</p>
-                    </div>
-                    <div id="stepDescription2" class="step-description">
-                        <h4>2. Add Details</h4>
-                        <p>Tell CardKeep who sent it, what the occasion was, and when you received it to make it easily searchable</p>
-                    </div>
-                    <div id="stepDescription3" class="step-description">
-                        <h4>3. Save Forever</h4>
-                        <p>Your precious memory is now preserved and easily searchable whenever you want to revisit those special moments</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
@@ -165,10 +93,8 @@
                 <h1 class="hero-title" id="hero-title">Keep Your <span class="highlight">Precious Memories</span> Forever ✨</h1>
                 <p class="hero-subtitle">The beautiful way to preserve your greeting card memories! Digitally store birthday cards, thank you notes, congratulations cards, and all the heartfelt messages that matter most to you. 💜</p>
                 <div class="hero-buttons">
-                    <button class="btn btn-primary" aria-describedby="download-desc">🎴 Download Free</button>
-                    <button class="btn btn-secondary" aria-describedby="demo-desc">✨ Watch Demo</button>
+                    <button class="btn btn-primary btn-large" aria-describedby="download-desc">🎴 Download Free</button>
                     <div id="download-desc" class="sr-only">Navigate to download section</div>
-                    <div id="demo-desc" class="sr-only">Open interactive demo modal</div>
                 </div>
             </div>
             <div class="hero-visual" role="img" aria-label="Stack of greeting cards showing birthday, wedding, and thank you cards">

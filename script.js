@@ -197,9 +197,6 @@ document.querySelectorAll('.hero-buttons .btn').forEach(btn => {
             document.querySelector('#download').scrollIntoView({
                 behavior: 'smooth'
             });
-        } else if (btn.textContent.includes('Demo')) {
-            e.preventDefault();
-            showDemoModal();
         }
     });
 });
@@ -461,9 +458,7 @@ function trapFocus(element) {
         }
         
         if (e.key === 'Escape') {
-            if (element.id === 'demoModal') {
-                closeDemoModal();
-            } else if (element.id === 'privacyModal') {
+            if (element.id === 'privacyModal') {
                 closePrivacyModal();
             } else if (element.id === 'termsModal') {
                 closeTermsModal();
@@ -525,48 +520,6 @@ function createWelcomeSparkles() {
     }
 }
 
-// Demo Modal Functions
-let currentDemoStep = 1;
-
-function showDemoModal() {
-    const modal = document.getElementById('demoModal');
-    modal.style.display = 'block';
-    currentDemoStep = 1;
-    showDemoStep(1);
-    
-    // Focus management for accessibility
-    const closeButton = modal.querySelector('.demo-close');
-    closeButton.focus();
-    
-    // Trap focus within modal
-    trapFocus(modal);
-}
-
-function closeDemoModal() {
-    document.getElementById('demoModal').style.display = 'none';
-}
-
-function nextDemoStep() {
-    currentDemoStep++;
-    if (currentDemoStep <= 3) {
-        showDemoStep(currentDemoStep);
-    }
-}
-
-function showDemoStep(step) {
-    // Hide all steps
-    document.querySelectorAll('.demo-step').forEach(el => el.classList.remove('active'));
-    document.querySelectorAll('.step-description').forEach(el => el.classList.remove('active'));
-    
-    // Show current step
-    document.getElementById('demoStep' + step).classList.add('active');
-    document.getElementById('stepDescription' + step).classList.add('active');
-}
-
-function restartDemo() {
-    currentDemoStep = 1;
-    showDemoStep(1);
-}
 
 // Privacy Modal Functions
 function showPrivacyModal() {
@@ -604,13 +557,9 @@ function closeTermsModal() {
 
 // Close modals when clicking outside
 window.onclick = function(event) {
-    const demoModal = document.getElementById('demoModal');
     const privacyModal = document.getElementById('privacyModal');
     const termsModal = document.getElementById('termsModal');
     
-    if (event.target === demoModal) {
-        closeDemoModal();
-    }
     if (event.target === privacyModal) {
         closePrivacyModal();
     }

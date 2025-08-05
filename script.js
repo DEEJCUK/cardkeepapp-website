@@ -116,34 +116,39 @@ function createSparkles(element) {
 // Enhanced download button interactions with cute feedback
 document.querySelectorAll('.download-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        
-        // Add cute loading state with hearts
-        const originalText = btn.innerHTML;
-        btn.innerHTML = '<span style="display: inline-block; animation: spin 1s linear infinite;">💖</span> Getting ready...';
-        btn.style.pointerEvents = 'none';
-        btn.style.transform = 'scale(0.95)';
-        
-        // Create heart explosion effect
-        createHeartExplosion(btn);
-        
-        // Simulate download process with cute messages
-        setTimeout(() => {
-            const messages = [
-                '✨ Almost there!',
-                '🎉 Coming Soon!',
-                '💫 Stay tuned!',
-                '🌟 Worth the wait!'
-            ];
-            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-            btn.innerHTML = randomMessage;
+        // Check if it's the iOS download button (enabled) vs Android (disabled)
+        if (!btn.disabled && btn.classList.contains('ios')) {
+            e.preventDefault();
             
+            // Add cute loading state with hearts
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<span style="display: inline-block; animation: spin 1s linear infinite;">💖</span> Getting ready...';
+            btn.style.pointerEvents = 'none';
+            btn.style.transform = 'scale(0.95)';
+            
+            // Create heart explosion effect
+            createHeartExplosion(btn);
+            
+            // Redirect to App Store after animation
             setTimeout(() => {
+                window.open('https://apps.apple.com/gb/app/', '_blank');
+                
+                // Reset button state
                 btn.innerHTML = originalText;
                 btn.style.pointerEvents = 'auto';
                 btn.style.transform = 'scale(1)';
-            }, 2500);
-        }, 1500);
+            }, 1000);
+        } else if (btn.disabled) {
+            // For disabled Android button, show coming soon message
+            e.preventDefault();
+            
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '🔜 Coming Soon!';
+            
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+            }, 2000);
+        }
     });
     
     // Add hover sound effect simulation
@@ -194,9 +199,7 @@ document.querySelectorAll('.hero-buttons .btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
         if (btn.textContent.includes('Download')) {
             e.preventDefault();
-            document.querySelector('#download').scrollIntoView({
-                behavior: 'smooth'
-            });
+            window.open('https://apps.apple.com/gb/app/', '_blank');
         }
     });
 });
@@ -481,7 +484,6 @@ document.querySelectorAll('.feature-card').forEach((card, index) => {
 });
 
 console.log('🎴 CardKeep Website loaded successfully!');
-console.log('💡 Try the Konami Code for a magical surprise!');
 console.log('✨ Welcome to the cutest card collection manager!');
 console.log('🌈 Made with love and lots of emojis! 💖');
 console.log('♿ Fully accessible for everyone!');

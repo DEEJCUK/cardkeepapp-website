@@ -432,6 +432,13 @@ function showPrivacyModal() {
     const modal = document.getElementById('privacyModal');
     modal.style.display = 'block';
     
+    // Scroll to top of page and modal content
+    window.scrollTo(0, 0);
+    const modalContent = modal.querySelector('.privacy-content');
+    if (modalContent) {
+        modalContent.scrollTop = 0;
+    }
+    
     // Focus management for accessibility
     const closeButton = modal.querySelector('.privacy-close');
     closeButton.focus();
@@ -448,6 +455,13 @@ function closePrivacyModal() {
 function showTermsModal() {
     const modal = document.getElementById('termsModal');
     modal.style.display = 'block';
+    
+    // Scroll to top of page and modal content
+    window.scrollTo(0, 0);
+    const modalContent = modal.querySelector('.terms-content');
+    if (modalContent) {
+        modalContent.scrollTop = 0;
+    }
     
     // Focus management for accessibility
     const closeButton = modal.querySelector('.terms-close');

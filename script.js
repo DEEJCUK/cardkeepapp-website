@@ -387,7 +387,7 @@ document.querySelectorAll('.feature-card').forEach((card, index) => {
     });
 });
 
-console.log('🎴 CardKeep Website loaded successfully!');
+console.log('🎴 CardKeepApp Website loaded successfully!');
 console.log('✨ Welcome to the cutest card collection manager!');
 console.log('🌈 Made with love and lots of emojis! 💖');
 console.log('♿ Fully accessible for everyone!');

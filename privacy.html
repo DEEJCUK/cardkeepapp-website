@@ -1,291 +1,388 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CardKeepApp Privacy Policy - Your privacy is our top priority. Learn how we handle your precious greeting card memories.">
-    <meta name="keywords" content="CardKeepApp privacy, data protection, greeting card app privacy, local storage, secure app">
-    <meta name="author" content="CardKeepApp Team">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#6366f1">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CardKeepApp Privacy Policy - Your privacy is our top priority. Learn how we handle your precious greeting card memories."
+    />
+    <meta
+      name="keywords"
+      content="CardKeepApp privacy, data protection, greeting card app privacy, local storage, secure app"
+    />
+    <meta name="author" content="CardKeepApp Team" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#6366f1" />
+
     <title>Privacy Policy - CardKeepApp | Your Privacy Matters</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="canonical" href="https://cardkeep.app/privacy.html">
-</head>
-<body role="document">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="canonical" href="https://cardkeep.app/privacy.html" />
+  </head>
+  <body role="document">
     <a href="#main" class="skip-link">Skip to main content</a>
-    
+
     <header class="header" role="banner">
-        <nav class="nav" role="navigation" aria-label="Main navigation">
-            <div class="nav-brand">
-                <h1 class="logo" aria-label="CardKeepApp - Home"><a href="index.html">CardKeepApp</a></h1>
-            </div>
-            <ul class="nav-menu" id="nav-menu" role="menubar">
-                <li role="none"><a href="index.html" class="nav-link" role="menuitem">🏠 Home</a></li>
-                <li role="none"><a href="index.html#features" class="nav-link" role="menuitem">Features</a></li>
-                <li role="none"><a href="index.html#about" class="nav-link" role="menuitem">About</a></li>
-                <li role="none"><a href="index.html#download" class="nav-link" role="menuitem">Download</a></li>
-                <li role="none"><a href="documentation.html" class="nav-link" role="menuitem">Documentation</a></li>
-                <li role="none"><a href="index.html#contact" class="nav-link" role="menuitem">Contact</a></li>
-            </ul>
-            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </button>
-        </nav>
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-brand">
+          <h1 class="logo" aria-label="CardKeepApp - Home">
+            <a href="index.html">CardKeepApp</a>
+          </h1>
+        </div>
+        <ul class="nav-menu" id="nav-menu" role="menubar">
+          <li role="none">
+            <a href="index.html" class="nav-link" role="menuitem">🏠 Home</a>
+          </li>
+          <li role="none">
+            <a href="index.html#features" class="nav-link" role="menuitem"
+              >Features</a
+            >
+          </li>
+          <li role="none">
+            <a href="index.html#about" class="nav-link" role="menuitem"
+              >About</a
+            >
+          </li>
+          <li role="none">
+            <a href="index.html#download" class="nav-link" role="menuitem"
+              >Download</a
+            >
+          </li>
+          <li role="none">
+            <a href="documentation.html" class="nav-link" role="menuitem"
+              >Documentation</a
+            >
+          </li>
+          <li role="none">
+            <a href="index.html#contact" class="nav-link" role="menuitem"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <button
+          class="hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </nav>
     </header>
 
     <style>
+      .legal-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 6rem 2rem 2rem 2rem;
+        line-height: 1.6;
+      }
+
+      .legal-header {
+        text-align: center;
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid var(--gradient-start);
+        background: linear-gradient(135deg, #fdf8fc 0%, #f0e6f5 100%);
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: 0 10px 30px rgba(99, 102, 241, 0.1);
+      }
+
+      .legal-header h1 {
+        color: var(--gradient-start);
+        font-size: 2.5rem;
+        margin: 0 0 1rem 0;
+        font-weight: 700;
+      }
+
+      .legal-header p {
+        color: var(--text-secondary);
+        font-size: 1.2rem;
+        margin: 0;
+      }
+
+      .legal-section {
+        background: var(--card-bg);
+        border-radius: 16px;
+        padding: 2.5rem;
+        margin-bottom: 2rem;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 8px 25px rgba(99, 102, 241, 0.1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .legal-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(
+          90deg,
+          var(--gradient-start),
+          var(--gradient-mid),
+          var(--gradient-end)
+        );
+        border-radius: 16px 16px 0 0;
+      }
+
+      .legal-section h2 {
+        color: var(--gradient-start);
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .legal-section h3 {
+        color: var(--gradient-mid);
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+
+      .legal-section p {
+        color: var(--text-primary);
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+        line-height: 1.7;
+      }
+
+      .legal-section ul {
+        margin: 1rem 0;
+        padding-left: 1.5rem;
+      }
+
+      .legal-section li {
+        color: var(--text-primary);
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+      }
+
+      .tip {
+        background: linear-gradient(135deg, #e8f5e8 0%, #f0f9f0 100%);
+        border-left: 4px solid #4ade80;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin: 2rem 0;
+        box-shadow: 0 4px 12px rgba(74, 222, 128, 0.1);
+      }
+
+      .tip strong {
+        color: #166534;
+        font-size: 1.1rem;
+      }
+
+      .tip p {
+        margin: 0.5rem 0 0 0;
+      }
+
+      .back-section {
+        text-align: center;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border-color);
+        background: linear-gradient(135deg, #fdf8fc 0%, #f0e6f5 100%);
+        border-radius: 16px;
+        padding: 2rem;
+      }
+
+      .back-section p {
+        margin-bottom: 1.5rem;
+        color: var(--text-secondary);
+      }
+
+      .back-section a[href^="mailto"] {
+        color: var(--gradient-start);
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .back-section a[href^="mailto"]:hover {
+        color: var(--gradient-mid);
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
         .legal-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 6rem 2rem 2rem 2rem;
-            line-height: 1.6;
+          padding: 5rem 1rem 1rem 1rem;
         }
-        
+
         .legal-header {
-            text-align: center;
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 2px solid var(--gradient-start);
-            background: linear-gradient(135deg, #fdf8fc 0%, #f0e6f5 100%);
-            border-radius: 20px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.1);
+          padding: 1.5rem;
         }
-        
+
         .legal-header h1 {
-            color: var(--gradient-start);
-            font-size: 2.5rem;
-            margin: 0 0 1rem 0;
-            font-weight: 700;
+          font-size: 2rem;
         }
-        
-        .legal-header p {
-            color: var(--text-secondary);
-            font-size: 1.2rem;
-            margin: 0;
-        }
-        
+
         .legal-section {
-            background: var(--card-bg);
-            border-radius: 16px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            border: 1px solid var(--border-color);
-            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.1);
-            position: relative;
-            overflow: hidden;
+          padding: 1.5rem;
         }
-        
-        .legal-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--gradient-start), var(--gradient-mid), var(--gradient-end));
-            border-radius: 16px 16px 0 0;
-        }
-        
+
         .legal-section h2 {
-            color: var(--gradient-start);
-            margin-top: 0;
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+          font-size: 1.5rem;
         }
-        
-        .legal-section h3 {
-            color: var(--gradient-mid);
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-            font-weight: 600;
-        }
-        
-        .legal-section p {
-            color: var(--text-primary);
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-            line-height: 1.7;
-        }
-        
-        .legal-section ul {
-            margin: 1rem 0;
-            padding-left: 1.5rem;
-        }
-        
-        .legal-section li {
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
-            line-height: 1.6;
-        }
-        
-        .tip {
-            background: linear-gradient(135deg, #e8f5e8 0%, #f0f9f0 100%);
-            border-left: 4px solid #4ade80;
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            box-shadow: 0 4px 12px rgba(74, 222, 128, 0.1);
-        }
-        
-        .tip strong {
-            color: #166534;
-            font-size: 1.1rem;
-        }
-        
-        .tip p {
-            margin: 0.5rem 0 0 0;
-        }
-        
-        .back-section {
-            text-align: center;
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border-color);
-            background: linear-gradient(135deg, #fdf8fc 0%, #f0e6f5 100%);
-            border-radius: 16px;
-            padding: 2rem;
-        }
-        
-        .back-section p {
-            margin-bottom: 1.5rem;
-            color: var(--text-secondary);
-        }
-        
-        .back-section a[href^="mailto"] {
-            color: var(--gradient-start);
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        
-        .back-section a[href^="mailto"]:hover {
-            color: var(--gradient-mid);
-            text-decoration: underline;
-        }
-        
-        @media (max-width: 768px) {
-            .legal-container {
-                padding: 5rem 1rem 1rem 1rem;
-            }
-            
-            .legal-header {
-                padding: 1.5rem;
-            }
-            
-            .legal-header h1 {
-                font-size: 2rem;
-            }
-            
-            .legal-section {
-                padding: 1.5rem;
-            }
-            
-            .legal-section h2 {
-                font-size: 1.5rem;
-            }
-        }
+      }
     </style>
 
     <main role="main" id="main" class="legal-container">
-        <div class="legal-header">
-            <h1>🔒 Privacy Policy</h1>
-            <p>Your privacy is our top priority</p>
+      <div class="legal-header">
+        <h1>🔒 Privacy Policy</h1>
+        <p>Your privacy is our top priority</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>Your Privacy Matters 💜</h2>
+        <p>
+          CardKeepApp is designed with your privacy as our top priority. Here's
+          how we handle your precious memories:
+        </p>
+
+        <h3>🏠 Local Storage</h3>
+        <p>
+          All your card data, photos, and personal information are stored
+          locally on your iPhone using Core Data. We never send your data to our
+          servers or any third parties.
+        </p>
+
+        <h3>☁️ iCloud Photo Sync</h3>
+        <p>
+          When you save cards to CardKeepApp, the photos are automatically added
+          to your device's photo library in an album called "CardKeepApp". If
+          you have iCloud Photos enabled in your device settings, these photos
+          will sync to your iCloud account as part of your normal photo backup -
+          this is handled entirely by Apple, not by us.
+        </p>
+
+        <h3>🚫 No Data Collection</h3>
+        <p>
+          We don't collect analytics, crash reports, or any personal
+          information. Your memories are yours alone.
+        </p>
+
+        <h3>📱 Permissions</h3>
+        <p>
+          CardKeepApp only requests camera and photo library permissions to save
+          your card photos. These are essential for the app's functionality.
+        </p>
+
+        <h3>🌐 Website Storage</h3>
+        <p>
+          Our website (cardkeep.app) uses minimal browser storage to enhance
+          your experience:
+        </p>
+        <ul>
+          <li>
+            <strong>Welcome popup preference:</strong> We store a small flag to
+            remember if you've seen our first-visit welcome message, so we don't
+            show it repeatedly
+          </li>
+          <li>
+            <strong>No tracking:</strong> We don't use cookies for analytics,
+            advertising, or user tracking
+          </li>
+          <li>
+            <strong>No personal data:</strong> No personal information is stored
+            in browser storage
+          </li>
+          <li>
+            <strong>Private browsing friendly:</strong> Our storage works with
+            private/incognito browsing modes
+          </li>
+        </ul>
+
+        <div class="tip">
+          <strong>💡 In Summary:</strong> Your greeting card memories stay
+          completely private on your device. We never see, store, or access your
+          personal data. Our website only remembers basic preferences to improve
+          your experience.
         </div>
-        
-        <div class="legal-section">
-            <h2>Your Privacy Matters 💜</h2>
-            <p>CardKeepApp is designed with your privacy as our top priority. Here's how we handle your precious memories:</p>
-            
-            <h3>🏠 Local Storage</h3>
-            <p>All your card data, photos, and personal information are stored locally on your iPhone using Core Data. We never send your data to our servers or any third parties.</p>
-            
-            <h3>☁️ iCloud Photo Sync</h3>
-            <p>When you save cards to CardKeepApp, the photos are automatically added to your device's photo library in an album called "CardKeepApp". If you have iCloud Photos enabled in your device settings, these photos will sync to your iCloud account as part of your normal photo backup - this is handled entirely by Apple, not by us.</p>
-            
-            <h3>🚫 No Data Collection</h3>
-            <p>We don't collect analytics, crash reports, or any personal information. Your memories are yours alone.</p>
-            
-            <h3>📱 Permissions</h3>
-            <p>CardKeepApp only requests camera and photo library permissions to save your card photos. These are essential for the app's functionality.</p>
-            
-            <h3>🌐 Website Storage</h3>
-            <p>Our website (cardkeep.app) uses minimal browser storage to enhance your experience:</p>
-            <ul>
-                <li><strong>Welcome popup preference:</strong> We store a small flag to remember if you've seen our first-visit welcome message, so we don't show it repeatedly</li>
-                <li><strong>No tracking:</strong> We don't use cookies for analytics, advertising, or user tracking</li>
-                <li><strong>No personal data:</strong> No personal information is stored in browser storage</li>
-                <li><strong>Private browsing friendly:</strong> Our storage works with private/incognito browsing modes</li>
-            </ul>
-            
-            <div class="tip">
-                <strong>💡 In Summary:</strong> Your greeting card memories stay completely private on your device. We never see, store, or access your personal data. Our website only remembers basic preferences to improve your experience.
-            </div>
-            
-            <p><strong>Last updated:</strong> 2024</p>
-        </div>
-        
-        <div class="back-section">
-            <p>Questions about our privacy practices? Contact us at <a href="mailto:memories@cardkeep.app">memories@cardkeep.app</a></p>
-            <p><a href="index.html" class="btn btn-primary">← Back to Home</a></p>
-        </div>
+
+        <p><strong>Last updated:</strong> 2024</p>
+      </div>
+
+      <div class="back-section">
+        <p>
+          Questions about our privacy practices? Contact us at
+          <a href="mailto:memories@cardkeep.app">memories@cardkeep.app</a>
+        </p>
+        <p><a href="index.html" class="btn btn-primary">← Back to Home</a></p>
+      </div>
     </main>
 
     <footer id="contact" class="footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>CardKeepApp 💖</h3>
-                    <p>Making card collection management simple, beautiful, and absolutely delightful!</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Product</h4>
-                        <ul>
-                            <li><a href="index.html#features">Features</a></li>
-                            <li><a href="index.html#download">Download</a></li>
-                            <li><a href="index.html#about">About</a></li>
-                            <li><a href="documentation.html">Documentation</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Support</h4>
-                        <ul>
-                            <li><a href="mailto:memories@cardkeep.app">Contact Us</a></li>
-                            <li><a href="privacy.html">Privacy Policy</a></li>
-                            <li><a href="terms.html">Terms of Service</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Connect</h4>
-                        <ul>
-                            <li><a href="https://www.instagram.com/cardkeepapp/" target="_blank">Instagram</a></li>
-                            <li><a href="https://x.com/CardKeepAppApp" target="_blank">X (Twitter)</a></li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>CardKeepApp 💖</h3>
+            <p>
+              Making card collection management simple, beautiful, and
+              absolutely delightful!
+            </p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Product</h4>
+              <ul>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#download">Download</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+              </ul>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 CardKeepApp. All rights reserved.</p>
+            <div class="footer-column">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="mailto:memories@cardkeep.app">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+              </ul>
             </div>
+            <div class="footer-column">
+              <h4>Connect</h4>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.instagram.com/cardkeepapp/"
+                    target="_blank"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="https://x.com/CardKeepAppApp" target="_blank"
+                    >X (Twitter)</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 CardKeepApp. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

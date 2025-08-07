@@ -22,9 +22,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+            // Get the header height to offset scroll position
+            const headerHeight = document.querySelector('.header')?.offsetHeight || 70;
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+            
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
             });
         }
     });
@@ -141,14 +145,7 @@ document.querySelectorAll('.download-btn').forEach(btn => {
 });
 
 
-// Parallax effect for hero section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const heroVisual = document.querySelector('.hero-visual');
-    if (heroVisual) {
-        heroVisual.style.transform = `translateY(${scrolled * 0.1}px)`;
-    }
-});
+// Removed parallax effect to prevent page bouncing
 
 // Enhanced feature cards with 3D tilt and cute effects
 document.querySelectorAll('.feature-card').forEach(card => {
@@ -327,17 +324,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Enhanced loading animation with cute fade-in
-window.addEventListener('load', () => {
-    document.body.style.opacity = '0';
-    document.body.style.transform = 'scale(0.95)';
-    document.body.style.transition = 'opacity 0.8s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1)';
-    
-    setTimeout(() => {
-        document.body.style.opacity = '1';
-        document.body.style.transform = 'scale(1)';
-    }, 100);
-});
+// Removed loading animation to prevent page bouncing
 
 
 
@@ -365,11 +352,7 @@ function trapFocus(element) {
         }
         
         if (e.key === 'Escape') {
-            if (element.id === 'privacyModal') {
-                closePrivacyModal();
-            } else if (element.id === 'termsModal') {
-                closeTermsModal();
-            }
+            // Handle escape key for any modal
         }
     });
 }
@@ -427,63 +410,124 @@ function createWelcomeSparkles() {
 }
 
 
-// Privacy Modal Functions
-function showPrivacyModal() {
-    const modal = document.getElementById('privacyModal');
-    modal.style.display = 'block';
-    
-    // Scroll to top of page and modal content
-    window.scrollTo(0, 0);
-    const modalContent = modal.querySelector('.privacy-content');
-    if (modalContent) {
-        modalContent.scrollTop = 0;
-    }
-    
-    // Focus management for accessibility
-    const closeButton = modal.querySelector('.privacy-close');
-    closeButton.focus();
-    
-    // Trap focus within modal
-    trapFocus(modal);
-}
 
-function closePrivacyModal() {
-    document.getElementById('privacyModal').style.display = 'none';
-}
-
-// Terms Modal Functions
-function showTermsModal() {
-    const modal = document.getElementById('termsModal');
-    modal.style.display = 'block';
-    
-    // Scroll to top of page and modal content
-    window.scrollTo(0, 0);
-    const modalContent = modal.querySelector('.terms-content');
-    if (modalContent) {
-        modalContent.scrollTop = 0;
-    }
-    
-    // Focus management for accessibility
-    const closeButton = modal.querySelector('.terms-close');
-    closeButton.focus();
-    
-    // Trap focus within modal
-    trapFocus(modal);
-}
-
-function closeTermsModal() {
-    document.getElementById('termsModal').style.display = 'none';
-}
-
-// Close modals when clicking outside
-window.onclick = function(event) {
-    const privacyModal = document.getElementById('privacyModal');
-    const termsModal = document.getElementById('termsModal');
-    
-    if (event.target === privacyModal) {
-        closePrivacyModal();
-    }
-    if (event.target === termsModal) {
-        closeTermsModal();
+// Welcome Popup Functions
+function showWelcomePopup() {
+    const popup = document.getElementById('welcomePopup');
+    if (popup) {
+        popup.style.display = 'flex';
+        
+        // Focus management for accessibility
+        const closeButton = popup.querySelector('.welcome-close');
+        if (closeButton) {
+            closeButton.focus();
+        }
+        
+        // Trap focus within popup
+        trapFocus(popup);
+        
+        // Add sparkle effect
+        setTimeout(() => {
+            createWelcomePopupSparkles();
+        }, 500);
     }
 }
+
+function closeWelcomePopup() {
+    const popup = document.getElementById('welcomePopup');
+    if (popup) {
+        popup.style.display = 'none';
+        
+        // Mark that user has seen the welcome popup (with fallback for private browsing)
+        try {
+            localStorage.setItem('cardkeepapp-welcome-shown', 'true');
+        } catch (e) {
+            // Fallback for private browsing: use sessionStorage or just set a flag
+            try {
+                sessionStorage.setItem('cardkeepapp-welcome-shown', 'true');
+            } catch (e2) {
+                // As last resort, just set a global variable for this session
+                window.cardkeepWelcomeShown = true;
+            }
+        }
+    }
+}
+
+// Check if this is the first visit
+function checkFirstVisit() {
+    let hasSeenWelcome = false;
+    
+    // Try multiple storage methods for private browsing compatibility
+    try {
+        hasSeenWelcome = localStorage.getItem('cardkeepapp-welcome-shown') === 'true';
+    } catch (e) {
+        try {
+            hasSeenWelcome = sessionStorage.getItem('cardkeepapp-welcome-shown') === 'true';
+        } catch (e2) {
+            hasSeenWelcome = window.cardkeepWelcomeShown === true;
+        }
+    }
+    
+    // Only show on index.html and if user hasn't seen it before
+    if (!hasSeenWelcome && (window.location.pathname === '/' || window.location.pathname.endsWith('index.html') || window.location.pathname === '/CardKeep-Website/')) {
+        // Wait a bit for the page to load nicely
+        setTimeout(() => {
+            showWelcomePopup();
+        }, 1500);
+    }
+}
+
+// Create sparkles for welcome popup
+function createWelcomePopupSparkles() {
+    const popup = document.querySelector('.welcome-popup-content');
+    if (!popup) return;
+    
+    for (let i = 0; i < 8; i++) {
+        setTimeout(() => {
+            const sparkle = document.createElement('div');
+            sparkle.innerHTML = ['✨', '💖', '💜', '🌟', '💕'][Math.floor(Math.random() * 5)];
+            sparkle.style.position = 'absolute';
+            sparkle.style.pointerEvents = 'none';
+            sparkle.style.fontSize = '20px';
+            sparkle.style.zIndex = '2001';
+            
+            const rect = popup.getBoundingClientRect();
+            sparkle.style.left = (rect.left + Math.random() * rect.width) + 'px';
+            sparkle.style.top = (rect.top + Math.random() * rect.height) + 'px';
+            
+            document.body.appendChild(sparkle);
+            
+            sparkle.animate([
+                { transform: 'scale(0) rotate(0deg)', opacity: 0 },
+                { transform: 'scale(1.2) rotate(180deg)', opacity: 1 },
+                { transform: 'scale(0) rotate(360deg)', opacity: 0 }
+            ], {
+                duration: 2000,
+                easing: 'cubic-bezier(0.34, 1.56, 0.64, 1)'
+            }).onfinish = () => sparkle.remove();
+        }, i * 150);
+    }
+}
+
+// Initialize first visit check when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    checkFirstVisit();
+});
+
+// Close welcome popup when clicking outside
+window.addEventListener('click', (event) => {
+    const welcomePopup = document.getElementById('welcomePopup');
+    if (event.target === welcomePopup) {
+        closeWelcomePopup();
+    }
+});
+
+// Close welcome popup with Escape key
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+        const welcomePopup = document.getElementById('welcomePopup');
+        if (welcomePopup && welcomePopup.style.display === 'flex') {
+            closeWelcomePopup();
+        }
+    }
+});

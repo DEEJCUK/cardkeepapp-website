@@ -358,6 +358,7 @@
           <li><a href="#functionality">App Features</a></li>
           <li><a href="#limitations">Limitations</a></li>
           <li><a href="#technical">Technical</a></li>
+          <li><a href="#errors-troubleshooting">Errors & Troubleshooting</a></li>
           <li><a href="#cost-purchase">Cost & Purchase</a></li>
           <li><a href="#usage-tips">Usage Tips</a></li>
         </ul>
@@ -419,15 +420,34 @@
         <div class="faq-item">
           <div class="faq-question">How much storage does the app use?</div>
           <div class="faq-answer">
-            The app itself is small, but storage depends on how many cards you
-            save and photo quality:
+            CardKeepApp now uses an efficient storage system:
             <br /><br />
             • <strong>App size:</strong> About 10-20MB<br />
-            • <strong>Per card:</strong> 2-10MB depending on photo quality<br />
-            • <strong>100 cards:</strong> Roughly 200MB-1GB<br />
+            • <strong>Card data:</strong> Very small (just text info)<br />
+            • <strong>Photos:</strong> Only stored once in your Photos app<br />
+            • <strong>100 cards:</strong> App data ~50MB, photos depend on quality<br />
             <br />
-            Photos are also saved to your Photos app, so they count twice
-            against your storage (once in CardKeepApp, once in Photos).
+            <div class="tip">
+              <strong>💡 Efficient:</strong> Photos are no longer duplicated! They're stored once in your Photos app and referenced by CardKeepApp, saving significant storage space.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">What happens if I delete photos from my Photos app?</div>
+          <div class="faq-answer">
+            <div class="warning">
+              <strong>⚠️ Critical:</strong> If you delete photos from the "CardKeepApp" album in your Photos app, those cards will show broken image links in CardKeepApp!
+            </div>
+            Since CardKeepApp now references photos stored in your Photos app rather than keeping copies:
+            <br><br>
+            • <strong>Deleted photos = broken cards:</strong> The card information remains, but photos won't display<br>
+            • <strong>No way to re-add:</strong> You cannot add new photos to existing cards<br>
+            • <strong>Only solution:</strong> Delete the broken card and create it again with new photos<br>
+            <br>
+            <div class="tip">
+              <strong>💡 Protection tip:</strong> Be very careful when managing photos in your Photos app. Consider creating a backup before deleting photos from the CardKeepApp album.
+            </div>
           </div>
         </div>
       </section>
@@ -617,6 +637,86 @@
         </div>
       </section>
 
+      <section id="errors-troubleshooting" class="faq-section">
+        <h2>🔧 Errors & Troubleshooting</h2>
+        
+        <div class="faq-item">
+          <div class="faq-question">The app says "Camera access denied" or won't let me take photos</div>
+          <div class="faq-answer">
+            CardKeepApp needs camera permission to photograph your greeting cards. To fix this:
+            <br><br>
+            1. Go to <strong>Settings > Privacy & Security > Camera</strong><br>
+            2. Find <strong>CardKeepApp</strong> in the list<br>
+            3. Toggle it <strong>ON</strong><br>
+            4. Return to CardKeepApp and try taking photos again<br>
+            <br>
+            <div class="tip">
+              <strong>💡 Note:</strong> You might need to completely close and reopen CardKeepApp after changing permissions.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">I get "Photos access denied" or can't save cards</div>
+          <div class="faq-answer">
+            CardKeepApp needs Photos access to save your card images. To enable this:
+            <br><br>
+            1. Go to <strong>Settings > Privacy & Security > Photos</strong><br>
+            2. Find <strong>CardKeepApp</strong> in the list<br>
+            3. Select <strong>"All Photos"</strong><br>
+            4. Return to CardKeepApp and try saving again<br>
+            <br>
+            <strong>Note:</strong> CardKeepApp requires "All Photos" access because it needs to read the photos it saves to display them in your card collection. Since photos are now referenced from your Photos app rather than stored as copies, the app must be able to access them to show your cards.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">My card photos show up as blank or broken images</div>
+          <div class="faq-answer">
+            This usually happens when:
+            <br><br>
+            • <strong>Photos were deleted:</strong> Someone deleted photos from the "CardKeepApp" album in your Photos app<br>
+            • <strong>iCloud Photos sync issue:</strong> Photos haven't synced properly across devices<br>
+            • <strong>Storage full:</strong> Your device ran out of storage while saving<br>
+            <br>
+            <div class="warning">
+              <strong>⚠️ Unfortunately:</strong> There's no way to fix broken image references. You'll need to delete the card and create it again with new photos.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">The app crashes when I try to take photos</div>
+          <div class="faq-answer">
+            Try these troubleshooting steps:
+            <br><br>
+            1. <strong>Close and reopen</strong> CardKeepApp completely<br>
+            2. <strong>Check permissions:</strong> Ensure Camera and Photos access are enabled<br>
+            3. <strong>Check storage:</strong> Make sure you have at least 100MB free space<br>
+            4. <strong>Restart your iPhone</strong> if the problem persists<br>
+            5. <strong>Update the app</strong> if there's a new version available<br>
+            <br>
+            If crashes continue, please contact us at <a href="mailto:memories@cardkeep.app">memories@cardkeep.app</a> with your iPhone model and iOS version.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">I can't find the "CardKeepApp" album in my Photos</div>
+          <div class="faq-answer">
+            The CardKeepApp album should appear automatically when you save your first card. If it's missing:
+            <br><br>
+            • <strong>Check Albums tab:</strong> Open Photos app > Albums tab > scroll down to find "CardKeepApp"<br>
+            • <strong>Search for it:</strong> Use the search function in Photos app<br>
+            • <strong>Save a test card:</strong> Try saving one card to trigger album creation<br>
+            • <strong>Check permissions:</strong> Ensure CardKeepApp has Photos access<br>
+            <br>
+            <div class="tip">
+              <strong>💡 Tip:</strong> Albums are automatically created by iOS when apps save photos. It might take a moment to appear after saving your first card.
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="cost-purchase" class="faq-section">
         <h2>💰 Cost & Purchase</h2>
 
@@ -702,6 +802,7 @@
             <div class="tip">
               <strong>📸 Photography tips:</strong><br /><br />
               • Use good lighting (natural light works best)<br />
+              • Choose portrait or landscape orientation to match your card format<br />
               • Frame the card to fill most of the screen<br />
               • Keep your hands steady<br />
               • Make sure text is readable and in focus<br />

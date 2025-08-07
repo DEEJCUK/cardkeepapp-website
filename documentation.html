@@ -359,9 +359,7 @@
         </div>
 
         <div class="tip">
-          <strong>💡 Tip:</strong> CardKeepApp automatically saves photos to a
-          "CardKeepApp" album in your photo library, so they're included in your
-          iCloud Photos backup if enabled.
+          <strong>💡 Important:</strong> CardKeepApp saves photos directly to your Photos app in a "CardKeepApp" album and references them from there. This means your photos are automatically included in your iCloud Photos backup, but deleting photos from your Photos app will break the reference in CardKeepApp.
         </div>
       </section>
 
@@ -511,19 +509,18 @@
           <li>Works offline - no internet connection required</li>
         </ul>
 
-        <h3>iCloud Photo Integration</h3>
+        <h3>Photos App Integration</h3>
         <p>
-          When you save cards, photos are automatically added to your photo
-          library in a "CardKeepApp" album:
+          CardKeepApp uses an efficient storage system where photos are saved directly to your Photos app:
         </p>
         <ul>
           <li>
-            If iCloud Photos is enabled, your card photos sync to your iCloud
-            account
+            Photos are stored in a "CardKeepApp" album in your Photos app
           </li>
-          <li>This backup is handled entirely by Apple, not by CardKeepApp</li>
-          <li>Provides automatic backup protection for your memories</li>
-          <li>You maintain full control through your iOS settings</li>
+          <li>CardKeepApp references these photos rather than storing copies</li>
+          <li>If iCloud Photos is enabled, your card photos automatically sync to iCloud</li>
+          <li>This reduces storage usage and ensures your photos are backed up</li>
+          <li><strong>Important:</strong> Deleting photos from the Photos app will break the link in CardKeepApp</li>
         </ul>
 
         <h3>Permissions</h3>
@@ -569,8 +566,12 @@
         <div class="limitation">
           <strong>⚠️ Data Deletion Warning:</strong> If you delete the
           CardKeepApp app, all your saved card data will be lost forever.
-          However, the photos are safely stored in your Photos app in the
+          However, your photos remain safely stored in your Photos app in the
           "CardKeepApp" album.
+        </div>
+
+        <div class="limitation">
+          <strong>⚠️ Photo Deletion Warning:</strong> Since CardKeepApp references photos stored in your Photos app, deleting photos from the "CardKeepApp" album in your Photos app will break the links in CardKeepApp. There's no way to re-add photos to existing cards.
         </div>
 
         <div class="limitation">
@@ -602,8 +603,7 @@
           <li>
             <strong>Proper Framing:</strong> Frame the card properly to fill
             most of the screen - this is crucial as you cannot crop or edit
-            photos after saving, the photo window does allow for resizing after
-            capture and before saving
+            photos after saving. The camera interface allows you to take photos in both portrait and landscape orientations to best match your card's format
           </li>
           <li>
             <strong>Steady Shots:</strong> Use both hands and ensure the card is

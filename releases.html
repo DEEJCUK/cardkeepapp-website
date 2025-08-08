@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CardKeep Version 1.1 Release Notes - Enhanced Photo Organization & Reliability with major improvements to photo type selection and iPad compatibility."
+    />
+    <meta
+      name="keywords"
+      content="CardKeep 1.1, release notes, photo organization, iPad compatibility, app update, greeting card app"
+    />
+    <meta name="author" content="CardKeepApp Team" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#6366f1" />
+
+    <title>CardKeep 1.1 Release Notes - Enhanced Photo Organization & Reliability</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="canonical" href="https://cardkeep.app/releases.html" />
+
+    <style>
+      .release-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 8rem 2rem 2rem 2rem;
+        line-height: 1.6;
+      }
+
+      .release-header {
+        text-align: center;
+        margin-bottom: 3rem;
+        padding: 3rem 2rem;
+        background: linear-gradient(135deg, #fdf8fc 0%, #f0e6f5 100%);
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(99, 102, 241, 0.1);
+      }
+
+      .release-header h1 {
+        color: var(--gradient-start);
+        font-size: 3rem;
+        margin: 0 0 1rem 0;
+        font-weight: 700;
+      }
+
+      .release-subtitle {
+        color: var(--text-secondary);
+        font-size: 1.3rem;
+        margin: 1rem 0;
+        font-weight: 500;
+      }
+
+      .release-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin: 2rem 0;
+        background: var(--card-bg);
+        padding: 2rem;
+        border-radius: 12px;
+        border: 1px solid var(--border-color);
+      }
+
+      .release-info-item {
+        text-align: center;
+      }
+
+      .release-info-label {
+        font-weight: 600;
+        color: var(--gradient-start);
+        margin-bottom: 0.5rem;
+      }
+
+      .release-info-value {
+        color: var(--text-primary);
+        font-size: 1.1rem;
+      }
+
+      .release-section {
+        margin-bottom: 3rem;
+        background: var(--card-bg);
+        border-radius: 16px;
+        padding: 2.5rem;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 8px 25px rgba(99, 102, 241, 0.1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .release-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(
+          90deg,
+          var(--gradient-start),
+          var(--gradient-mid),
+          var(--gradient-end)
+        );
+        border-radius: 16px 16px 0 0;
+      }
+
+      .release-section h2 {
+        color: var(--gradient-start);
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .release-section h3 {
+        color: var(--gradient-mid);
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin: 1.5rem 0;
+      }
+
+      .feature-item {
+        background: var(--bg-color);
+        border-radius: 12px;
+        padding: 1.5rem;
+        border: 1px solid var(--border-color);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .feature-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(99, 102, 241, 0.15);
+      }
+
+      .feature-item h4 {
+        color: var(--gradient-start);
+        margin: 0 0 0.75rem 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+
+      .feature-item p {
+        margin: 0;
+        color: var(--text-primary);
+      }
+
+      .improvement {
+        background: linear-gradient(135deg, #e8f5e8 0%, #f0f9f0 100%);
+        border-left: 4px solid #4ade80;
+        border-radius: 8px;
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+
+      .improvement strong {
+        color: #166534;
+      }
+
+      .bug-fix {
+        background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+        border-left: 4px solid #f39c12;
+        border-radius: 8px;
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+
+      .bug-fix strong {
+        color: #d68910;
+      }
+
+      .technical-note {
+        background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        border-left: 4px solid #0ea5e9;
+        border-radius: 8px;
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+
+      .technical-note strong {
+        color: #0c4a6e;
+      }
+
+      .checklist {
+        list-style: none;
+        padding: 0;
+      }
+
+      .checklist li {
+        padding: 0.5rem 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+
+      .checklist li::before {
+        content: "✅";
+        flex-shrink: 0;
+        margin-top: 0.1rem;
+      }
+
+      .download-section {
+        background: linear-gradient(135deg, var(--gradient-start), var(--gradient-mid));
+        color: white;
+        border-radius: 16px;
+        padding: 3rem;
+        text-align: center;
+        margin: 3rem 0;
+      }
+
+      .download-section h3 {
+        color: white;
+        font-size: 2rem;
+        margin: 0 0 1rem 0;
+      }
+
+      .download-btn-release {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: all 0.3s ease;
+        margin: 1rem;
+      }
+
+      .download-btn-release:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 768px) {
+        .release-container {
+          padding: 6rem 1rem 1rem 1rem;
+        }
+
+        .release-header h1 {
+          font-size: 2.2rem;
+        }
+
+        .release-subtitle {
+          font-size: 1.1rem;
+        }
+
+        .release-info {
+          grid-template-columns: 1fr;
+        }
+
+        .feature-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .release-section {
+          padding: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body role="document">
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header class="header" role="banner">
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-brand">
+          <h1 class="logo" aria-label="CardKeepApp - Home">
+            <a href="index.html">CardKeepApp</a>
+          </h1>
+        </div>
+        <ul class="nav-menu" id="nav-menu" role="menubar">
+          <li role="none">
+            <a href="index.html" class="nav-link" role="menuitem">🏠 Home</a>
+          </li>
+          <li role="none">
+            <a href="index.html#features" class="nav-link" role="menuitem"
+              >Features</a
+            >
+          </li>
+          <li role="none">
+            <a href="index.html#about" class="nav-link" role="menuitem"
+              >About</a
+            >
+          </li>
+          <li role="none">
+            <a href="index.html#download" class="nav-link" role="menuitem"
+              >Download</a
+            >
+          </li>
+          <li role="none">
+            <a href="documentation.html" class="nav-link" role="menuitem"
+              >Documentation</a
+            >
+          </li>
+          <li role="none">
+            <a href="faq.html" class="nav-link" role="menuitem">FAQ</a>
+          </li>
+          <li role="none">
+            <a
+              href="releases.html"
+              class="nav-link"
+              role="menuitem"
+              style="color: var(--gradient-start)"
+              >Releases</a
+            >
+          </li>
+          <li role="none">
+            <a href="index.html#contact" class="nav-link" role="menuitem"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <button
+          class="hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main role="main" id="main" class="release-container">
+      <div class="release-header">
+        <h1>CardKeep 1.1: Enhanced Photo Organization & Reliability</h1>
+        <p class="release-subtitle">
+          Major improvements to photo type selection, iPad compatibility, and overall reliability
+        </p>
+        
+        <div class="release-info">
+          <div class="release-info-item">
+            <div class="release-info-label">Version</div>
+            <div class="release-info-value">1.1</div>
+          </div>
+          <div class="release-info-item">
+            <div class="release-info-label">Release Date</div>
+            <div class="release-info-value">August 8, 2025</div>
+          </div>
+          <div class="release-info-item">
+            <div class="release-info-label">Build</div>
+            <div class="release-info-value">Production Ready</div>
+          </div>
+          <div class="release-info-item">
+            <div class="release-info-label">Platform</div>
+            <div class="release-info-value">iOS 16.0+</div>
+          </div>
+          <div class="release-info-item">
+            <div class="release-info-label">Compatibility</div>
+            <div class="release-info-value">iPhone & iPad</div>
+          </div>
+        </div>
+      </div>
+
+      <section class="release-section">
+        <h2>🎯 Major Features & Improvements</h2>
+
+        <div class="feature-grid">
+          <div class="feature-item">
+            <h4>✨ Photo Type Selection Overhaul</h4>
+            <p>Smart photo organization with accurate labeling. Choose exactly which type of photo you're taking (Front, Inside, Back, Extra 1, Extra 2) with a clean, intuitive interface.</p>
+          </div>
+          <div class="feature-item">
+            <h4>🔧 iPad Experience Enhanced</h4>
+            <p>Eliminated blank screen issues when exporting card backups on iPad. Export now uses native iOS file picker for reliable sharing across devices.</p>
+          </div>
+          <div class="feature-item">
+            <h4>📸 Photo System Improvements</h4>
+            <p>Advanced photo storage with new type-mapping system, improved performance, smart caching, and better memory management.</p>
+          </div>
+          <div class="feature-item">
+            <h4>🔄 Backward Compatibility</h4>
+            <p>Seamless migration with zero data loss. All existing cards continue to work perfectly with dual format support.</p>
+          </div>
+        </div>
+
+        <h3>Photo Type Selection Details</h3>
+        <div class="improvement">
+          <strong>🎯 Major Fix:</strong> When you select "Front" and "Back" photos, they now correctly display as "Front, Back" (previously showed "Front, Inside" due to a display bug).
+        </div>
+        
+        <ul>
+          <li><strong>Visual Photo Type Selector:</strong> Clean, intuitive interface for selecting photo types before capture</li>
+          <li><strong>Portrait & Landscape Options:</strong> Choose the perfect orientation for each card photo</li>
+          <li><strong>Accurate Labeling:</strong> Photos display with the exact labels you selected</li>
+          <li><strong>Streamlined Workflow:</strong> Faster photo capture with clearer organization</li>
+        </ul>
+      </section>
+
+      <section class="release-section">
+        <h2>🐛 Bug Fixes</h2>
+
+        <h3>Critical Fixes</h3>
+        <div class="bug-fix">
+          <strong>⚠️ Photo Type Mismatch:</strong> Fixed major bug where selected photo types didn't match displayed labels
+        </div>
+        <div class="bug-fix">
+          <strong>📱 iPad Export Crashes:</strong> Resolved blank screen and crashes when exporting backups on iPad
+        </div>
+        <div class="bug-fix">
+          <strong>🖼️ Thumbnail Loading:</strong> Fixed "Photo Unavailable" displays after importing cards
+        </div>
+        <div class="bug-fix">
+          <strong>⚡ Performance Issues:</strong> Eliminated lag in photo loading and display
+        </div>
+
+        <h3>Stability Improvements</h3>
+        <ul>
+          <li><strong>Memory Optimization:</strong> Reduced memory usage during photo operations</li>
+          <li><strong>Error Handling:</strong> Enhanced error recovery for photo loading failures</li>
+          <li><strong>Thread Safety:</strong> Improved threading model for photo operations</li>
+          <li><strong>Cache Management:</strong> Automatic cache clearing prevents stale photo displays</li>
+        </ul>
+      </section>
+
+      <section class="release-section">
+        <h2>🔧 Technical Improvements</h2>
+
+        <h3>Architecture Enhancements</h3>
+        <div class="technical-note">
+          <strong>🏗️ Photo Reference System:</strong> Migrated from binary storage to PHAsset identifier references for better performance and reliability.
+        </div>
+        
+        <ul>
+          <li><strong>Smart Photo Loading:</strong> Intelligent detection of storage formats for seamless compatibility</li>
+          <li><strong>Enhanced Core Data Model:</strong> Optimized data structure for better performance</li>
+          <li><strong>Improved File Management:</strong> Native iOS file operations for exports and imports</li>
+          <li><strong>Format Detection:</strong> Automatic detection and handling of both old and new photo formats</li>
+        </ul>
+
+        <h3>Developer Experience</h3>
+        <ul>
+          <li><strong>Clean Build:</strong> No compiler warnings or errors in production build</li>
+          <li><strong>Comprehensive Testing:</strong> Full test coverage for new photo type system</li>
+          <li><strong>Enhanced Debugging:</strong> Improved debugging capabilities for troubleshooting</li>
+          <li><strong>Complete Documentation:</strong> Full technical documentation for new systems</li>
+        </ul>
+      </section>
+
+      <section class="release-section">
+        <h2>🎨 User Experience</h2>
+
+        <h3>Interface Polish</h3>
+        <ul>
+          <li><strong>Intuitive Photo Selection:</strong> Clear, visual interface for choosing photo types</li>
+          <li><strong>Smooth Animations:</strong> Enhanced transitions and loading states</li>
+          <li><strong>Consistent Theming:</strong> Maintained warm, cozy design language across all features</li>
+          <li><strong>Accessibility:</strong> Improved accessibility labels and navigation</li>
+        </ul>
+
+        <h3>Workflow Improvements</h3>
+        <ul>
+          <li><strong>Faster Photo Capture:</strong> Streamlined process from camera to saved card</li>
+          <li><strong>Better Organization:</strong> Photos display with accurate, user-selected labels</li>
+          <li><strong>Reliable Backups:</strong> Export/import process now works consistently on all devices</li>
+          <li><strong>Seamless Updates:</strong> Existing users experience smooth transition to new system</li>
+        </ul>
+      </section>
+
+      <section class="release-section">
+        <h2>📊 What's New Summary</h2>
+
+        <ul class="checklist">
+          <li>Fixed photo type selection bug (Front/Back now displays correctly)</li>
+          <li>Enhanced iPad export backup reliability</li>
+          <li>Improved photo loading performance</li>
+          <li>Added backward compatibility for existing cards</li>
+          <li>Streamlined photo type selection interface</li>
+          <li>Optimized memory usage and caching</li>
+          <li>Eliminated thumbnail loading issues</li>
+          <li>Enhanced cross-device consistency</li>
+        </ul>
+
+        <h3>🔄 Migration & Compatibility</h3>
+        <div class="improvement">
+          <strong>✨ Automatic Migration:</strong> No user action required - existing cards work immediately with all photos, notes, tags, and metadata preserved.
+        </div>
+        
+        <ul>
+          <li><strong>Format Detection:</strong> App automatically detects and handles both old and new photo formats</li>
+          <li><strong>Performance Benefits:</strong> Existing cards may load faster due to improved caching</li>
+          <li><strong>Zero Data Loss:</strong> Complete compatibility with cards created in previous versions</li>
+        </ul>
+      </section>
+
+      <section class="release-section">
+        <h2>💡 For Developers</h2>
+
+        <h3>Technical Details</h3>
+        <div class="technical-note">
+          <strong>🔧 Storage Format Change:</strong> New format uses {"Front": "identifier1", "Back": "identifier2"} vs legacy ["identifier1", "identifier2"] array format.
+        </div>
+        
+        <ul>
+          <li><strong>PhotoReferenceManager:</strong> Enhanced with intelligent format detection and caching</li>
+          <li><strong>PhotoOrientationChoiceView:</strong> Restored and improved photo type selection UI</li>
+          <li><strong>Backward Compatibility:</strong> Smart loading supports both storage formats seamlessly</li>
+          <li><strong>Error Recovery:</strong> Comprehensive error handling for photo loading failures</li>
+        </ul>
+      </section>
+
+      <div class="download-section">
+        <h3>🚀 Download & Update</h3>
+        <p>Version 1.1 is available now with automatic updates for existing users</p>
+        <a href="https://apps.apple.com/us/app/cardkeep/id6749583192" target="_blank" class="download-btn-release">
+          📱 Download on App Store
+        </a>
+        <a href="index.html" class="download-btn-release">
+          🏠 Back to Home
+        </a>
+        
+        <div style="margin-top: 2rem; font-size: 0.95rem; opacity: 0.9;">
+          <p><strong>Requirements:</strong> iOS 16.0 or later</p>
+          <p><strong>Devices:</strong> iPhone & iPad (optimized for both)</p>
+          <p><strong>Size:</strong> Optimized app bundle size</p>
+        </div>
+      </div>
+    </main>
+
+    <footer id="contact" class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>CardKeepApp 💖</h3>
+            <p>
+              Making card collection management simple, beautiful, and
+              absolutely delightful!
+            </p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Product</h4>
+              <ul>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#download">Download</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="releases.html">Release Notes</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="mailto:memories@cardkeep.app">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Connect</h4>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.instagram.com/cardkeepapp/"
+                    target="_blank"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="https://x.com/CardKeepAppApp" target="_blank"
+                    >X (Twitter)</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 CardKeepApp. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

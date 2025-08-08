@@ -188,7 +188,7 @@
         </div>
         <ul class="nav-menu" id="nav-menu" role="menubar">
           <li role="none">
-            <a href="index.html" class="nav-link" role="menuitem">🏠 Home</a>
+            <a href="index.html" class="nav-link" role="menuitem">Home</a>
           </li>
           <li role="none">
             <a href="index.html#features" class="nav-link" role="menuitem"
@@ -249,6 +249,7 @@
         <ul>
           <li><a href="#getting-started">Getting Started</a></li>
           <li><a href="#adding-cards">Adding Cards</a></li>
+          <li><a href="#backup-export">Backup & Export</a></li>
           <li><a href="#search-features">Search Features</a></li>
           <li><a href="#tags-organization">Tags & Organization</a></li>
           <li><a href="#viewing-cards">Viewing Your Cards</a></li>
@@ -268,7 +269,7 @@
         <h3>First Launch</h3>
         <p>
           When you first open CardKeepApp, you'll see a clean, welcoming
-          interface designed specifically for iPhone in portrait mode. The app
+          interface designed specifically for iPhone / iPad. The app
           uses a warm, cozy aesthetic that makes organizing your memories a
           delightful experience.
         </p>
@@ -359,7 +360,70 @@
         </div>
 
         <div class="tip">
-          <strong>💡 Important:</strong> CardKeepApp saves photos directly to your Photos app in a "CardKeepApp" album and references them from there. This means your photos are automatically included in your iCloud Photos backup, but deleting photos from your Photos app will break the reference in CardKeepApp.
+          <strong>💡 Important:</strong> CardKeepApp saves photos directly to your Photos app and adds them to a "CardKeepApp" album and references them from there. This means your photos are automatically included in your iCloud Photos backup, but deleting photos from your Photos app will break the reference in CardKeepApp.
+        </div>
+      </section>
+
+      <section id="backup-export" class="doc-section">
+        <h2>💾 Backup & Export System</h2>
+        <p>
+          CardKeepApp includes a comprehensive backup system to protect your precious memories and allow you to transfer your collection between devices.
+        </p>
+
+        <h3>JSON Backup Export</h3>
+        <p>
+          Export your entire card collection to a lightweight JSON file that contains all your card information and photo references:
+        </p>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <h4>Complete Card Data</h4>
+            <p>All card information including sender, occasion, dates, tags, and personal notes</p>
+          </div>
+          <div class="feature-item">
+            <h4>Photo References</h4>
+            <p>Links to your photos in the Photos app (photos remain in your Photos library)</p>
+          </div>
+          <div class="feature-item">
+            <h4>Ultra-Lightweight</h4>
+            <p>Export files are less than 1KB per card (previously 23MB+)</p>
+          </div>
+          <div class="feature-item">
+            <h4>Easy Sharing</h4>
+            <p>Share via email, AirDrop, or save to Files app</p>
+          </div>
+        </div>
+
+        <h3>Import & Restore</h3>
+        <p>Restore your collection from backup files:</p>
+        <ul>
+          <li><strong>Duplicate Detection:</strong> Automatically identifies and prevents duplicate cards during import</li>
+          <li><strong>Data Validation:</strong> Ensures backup files are valid before importing</li>
+          <li><strong>Photo Reference Recovery:</strong> Attempts to reconnect with photos in your Photos app</li>
+          <li><strong>Selective Import:</strong> Choose which cards to import from backup files</li>
+        </ul>
+
+        <h3>iCloud Integration</h3>
+        <div class="tip">
+          <strong>💡 iCloud Benefits:</strong> When iCloud is available, CardKeepApp can automatically detect iCloud status and provide helpful guidance for backing up your collection across devices.
+        </div>
+
+        <h3>Backup Reminders</h3>
+        <p>CardKeepApp includes smart backup reminders to help protect your memories:</p>
+        <ul>
+          <li><strong>Monthly Prompts:</strong> Gentle reminders to backup your collection</li>
+          <li><strong>Card Count Tracking:</strong> Shows how many cards you have to backup</li>
+          <li><strong>Last Backup Date:</strong> Tracks when you last created a backup</li>
+          <li><strong>User Control:</strong> "Don't remind me" option for advanced users who manage their own backups</li>
+        </ul>
+
+        <div class="limitation">
+          <strong>⚠️ Important Backup Notes:</strong>
+          <ul>
+            <li>Backup files contain photo references, not the actual photos</li>
+            <li>Photos must remain in your Photos app for successful restore</li>
+            <li>When moving to a new device, transfer photos first, then import backup</li>
+            <li>Backup files work best when photos are synced via iCloud Photos</li>
+          </ul>
         </div>
       </section>
 
@@ -460,8 +524,12 @@
         </ul>
 
         <div class="tip">
-          <strong>💡 Pro Tip:</strong> Use consistent tag naming (e.g., always
-          "Family" not sometimes "family") for better search results.
+          <strong>💡 Pro Tips:</strong>
+          <ul>
+            <li>Use consistent tag naming (e.g., always "Family" not sometimes "family") for better search results</li>
+            <li>Tags are included in backup exports, so your organization travels with your data</li>
+            <li>Consider adding backup dates as tags (e.g., "Backup_2024_Jan") for easy tracking</li>
+          </ul>
         </div>
       </section>
 
@@ -485,7 +553,7 @@
           <li>Complete card information (sender, occasion, date)</li>
           <li>All custom tags and personal notes</li>
           <li>
-            High-resolution photo viewing with pinch-to-zoom (no rotation)
+            High-resolution photo viewing with pinch-to-zoom
           </li>
         </ul>
       </section>
@@ -515,7 +583,7 @@
         </p>
         <ul>
           <li>
-            Photos are stored in a "CardKeepApp" album in your Photos app
+            Photos are also placed into a "CardKeepApp" album in your Photos app
           </li>
           <li>CardKeepApp references these photos rather than storing copies</li>
           <li>If iCloud Photos is enabled, your card photos automatically sync to iCloud</li>
@@ -548,25 +616,21 @@
         </div>
 
         <div class="limitation">
-          <strong>⚠️ iOS Only:</strong> Currently CardKeepApp is only available
-          for iPhone. Android version is planned for the future.
+          <strong>⚠️ iOS Only:</strong> Currently CardKeepApp is available for iPhone and iPad. Android version is planned for the future.
         </div>
 
         <div class="limitation">
-          <strong>⚠️ Portrait Orientation Only:</strong> The app is designed
-          exclusively for portrait mode and will not rotate to landscape
-          orientation.
+          <strong>⚠️ Portrait Orientation Only:</strong> On iPhone, the app is designed exclusively for portrait mode and will not rotate to landscape orientation. iPad supports both portrait and landscape orientations.
         </div>
 
         <div class="limitation">
-          <strong>⚠️ No Cloud Sync:</strong> Cards don't automatically sync
-          between devices. Each device maintains its own local collection.
+          <strong>⚠️ No Automatic Cloud Sync:</strong> Cards don't automatically sync between devices, but you can use the backup/export system to transfer your collection manually.
         </div>
 
         <div class="limitation">
           <strong>⚠️ Data Deletion Warning:</strong> If you delete the
-          CardKeepApp app, all your saved card data will be lost forever.
-          However, your photos remain safely stored in your Photos app in the
+          CardKeepApp app, all your saved card data will be lost forever unless you have exported the data using our export function.
+          Your photos remain safely stored in your Photos app and assigned to  the
           "CardKeepApp" album.
         </div>
 
@@ -664,6 +728,10 @@
           photo library, they're automatically included in your regular iPhone
           backups. Enable iCloud Photos for extra protection of your precious
           memories.
+          <br>
+          Ensure you regularly export your card data using our export function (found on the Info screen)
+          <br>
+          You will be prompted every so often to do this if its not been done manually
         </div>
       </section>
 

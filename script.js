@@ -539,6 +539,7 @@ function createWelcomePopupSparkles() {
 // Initialize first visit check when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
   checkFirstVisit();
+  checkLaunchAnimation();
 });
 
 // Close welcome popup when clicking outside
@@ -556,5 +557,149 @@ document.addEventListener("keydown", (event) => {
     if (welcomePopup && welcomePopup.style.display === "flex") {
       closeWelcomePopup();
     }
+
+    const launchOverlay = document.getElementById("launchOverlay");
+    if (launchOverlay && !launchOverlay.classList.contains("fade-out")) {
+      closeLaunchAnimation();
+    }
   }
 });
+
+// Launch Animation Functions
+let launchCurrentSlide = 0;
+let launchSlides = [];
+let launchInterval;
+
+function checkLaunchAnimation() {
+  let hasSeenLaunch = false;
+
+  // Use sessionStorage so it shows once per browser session (not just once ever)
+  try {
+    hasSeenLaunch =
+      sessionStorage.getItem("cardkeepapp-launch-v110-shown") === "true";
+  } catch (e) {
+    // Fallback for private browsing: use window variable
+    hasSeenLaunch = window.cardkeepLaunchShown === true;
+  }
+
+  // Only show on index.html and if user hasn't seen v1.1.0 launch yet
+  if (
+    !hasSeenLaunch &&
+    (window.location.pathname === "/" ||
+      window.location.pathname.endsWith("index.html") ||
+      window.location.pathname === "/CardKeep-Website/")
+  ) {
+    // Show launch animation after a brief delay
+    setTimeout(() => {
+      showLaunchAnimation();
+    }, 800);
+  }
+}
+
+function showLaunchAnimation() {
+  const overlay = document.getElementById("launchOverlay");
+  if (overlay) {
+    overlay.style.display = "flex";
+    launchSlides = overlay.querySelectorAll(".launch-slide");
+
+    // Start the slideshow
+    launchCurrentSlide = 0;
+    showLaunchSlide(0);
+    startLaunchAutoPlay();
+    startLaunchHearts();
+
+    // Auto-close after all slides (20 seconds)
+    setTimeout(() => {
+      closeLaunchAnimation();
+    }, 20000); // 4 seconds per slide × 5 slides = 20 seconds
+  }
+}
+
+function showLaunchSlide(index) {
+  if (!launchSlides.length) return;
+
+  launchSlides.forEach((slide) => slide.classList.remove("active"));
+  launchSlides[index].classList.add("active");
+
+  // Animate feature items if present
+  const featureItems = launchSlides[index].querySelectorAll(
+    ".launch-feature-item",
+  );
+  setTimeout(() => {
+    featureItems.forEach((item, i) => {
+      setTimeout(() => {
+        item.classList.add("animate");
+      }, i * 200);
+    });
+  }, 300);
+}
+
+function nextLaunchSlide() {
+  launchCurrentSlide = (launchCurrentSlide + 1) % launchSlides.length;
+  showLaunchSlide(launchCurrentSlide);
+}
+
+function startLaunchAutoPlay() {
+  launchInterval = setInterval(() => {
+    nextLaunchSlide();
+  }, 4000);
+}
+
+function closeLaunchAnimation() {
+  const overlay = document.getElementById("launchOverlay");
+  if (overlay) {
+    clearInterval(launchInterval);
+    overlay.classList.add("fade-out");
+
+    // Mark that user has seen the v1.1.0 launch for this session (with fallback for private browsing)
+    try {
+      sessionStorage.setItem("cardkeepapp-launch-v110-shown", "true");
+    } catch (e) {
+      // Fallback for private browsing: use window variable
+      window.cardkeepLaunchShown = true;
+    }
+
+    // Hide completely after fade transition
+    setTimeout(() => {
+      overlay.style.display = "none";
+    }, 1000);
+  }
+}
+
+// Add hearts periodically during launch
+function createLaunchHeart() {
+  const containers = document.querySelectorAll(".launch-floating-hearts");
+  containers.forEach((container) => {
+    if (!container || !container.offsetParent) return; // Skip if not visible
+
+    const heart = document.createElement("span");
+    heart.textContent = "♥";
+    heart.className = "launch-heart";
+    heart.style.left = Math.random() * 100 + "%";
+    heart.style.animationDelay = Math.random() * 4 + "s";
+
+    container.appendChild(heart);
+
+    setTimeout(() => {
+      if (heart.parentNode) {
+        heart.parentNode.removeChild(heart);
+      }
+    }, 4000);
+  });
+}
+
+// Start creating hearts when launch animation is active
+function startLaunchHearts() {
+  const heartInterval = setInterval(() => {
+    const overlay = document.getElementById("launchOverlay");
+    if (
+      !overlay ||
+      overlay.style.display === "none" ||
+      overlay.classList.contains("fade-out")
+    ) {
+      clearInterval(heartInterval);
+      return;
+    }
+    createLaunchHeart();
+  }, 1000);
+}

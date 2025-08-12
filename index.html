@@ -50,6 +50,7 @@
       CardKeepApp - Your Digital Card Collection Manager | Card Organiser App
     </title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="launch.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -63,6 +64,212 @@
   </head>
   <body role="document">
     <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Launch Animation Overlay -->
+    <div id="launchOverlay" class="launch-overlay" style="display: none">
+      <div class="video-container">
+        <button class="launch-skip-button" onclick="closeLaunchAnimation()">
+          Skip
+        </button>
+
+        <!-- Slide 1: Title -->
+        <div class="launch-slide launch-slide-1 active">
+          <div class="launch-app-icon">
+            <span class="launch-heart-icon">💝</span>
+          </div>
+          <div class="launch-version-badge">v1.1.0</div>
+          <h1 class="launch-title">CardKeepApp</h1>
+          <p class="launch-subtitle">Enhanced Design & Search</p>
+          <div class="launch-floating-hearts">
+            <span class="launch-heart" style="left: 10%; animation-delay: 0s"
+              >♥</span
+            >
+            <span class="launch-heart" style="left: 30%; animation-delay: 1s"
+              >♥</span
+            >
+            <span class="launch-heart" style="left: 50%; animation-delay: 2s"
+              >♥</span
+            >
+            <span class="launch-heart" style="left: 70%; animation-delay: 3s"
+              >♥</span
+            >
+            <span class="launch-heart" style="left: 90%; animation-delay: 4s"
+              >♥</span
+            >
+          </div>
+        </div>
+
+        <!-- Slide 2: Updated Color Scheme -->
+        <div class="launch-slide launch-slide-2">
+          <h2 class="launch-title">Fresh Look</h2>
+          <p class="launch-subtitle">
+            Updated color scheme with modern, accessible design
+          </p>
+          <div class="launch-phone-mockup">
+            <div class="launch-screen">
+              <div class="launch-app-ui">
+                <div
+                  style="
+                    width: 120px;
+                    height: 30px;
+                    background: linear-gradient(135deg, #f093fb, #f5576c);
+                    border-radius: 15px;
+                    margin: 10px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-size: 12px;
+                    font-weight: 600;
+                  "
+                >
+                  Memories
+                </div>
+                <div
+                  style="
+                    width: 100px;
+                    height: 60px;
+                    background: linear-gradient(135deg, #4facfe, #00f2fe);
+                    border-radius: 10px;
+                    margin: 5px 0;
+                  "
+                ></div>
+                <div
+                  style="
+                    width: 100px;
+                    height: 60px;
+                    background: linear-gradient(135deg, #43e97b, #38f9d7);
+                    border-radius: 10px;
+                    margin: 5px 0;
+                  "
+                ></div>
+                <div
+                  style="
+                    width: 100px;
+                    height: 60px;
+                    background: linear-gradient(135deg, #fa709a, #fee140);
+                    border-radius: 10px;
+                    margin: 5px 0;
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Multi-term Search -->
+        <div class="launch-slide launch-slide-3">
+          <h2 class="launch-title">Smart Search</h2>
+          <p class="launch-subtitle">
+            Find cards with multiple search terms using natural language
+          </p>
+          <div class="launch-phone-mockup">
+            <div class="launch-screen">
+              <div class="launch-app-ui">
+                                <div
+                  style="
+                    width: 120px;
+                    height: 60px;
+                    background: linear-gradient(135deg, #a8edea, #fed6e3);
+                    border-radius: 10px;
+                    margin: 8px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 10px;
+                    color: #333;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                  "
+                >
+                  🎉 Thank You Card
+                </div>
+                <div
+                  style="
+                    width: 120px;
+                    height: 60px;
+                    background: linear-gradient(135deg, #a8edea, #fed6e3);
+                    border-radius: 10px;
+                    margin: 8px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 10px;
+                    color: #333;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                  "
+                >
+                  🎂 Birthday Card
+                </div>
+                <div
+                  style="
+                    width: 120px;
+                    height: 60px;
+                    background: linear-gradient(135deg, #a8edea, #fed6e3);
+                    border-radius: 10px;
+                    margin: 8px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 10px;
+                    color: #333;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                  "
+                >
+                  💐 Congratulations Card
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4: All Features -->
+        <div class="launch-slide launch-slide-4">
+          <h2 class="launch-title">What's New</h2>
+          <div class="launch-feature-item">
+            <div class="launch-feature-title">🎨 Updated Colors</div>
+            <div class="launch-feature-desc">Fresh visual identity</div>
+          </div>
+          <div class="launch-feature-item">
+            <div class="launch-feature-title">🔍 Smart Search</div>
+            <div class="launch-feature-desc">Multi-term functionality</div>
+          </div>
+          <div class="launch-feature-item">
+            <div class="launch-feature-title">🌙 Dark Mode</div>
+            <div class="launch-feature-desc">Better contrast & readability</div>
+          </div>
+        </div>
+
+        <!-- Slide 5: Call to Action -->
+        <div class="launch-slide launch-slide-5">
+          <div class="launch-app-icon">
+            <span class="launch-heart-icon">💝</span>
+          </div>
+          <h1 class="launch-title">Download Now</h1>
+          <p class="launch-subtitle">
+            CardKeepApp v1.1.0<br />Available on the App Store
+          </p>
+          <a
+            href="https://apps.apple.com/us/app/cardkeep/id6749583192"
+            target="_blank"
+            class="launch-cta-button"
+            >Update Today</a
+          >
+          <div
+            style="
+              margin-top: 20px;
+              font-size: 12px;
+              color: rgba(255, 255, 255, 0.7);
+            "
+          >
+            iOS 16.0+ • iPhone & iPad
+          </div>
+        </div>
+
+        <div class="launch-progress-bar">
+          <div class="launch-progress-fill"></div>
+        </div>
+      </div>
+    </div>
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
       {
@@ -126,7 +333,9 @@
             <a href="faq.html" class="nav-link" role="menuitem">FAQ</a>
           </li>
           <li role="none">
-            <a href="releases.html" class="nav-link" role="menuitem">Releases</a>
+            <a href="releases.html" class="nav-link" role="menuitem"
+              >Releases</a
+            >
           </li>
           <li role="none">
             <a href="#contact" class="nav-link" role="menuitem">Contact</a>
@@ -234,7 +443,10 @@
               <div class="feature-icon">📱💜</div>
               <h3>Enhanced Multi-Photo Storage</h3>
               <p>
-                Capture every detail with our improved photo type selection! Take organised photos of front, inside, back, and special details. Clear labelling makes it easy to know exactly which part you're photographing. ✨
+                Capture every detail with our improved photo type selection!
+                Take organised photos of front, inside, back, and special
+                details. Clear labelling makes it easy to know exactly which
+                part you're photographing. ✨
               </p>
             </div>
             <div class="feature-card">
@@ -293,7 +505,9 @@
               <div class="feature-icon">💾☁️</div>
               <h3>Backup & Export</h3>
               <p>
-                Complete backup system with JSON export! Ultra-lightweight files (less than 1KB per card) with iCloud files integration support. Never lose your memories! 🔒
+                Complete backup system with JSON export! Ultra-lightweight files
+                (less than 1KB per card) with iCloud files integration support.
+                Never lose your memories! 🔒
                 <a
                   href="documentation.html#backup-export"
                   style="
@@ -309,7 +523,9 @@
               <div class="feature-icon">📲🌙</div>
               <h3>Beautiful Interface</h3>
               <p>
-                Gorgeous design with enhanced dark mode support! iOS 16.0+ optimised for iPhone/iPad with professional architecture, smart caching, and a warm, cosy aesthetic 🌸
+                Gorgeous design with enhanced dark mode support! iOS 16.0+
+                optimised for iPhone/iPad with professional architecture, smart
+                caching, and a warm, cosy aesthetic 🌸
               </p>
             </div>
           </div>
@@ -340,16 +556,38 @@
                 experience!
               </p>
               <ul class="about-features">
-                <li>✨ Beautiful and intuitive iOS 16.0+ design with enhanced photo organisation</li>
-                <li>🔒 Complete privacy with professional-grade error handling and security</li>
-                <li>🚀 Production-ready architecture with smart caching and PHAsset integration</li>
+                <li>
+                  ✨ Beautiful and intuitive iOS 16.0+ design with enhanced
+                  photo organisation
+                </li>
+                <li>
+                  🔒 Complete privacy with professional-grade error handling and
+                  security
+                </li>
+                <li>
+                  🚀 Production-ready architecture with smart caching and
+                  PHAsset integration
+                </li>
                 <li>💜 One-time purchase - own it forever, no subscriptions</li>
-                <li>🎂 Perfect for birthday, thank you, and congratulations cards</li>
-                <li>📱 Made specifically for iPhone/iPad with comprehensive compatibility</li>
+                <li>
+                  🎂 Perfect for birthday, thank you, and congratulations cards
+                </li>
+                <li>
+                  📱 Made specifically for iPhone/iPad with comprehensive
+                  compatibility
+                </li>
                 <li>🌍 Fully localized interface available in 8+ languages</li>
-                <li>📅 Smart date handling that adapts to your region's format</li>
-                <li>⚡ 90% storage optimisation with backward compatibility for existing cards</li>
-                <li>🔧 Professional Core Data integration with robust photo reference system</li>
+                <li>
+                  📅 Smart date handling that adapts to your region's format
+                </li>
+                <li>
+                  ⚡ 90% storage optimisation with backward compatibility for
+                  existing cards
+                </li>
+                <li>
+                  🔧 Professional Core Data integration with robust photo
+                  reference system
+                </li>
                 <li>💷 Costs less than a standard greeting card</li>
               </ul>
             </div>
@@ -389,7 +627,10 @@
               />
               <div class="screenshot-caption">
                 <h4>Welcome Screen</h4>
-                <p>Welcoming empty state that encourages you to start saving precious memories</p>
+                <p>
+                  Welcoming empty state that encourages you to start saving
+                  precious memories
+                </p>
               </div>
             </div>
             <div class="screenshot-item">
@@ -400,7 +641,10 @@
               />
               <div class="screenshot-caption">
                 <h4>Add New Card</h4>
-                <p>Comprehensive form with multi-photo capture for front, inside, and back of cards</p>
+                <p>
+                  Comprehensive form with multi-photo capture for front, inside,
+                  and back of cards
+                </p>
               </div>
             </div>
             <div class="screenshot-item">
@@ -411,7 +655,10 @@
               />
               <div class="screenshot-caption">
                 <h4>Your Collection</h4>
-                <p>Elegant grid layout displaying your card collection with dates and sender information</p>
+                <p>
+                  Elegant grid layout displaying your card collection with dates
+                  and sender information
+                </p>
               </div>
             </div>
           </div>
@@ -424,7 +671,8 @@
             Start Preserving Your Memories! 🚀
           </h2>
           <p class="download-subtitle">
-            Available for iPhone and iPad - one-time purchase, yours forever! 💜<br />
+            Available for iPhone and iPad - one-time purchase, yours forever!
+            💜<br />
             <a
               href="documentation.html"
               style="

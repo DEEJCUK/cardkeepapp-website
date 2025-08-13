@@ -576,13 +576,13 @@ function checkLaunchAnimation() {
   // Use sessionStorage so it shows once per browser session (not just once ever)
   try {
     hasSeenLaunch =
-      sessionStorage.getItem("cardkeepapp-launch-v110-shown") === "true";
+      sessionStorage.getItem("cardkeepapp-launch-v120-shown") === "true";
   } catch (e) {
     // Fallback for private browsing: use window variable
     hasSeenLaunch = window.cardkeepLaunchShown === true;
   }
 
-  // Only show on index.html and if user hasn't seen v1.1.0 launch yet
+  // Only show on index.html and if user hasn't seen v1.2.0 launch yet
   if (
     !hasSeenLaunch &&
     (window.location.pathname === "/" ||
@@ -651,9 +651,9 @@ function closeLaunchAnimation() {
     clearInterval(launchInterval);
     overlay.classList.add("fade-out");
 
-    // Mark that user has seen the v1.1.0 launch for this session (with fallback for private browsing)
+    // Mark that user has seen the v1.2.0 launch for this session (with fallback for private browsing)
     try {
-      sessionStorage.setItem("cardkeepapp-launch-v110-shown", "true");
+      sessionStorage.setItem("cardkeepapp-launch-v120-shown", "true");
     } catch (e) {
       // Fallback for private browsing: use window variable
       window.cardkeepLaunchShown = true;

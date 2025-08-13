@@ -398,7 +398,7 @@
             <strong>Photos:</strong> If you have iCloud Photos enabled, your
             card photos automatically sync to iCloud as part of your regular
             photo backup. <br /><br />
-            <strong>Backup reminders:</strong> The app will remind you monthly to export your memory data for extra protection
+            <strong>Backup reminders:</strong> The app uses smart reminders (after 7+ days OR 5+ new cards) to suggest exporting your memory data for extra protection
           </div>
         </div>
 
@@ -477,7 +477,6 @@
             <ul>
               <li><strong>Duplicate Detection:</strong> Automatically prevents importing the same cards twice</li>
               <li><strong>Photo Reconnection:</strong> Links backup data to existing photos in your Photos app</li>
-              <li><strong>Selective Import:</strong> Choose which cards to restore from backup files</li>
             </ul>
             <a href="documentation.html#backup-export">Read the complete backup guide →</a>
           </div>
@@ -489,10 +488,11 @@
             <strong>Manual backup with smart reminders:</strong>
             <br><br>
             • <strong>Manual Export:</strong> You control when and where to save backup files<br>
-            • <strong>Monthly Reminders:</strong> The app gently reminds you to create backups<br>
+            • <strong>Weekly Reminders:</strong> Shows reminders after 7+ days OR 5+ new cards since last backup<br>
+            • <strong>Intelligent Triggers:</strong> Checks on app launch and after saving new cards<br>
+            • <strong>User Control:</strong> "Remind Later" (7 days) or "Don't Remind" (365 days) options<br>
             • <strong>Card Count Tracking:</strong> Shows how many cards you have to backup<br>
             • <strong>Last Backup Date:</strong> Tracks when you last created a backup<br>
-            • <strong>User Control:</strong> "Don't remind me" option if you prefer to manage backups yourself<br>
             <br>
             <div class="tip">
               <strong>💡 Recommendation:</strong> Export a backup monthly and after adding many new cards. Store backup files in multiple locations for extra safety!
@@ -572,7 +572,7 @@
               <li><strong>Keep recent backups:</strong> Store last 3-6 months of backups</li>
             </ul>
             <div class="tip">
-              <strong>💡 The app helps:</strong> CardKeepApp will remind you monthly and show how many cards you have to backup, making it easy to stay protected!
+              <strong>💡 The app helps:</strong> CardKeepApp uses smart reminders (after 7+ days OR 5+ new cards) and shows how many cards you have to backup, making it easy to stay protected!
             </div>
           </div>
         </div>
@@ -618,18 +618,40 @@
         <div class="faq-item">
           <div class="faq-question">Can I edit cards after saving them?</div>
           <div class="faq-answer">
-            <div class="warning">
-              <strong>❌ No, you cannot edit cards after saving.</strong> This
-              is one of the app's main limitations. Once you save a card, all
-              the information (sender, occasion, date, tags, notes) becomes
-              permanent.
+            <div class="tip">
+              <strong>✅ Yes! CardKeepApp v1.2.0 introduces full card editing.</strong> You can now edit any saved card including sender, occasion, dates, tags, notes, and even replace photos.
             </div>
-            If you need to make changes, you'll have to delete the card and
-            create it again. This is why it's important to double-check
-            everything before hitting save!
+            <strong>How to edit cards:</strong>
+            <ol>
+              <li>Open any saved card from your collection</li>
+              <li>Tap the "Edit" button in the card detail view</li>
+              <li>Make your changes to any field</li>
+              <li>Tap "Save" to keep your updates</li>
+            </ol>
+            No more deleting and recreating cards for simple changes!
             <br /><br />
-            <a href="documentation.html#limitations"
-              >Learn more about limitations →</a
+            <a href="documentation.html#card-editing"
+              >Learn more about card editing →</a
+            >
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Can I use photos from my photo library?</div>
+          <div class="faq-answer">
+            <div class="tip">
+              <strong>✅ Yes! CardKeepApp v1.2.0 lets you choose photos from your library.</strong>
+            </div>
+            <strong>Photo options:</strong>
+            <ul>
+              <li><strong>Take Photo:</strong> Use your camera to capture new photos with portrait or landscape framing</li>
+              <li><strong>Choose from Library:</strong> Select existing photos from your photo library</li>
+              <li><strong>Smart Management:</strong> The app intelligently prevents photo duplicates</li>
+            </ul>
+            This is perfect for adding older greeting cards to your collection using photos you've already taken!
+            <br /><br />
+            <a href="documentation.html#photo-library"
+              >Learn more about photo options →</a
             >
           </div>
         </div>
@@ -648,30 +670,6 @@
               <strong>✨ Recent Improvement:</strong> We've enhanced the photo type selection interface to make it clearer and more intuitive when choosing which part of your card you're photographing!
             </div>
             This lets you capture every detail of your greeting cards with proper organisation!
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">I heard there was a photo labeling bug - is it fixed?</div>
-          <div class="faq-answer">
-            <strong>Yes, completely fixed!</strong> We resolved a major bug in August 2025 where photo types were displaying incorrectly.
-            <br><br>
-            <strong>What was the issue:</strong>
-            <ul>
-              <li>Photos labeled as "Front, Back" were incorrectly showing as "Front, Inside"</li>
-              <li>This was purely a display issue - your actual photos were always correct</li>
-              <li>It only affected how photo types were shown in the interface</li>
-            </ul>
-            <strong>What we fixed:</strong>
-            <ul>
-              <li>✅ Completely redesigned the photo type selection UI</li>
-              <li>✅ Fixed all display inconsistencies</li>
-              <li>✅ Added clearer labels: Front, Inside, Back, Extra 1, Extra 2</li>
-              <li>✅ Ensured backward compatibility with existing cards</li>
-            </ul>
-            <div class="tip">
-              <strong>💡 Your existing cards:</strong> All your previously saved cards continue to work perfectly! The fix automatically applies to both new and existing card collections.
-            </div>
           </div>
         </div>
 
@@ -698,7 +696,7 @@
             <ul>
               <li><strong>Prevent accidents:</strong> Multiple deletion could accidentally remove precious memories</li>
               <li><strong>Encourage reflection:</strong> Each card deserves individual consideration before deletion</li>
-              <li><strong>Safety first:</strong> Since cards can't be edited, we want to prevent irreversible bulk mistakes</li>
+              <li><strong>Safety first:</strong> We want to prevent irreversible bulk mistakes</li>
               <li><strong>Backup reminder:</strong> Gives you time to create a backup if you're doing major cleanup</li>
             </ul>
             <div class="tip">
@@ -763,8 +761,6 @@
             Here are the key limitations to be aware of:
             <br /><br />
             <div class="warning">
-              <strong>📝 No editing:</strong> You cannot edit cards after saving
-              them<br />
               <strong>📱 iOS only:</strong> Currently iPhone and iPad only, no Android
               version<br />
               <strong>🔄 Portrait only:</strong> iPhone won't rotate to landscape
@@ -775,25 +771,6 @@
             <a href="documentation.html#limitations"
               >Read full limitations guide →</a
             >
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            I made a mistake entering information. What can I do?
-          </div>
-          <div class="faq-answer">
-            Unfortunately, you'll need to:
-            <br /><br />
-            1. <strong>Delete the card</strong> with the mistake<br />
-            2. <strong>Re-add it</strong> with correct information<br />
-            3. <strong>Retake photos</strong> (the photos from your deleted card
-            will still be in your Photos app though)<br />
-            <br />
-            <div class="tip">
-              <strong>💡 Prevention tip:</strong> Always double-check sender
-              names, dates, and tags before saving!
-            </div>
           </div>
         </div>
 
@@ -855,7 +832,7 @@
             <br><br>
             <strong>Why iOS 16.0+:</strong>
             <ul>
-              <li><strong>Modern photo handling:</strong> Latest PHAsset identifier system for better photo references</li>
+              <li><strong>Modern photo handling:</strong> Latest identifier system for better photo references</li>
               <li><strong>Enhanced performance:</strong> Optimised for current iOS capabilities</li>
               <li><strong>Security:</strong> Latest privacy and security frameworks</li>
               <li><strong>Reliability:</strong> Access to most stable iOS APIs</li>
@@ -924,9 +901,6 @@
             • <strong>iCloud Photos sync issue:</strong> Photos haven't synced properly across devices<br>
             • <strong>Storage full:</strong> Your device ran out of storage while saving<br>
             <br>
-            <div class="warning">
-              <strong>⚠️ Unfortunately:</strong> There's no way to fix broken image references. You'll need to delete the card and create it again with new photos.
-            </div>
           </div>
         </div>
 
@@ -1055,8 +1029,6 @@
               • Take photos of front, inside, and back<br />
               • Capture any special details separately
             </div>
-            Remember: You can't crop or edit photos after saving, so get them
-            right the first time!
             <br /><br />
             <a href="documentation.html#tips-tricks">More photography tips →</a>
           </div>

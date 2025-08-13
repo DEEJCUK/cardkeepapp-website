@@ -1,308 +1,335 @@
-/* Launch Animation CSS for CardKeepApp v1.1.0 */
+/* Launch Animation CSS for CardKeepApp v1.2.0 */
 .launch-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    z-index: 10000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    transition: opacity 1s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 1s ease;
 }
 
 .launch-overlay.fade-out {
-    opacity: 0;
-    pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .video-container {
-    width: 375px;
-    height: 667px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 25px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  width: 375px;
+  height: 667px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
 .launch-slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.8s ease;
-    padding: 40px 30px;
-    text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+  padding: 40px 30px;
+  text-align: center;
 }
 
 .launch-slide.active {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .launch-slide-1 {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
 }
 
 .launch-slide-2 {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
 
 .launch-slide-3 {
-    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
 }
 
 .launch-slide-4 {
-    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
 }
 
 .launch-slide-5 {
-    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
 }
 
 .launch-slide-6 {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .launch-slide-7 {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
 }
 
 .launch-app-icon {
-    width: 120px;
-    height: 120px;
-    background: #fff;
-    border-radius: 25px;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    animation: launchBounce 2s infinite;
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: launchBounce 2s infinite;
 }
 
 .launch-heart-icon {
-    font-size: 60px;
-    color: #e74c3c;
+  font-size: 60px;
+  color: #e74c3c;
 }
 
 .launch-version-badge {
-    background: rgba(255,255,255,0.2);
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 14px;
-    color: white;
-    margin-bottom: 20px;
-    backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
 }
 
 .launch-title {
-    font-size: 32px;
-    font-weight: 800;
-    color: white;
-    margin-bottom: 15px;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  font-size: 32px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .launch-subtitle {
-    font-size: 18px;
-    color: rgba(255,255,255,0.9);
-    margin-bottom: 30px;
-    line-height: 1.4;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 30px;
+  line-height: 1.4;
 }
 
 .launch-feature-item {
-    background: rgba(255,255,255,0.15);
-    padding: 20px;
-    border-radius: 15px;
-    margin: 10px 0;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.2);
-    width: 100%;
-    animation: launchSlideInUp 0.6s ease forwards;
-    opacity: 0;
-    transform: translateY(30px);
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 10px 0;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  animation: launchSlideInUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 .launch-feature-item.animate {
-    animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .launch-feature-item:nth-child(2).animate {
-    animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .launch-feature-item:nth-child(3).animate {
-    animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .launch-feature-title {
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
-    margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 5px;
 }
 
 .launch-feature-desc {
-    font-size: 14px;
-    color: rgba(255,255,255,0.8);
-    line-height: 1.3;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.3;
 }
 
 .launch-cta-button {
-    background: white;
-    color: #333;
-    padding: 15px 30px;
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-    margin-top: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
-    cursor: pointer;
+  background: white;
+  color: #333;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .launch-cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 .launch-phone-mockup {
-    width: 200px;
-    height: 400px;
-    background: #1a1a1a;
-    border-radius: 25px;
-    margin: 20px 0;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    animation: launchPhoneFloat 3s ease-in-out infinite;
+  width: 200px;
+  height: 400px;
+  background: #1a1a1a;
+  border-radius: 25px;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: launchPhoneFloat 3s ease-in-out infinite;
 }
 
 .launch-screen {
-    width: 180px;
-    height: 380px;
-    background: linear-gradient(145deg, #f8d7da, #d1ecf1);
-    border-radius: 20px;
-    margin: 10px auto;
-    position: relative;
-    overflow: hidden;
+  width: 180px;
+  height: 380px;
+  background: linear-gradient(145deg, #f8d7da, #d1ecf1);
+  border-radius: 20px;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .launch-app-ui {
-    padding: 20px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .launch-progress-bar {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 140px;
-    height: 4px;
-    background: rgba(255,255,255,0.3);
-    border-radius: 2px;
-    overflow: hidden;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  overflow: hidden;
 }
 
 .launch-progress-fill {
-    height: 100%;
-    background: white;
-    border-radius: 2px;
-    animation: launchProgressFill 20s linear;
+  height: 100%;
+  background: white;
+  border-radius: 2px;
+  animation: launchProgressFill 20s linear;
 }
 
 .launch-floating-hearts {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
 }
 
 .launch-heart {
-    position: absolute;
-    color: rgba(255,255,255,0.6);
-    font-size: 20px;
-    animation: launchFloatUp 4s linear infinite;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 20px;
+  animation: launchFloatUp 4s linear infinite;
 }
 
 .launch-skip-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: rgba(255,255,255,0.2);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 20px;
-    cursor: pointer;
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
-    font-size: 12px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  font-size: 12px;
 }
 
 .launch-skip-button:hover {
-    background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 @keyframes launchBounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-10px); }
-    60% { transform: translateY(-5px); }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }
 
 @keyframes launchSlideInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes launchPhoneFloat {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-10px) rotate(2deg); }
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
 }
 
 @keyframes launchProgressFill {
-    0% { width: 0%; }
-    20% { width: 20%; }
-    40% { width: 40%; }
-    60% { width: 60%; }
-    80% { width: 80%; }
-    100% { width: 100%; }
+  0% {
+    width: 0%;
+  }
+  20% {
+    width: 20%;
+  }
+  40% {
+    width: 40%;
+  }
+  60% {
+    width: 60%;
+  }
+  80% {
+    width: 80%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 @keyframes launchFloatUp {
-    0% {
-        transform: translateY(100vh) rotate(0deg);
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-100px) rotate(360deg);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+    opacity: 0;
+  }
 }

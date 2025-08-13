@@ -377,9 +377,9 @@
           CardKeepApp includes a comprehensive backup system to protect your precious memories and allow you to transfer your collection between devices.
         </p>
 
-        <h3>JSON Backup Export</h3>
+        <h3>Backup Export</h3>
         <p>
-          Export your entire card collection to a lightweight JSON file that contains all your card information and photo references:
+          Export your entire card collection to a lightweight file format that contains all your card information and photo references:
         </p>
         <div class="feature-grid">
           <div class="feature-item">
@@ -406,7 +406,6 @@
           <li><strong>Duplicate Detection:</strong> Automatically identifies and prevents duplicate cards during import</li>
           <li><strong>Data Validation:</strong> Ensures backup files are valid before importing</li>
           <li><strong>Photo Reference Recovery:</strong> Attempts to reconnect with photos in your Photos app</li>
-          <li><strong>Selective Import:</strong> Choose which cards to import from backup files</li>
         </ul>
 
         <h3>iCloud Integration</h3>
@@ -415,9 +414,12 @@
         </div>
 
         <h3>Backup Reminders</h3>
-        <p>CardKeepApp includes smart backup reminders to help protect your memories:</p>
+        <p>CardKeepApp includes intelligent backup reminders to help protect your memories:</p>
         <ul>
-          <li><strong>Monthly Prompts:</strong> Gentle reminders to backup your collection</li>
+          <li><strong>Weekly Frequency:</strong> Shows reminders after 7+ days OR 5+ new cards since last backup</li>
+          <li><strong>Automatic Triggers:</strong> Checks on app launch and 0.5 seconds after saving new cards</li>
+          <li><strong>User Control:</strong> "Remind Later" (7 days delay) or "Don't Remind" (365 days delay) options</li>
+          <li><strong>Edit-Friendly:</strong> Only new card creation triggers reminders, not editing existing cards</li>
           <li><strong>Card Count Tracking:</strong> Shows how many cards you have to backup</li>
           <li><strong>Last Backup Date:</strong> Tracks when you last created a backup</li>
         </ul>
@@ -486,6 +488,62 @@
           <li>Multiple tags can be searched simultaneously</li>
           <li>Search includes both visible text and your custom notes</li>
         </ul>
+      </section>
+
+      <section id="card-editing" class="doc-section">
+        <h2>✏️ Card Editing Features</h2>
+        <p>
+          CardKeepApp v1.2.0 introduces full card editing capabilities, giving you complete control over your saved memories.
+        </p>
+
+        <h3>What You Can Edit</h3>
+        <ul>
+          <li><strong>Sender Information:</strong> Change who sent the card</li>
+          <li><strong>Occasion:</strong> Update the event or reason for the card</li>
+          <li><strong>Dates:</strong> Modify when you received it or when the occasion was</li>
+          <li><strong>Tags:</strong> Add, remove, or modify custom tags</li>
+          <li><strong>Notes:</strong> Update your personal notes and memories</li>
+          <li><strong>Photos:</strong> Replace existing photos or add new ones from your library</li>
+        </ul>
+
+        <h3>How to Edit Cards</h3>
+        <ol>
+          <li>Open any saved card from your collection</li>
+          <li>Tap the "Pencil" icon in the card detail view</li>
+          <li>Make your changes to any field</li>
+          <li>Tap "Save" to keep your updates</li>
+        </ol>
+
+        <div class="tip">
+          <strong>💡 Pro Tip:</strong> No more deleting and recreating cards for simple typos! Edit functionality makes managing your collection much easier and preserves your card's creation history.
+        </div>
+      </section>
+
+      <section id="photo-library" class="doc-section">
+        <h2>📱 Photo Library & Camera Options</h2>
+        <p>
+          Choose photos from your existing library or take new ones with CardKeepApp's flexible photo system.
+        </p>
+
+        <h3>Photo Source Options</h3>
+        <ul>
+          <li><strong>Take Photo:</strong> Use your camera to capture new photos with portrait or landscape framing</li>
+          <li><strong>Photos from Library:</strong> Select existing photos from your photo library</li>
+          <li><strong>Smart Duplicate Prevention:</strong> The app intelligently reuses existing photos without creating duplicates</li>
+        </ul>
+
+        <h3>Photo Organization</h3>
+        <p>Whether you take new photos or select from your library, you can organize them using the same system:</p>
+        <ul>
+          <li><strong>Front:</strong> The front of the card</li>
+          <li><strong>Inside:</strong> The inside message</li>
+          <li><strong>Back:</strong> The back of the card</li>
+          <li><strong>Extra 1 & Extra 2:</strong> Additional details or special features</li>
+        </ul>
+
+        <div class="tip">
+          <strong>💡 Perfect for:</strong> Adding older greeting cards to your collection by selecting photos you've already taken, or mixing library photos with new camera captures for the same card.
+        </div>
       </section>
 
       <section id="tags-organisation" class="doc-section">
@@ -589,12 +647,12 @@
 
         <h3>Advanced Photos App Integration</h3>
         <p>
-          CardKeepApp uses a sophisticated photo reference system with the latest iOS technologies (iOS 16.0+) for optimal performance and reliability:
+          CardKeepApp uses a sophisticated photo reference system with the latest iOS technologies for optimal performance and reliability:
         </p>
         <ul>
-          <li><strong>PHAsset Integration:</strong> Uses modern PHAsset identifiers for robust photo references</li>
+          <li><strong>Photos Integration:</strong> Uses modern identifiers for robust photo references</li>
           <li><strong>CardKeepApp Album:</strong> Photos are saved to a dedicated "CardKeepApp" album in your Photos app</li>
-          <li><strong>Smart Reference System:</strong> Stores lightweight photo references instead of binary copies</li>
+          <li><strong>Smart Reference System:</strong> Stores lightweight photo references instead of copies</li>
           <li><strong>Enhanced Performance:</strong> Improved photo loading with smart caching and thumbnail refresh</li>
           <li><strong>Automatic iCloud Sync:</strong> If iCloud Photos is enabled, your card photos sync automatically</li>
           <li><strong>Storage Optimisation:</strong> Reduces app storage by 90%+ compared to binary storage</li>
@@ -624,11 +682,8 @@
           effectively.
         </p>
 
-        <div class="limitation">
-          <strong>⚠️ No Editing After Saving:</strong> Once you save a card, you
-          cannot edit the text information (sender, occasion, date, tags,
-          notes). You can view and enjoy your cards, but changes require
-          deleting and re-adding the card.
+        <div class="feature-highlight">
+          <strong>✏️ Full Card Editing:</strong> You can now edit any saved card! Change sender, occasion, dates, notes, tags, and even swap out photos. No need to delete and recreate cards anymore.
         </div>
 
         <div class="limitation">
@@ -650,8 +705,12 @@
           "CardKeepApp" album.
         </div>
 
+        <div class="feature-highlight">
+          <strong>📱 Photo Management:</strong> You can now add photos from your library or replace existing photos on saved cards! Choose from existing photos or take new ones with smart duplicate prevention.
+        </div>
+
         <div class="limitation">
-          <strong>⚠️ Photo Deletion Warning:</strong> Since CardKeepApp references photos stored in your Photos app, deleting photos from the "CardKeepApp" album in your Photos app will break the links in CardKeepApp. There's no way to re-add photos to existing cards.
+          <strong>⚠️ Photo Deletion Warning:</strong> While you can now edit and replace photos on cards, deleting photos from the "CardKeepApp" album in your Photos app will still break existing links until you replace them using the edit feature.
         </div>
 
         <div class="limitation">
@@ -659,16 +718,6 @@
           photos, but this shares the main information and photos, not the exact
           display format from the app.
         </div>
-
-        <h3>Planning Your Cards</h3>
-        <p>Since you cannot edit cards after saving, it's helpful to:</p>
-        <ul>
-          <li>Double-check all information before saving</li>
-          <li>Think about your tagging system in advance</li>
-          <li>Take all the photos you want before completing the card entry</li>
-          <li>Write notes that will be meaningful to you later</li>
-        </ul>
-      </section>
 
       <section id="tips-tricks" class="doc-section">
         <h2>✨ Tips & Tricks</h2>

@@ -500,6 +500,33 @@
         <h2>Backup System</h2>
 
         <div class="faq-item">
+          <div class="faq-question">Will my photos work when I restore to a new device?</div>
+          <div class="faq-answer">
+            <div class="warning">
+              <strong>Critical Information: New Device Photo Limitation</strong>
+            </div>
+            When restoring CardKeepApp backups to a <strong>completely new device</strong>:
+            <br /><br />
+            <strong>What works perfectly:</strong>
+            <ul>
+              <li>All card information (sender, occasion, dates, notes, tags)</li>
+              <li>Your complete card collection structure</li>
+              <li>All app settings and preferences</li>
+            </ul>
+            <strong>What requires manual work:</strong>
+            <ul>
+              <li><strong>ALL photos must be manually re-added to each card</strong></li>
+              <li>Photo links break due to Apple's iOS photo identifier system</li>
+              <li>Use CardKeepApp's edit feature to re-select photos from your iCloud Photos</li>
+            </ul>
+            <div class="tip">
+              <strong>Why this happens:</strong> Apple assigns new unique identifiers (PHAsset IDs) to all photos on new devices. The alternative would require CardKeepApp to store full-resolution photos internally, consuming massive storage (potentially gigabytes). Our lightweight approach preserves your card data while keeping storage minimal.
+            </div>
+            <strong>Bottom line:</strong> Your precious card memories and information are completely preserved, but photos need to be re-linked manually on new devices.
+          </div>
+        </div>
+
+        <div class="faq-item">
           <div class="faq-question">How does the new backup system work?</div>
           <div class="faq-answer">
             CardKeepApp now includes a comprehensive backup system:
@@ -740,6 +767,21 @@
                 correctly and will need to be added again
               </li>
             </ul>
+
+            <div class="warning">
+              <strong>Critical: New Device Limitation</strong>
+              <br /><br />
+              <strong>When restoring to a completely new device (not the same device with a fresh iOS install):</strong>
+              <ul>
+                <li>Apple's iOS assigns new unique identifiers (PHAsset IDs) to all photos</li>
+                <li><strong>ALL photo links will be broken</strong> regardless of iCloud Photos settings</li>
+                <li>Card data restores perfectly (names, dates, tags, notes)</li>
+                <li><strong>You must manually re-add all photos</strong> using the edit feature</li>
+                <li>This is an Apple iOS system limitation, not a CardKeepApp issue</li>
+              </ul>
+              <strong>Why this limitation exists:</strong> The alternative would require CardKeepApp to store full-resolution photos internally, consuming massive device storage (potentially gigabytes per user).
+            </div>
+
             <div class="tip">
               <strong>Tip: Best Results:</strong> Enable iCloud Photos before
               creating backups. If photos don't appear immediately after

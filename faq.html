@@ -435,8 +435,10 @@
               </li>
             </ol>
             <div class="tip">
-              <strong>Tip: Pro tip:</strong> The backup file contains photo
-              references that automatically reconnect to your synced photos.
+              <strong>Tip: Pro tip:</strong> The FULL backup file contains copies of your actual photos
+			  allowing full restore on another device              
+			  The SMALL backup file contains photo references
+			  that automatically reconnect to your synced photos.
               Make sure photos sync to your new device first, then import the
               backup!
             </div>
@@ -505,7 +507,7 @@
             <div class="tip">
               <strong>Great News: Complete Backup Solves This!</strong>
             </div>
-            CardKeepApp v1.2.1+ offers two backup options with different photo handling:
+            CardKeepApp v1.3.0+ offers two backup options with different photo handling:
             <br /><br />
             <strong>Complete Backup (Recommended for New Devices):</strong>
             <ul>
@@ -520,7 +522,7 @@
               <li>All card information restores perfectly (sender, occasion, dates, notes, tags)</li>
               <li><strong>Photos require manual re-linking</strong> due to Apple's photo identifier changes</li>
               <li>Use CardKeepApp's edit feature to re-select photos from your iCloud Photos</li>
-              <li>Ultra-lightweight files but requires photo management</li>
+              <li>Ultra-lightweight files but requires photo management if moving to a new device</li>
             </ul>
             <div class="tip">
               <strong>Recommendation:</strong> Use Complete Backup when moving to a new device for seamless photo restoration. Use Quick Backup for regular backups on the same device or when you have reliable iCloud Photos sync.
@@ -532,7 +534,7 @@
         <div class="faq-item">
           <div class="faq-question">How does the dual backup system work?</div>
           <div class="faq-answer">
-            CardKeepApp v1.2.1+ includes two backup types to meet different needs:
+            CardKeepApp v1.3.0+ includes two backup types to meet different needs:
             <br /><br />
             <strong>Quick Backup (Photo References Only):</strong>
             <ul>
@@ -558,7 +560,7 @@
                 <strong>Guaranteed restoration:</strong> Works regardless of Photos app contents
               </li>
               <li>
-                <strong>File sizes:</strong> About 400KB per card with typical photos (25 cards = ~10MB, 50 cards = ~20MB, 100 cards = ~40MB)
+                <strong>File sizes:</strong> About 400KB per card with typical photos (25 cards = ~10MB, 50 cards = ~30MB, 100 cards = ~50MB)
               </li>
               <li>
                 <strong>Best for:</strong> Device migrations, long-term archival, unreliable iCloud sync
@@ -567,7 +569,6 @@
             <strong>Both Types Include:</strong>
             <ul>
               <li>Complete card data (sender, occasion, dates, tags, notes)</li>
-              <li>Duplicate detection during import</li>
               <li>Easy sharing via email, AirDrop, Files app, or cloud storage</li>
             </ul>
             <a href="documentation.html#backup-export"
@@ -626,8 +627,11 @@
             </ul>
             <div class="tip">
               <strong>Tip: Best Protection:</strong> Enable iCloud Photos +
-              Export backups regularly = Complete protection!
+              Export backups regularly = Complete protection on the SAME device
             </div>
+			<div class="tip">
+              <strong>Tip: Best Protection:</strong> Enable iCloud Photos +
+              Export FULL backups regularly = Complete protection on a NEW device
           </div>
         </div>
 
@@ -660,7 +664,7 @@
               </li>
               <li>
                 <strong>Photos available:</strong> Card photos accessible
-                through iCloud Photos sync
+                through iCloud Photos sync or FULL backups file
               </li>
             </ul>
             <strong>Restore Results:</strong>
@@ -676,10 +680,6 @@
               <li>
                 <strong>Best case:</strong> Complete restore with all photos
                 (iCloud Photos enabled)
-              </li>
-              <li>
-                <strong>Partial case:</strong> Cards restore, photos appear as
-                they sync
               </li>
             </ul>
             <div class="warning">
@@ -742,7 +742,7 @@
           <div class="faq-answer">
             <strong>Two Different Photo Restoration Methods:</strong>
             <br /><br />
-            CardKeepApp v1.2.1+ uses different approaches depending on your backup type:
+            CardKeepApp v1.3.0+ uses different approaches depending on your backup type:
             <br /><br />
             <strong>Complete Backup - Direct Photo Restoration:</strong>
             <ul>
@@ -768,7 +768,7 @@
                 <strong>Photo references:</strong> Uses iOS Photos library identifiers
               </li>
               <li>
-                <strong>iCloud dependency:</strong> Requires photos to exist in Photos app
+                <strong>iCloud dependency:</strong> Requires photos to exist in Photos app on the same device the backup was taken
               </li>
               <li>
                 <strong>Same device:</strong> Works well for restoring to the same device
@@ -794,6 +794,7 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
 
       <section id="functionality" class="faq-section">
@@ -804,7 +805,7 @@
           <div class="faq-answer">
             <div class="tip">
               <strong
-                >Yes! CardKeepApp v1.2.0 introduces full card editing.</strong
+                >Yes! CardKeepApp has full card editing.</strong
               >
               You can now edit any saved card including sender, occasion, dates,
               tags, notes, and even replace photos.
@@ -812,7 +813,7 @@
             <strong>How to edit cards:</strong>
             <ol>
               <li>Open any saved card from your collection</li>
-              <li>Tap the "Edit" button in the card detail view</li>
+              <li>Tap the "Pencil" button in the card detail view</li>
               <li>Make your changes to any field</li>
               <li>Tap "Save" to keep your updates</li>
             </ol>
@@ -831,7 +832,7 @@
           <div class="faq-answer">
             <div class="tip">
               <strong
-                >Yes! Yes! CardKeepApp v1.2.0 lets you choose photos from your
+                >Yes! Yes! CardKeepApp lets you choose photos from your
                 library.</strong
               >
             </div>
@@ -991,7 +992,7 @@
             • Your personal notes<br />
             <br />
             Recipients will get this as a standard message (Shared via Email,
-            SMS, iMessage etc) with photos, not as a CardKeepApp card.
+            iMessage etc) with photos, not as a CardKeepApp card.
           </div>
         </div>
       </section>
@@ -1286,7 +1287,7 @@
             <br /><br />
             However, remember that each person's cards are stored locally on
             their own device - family members won't see each other's card
-            collections.
+            collections unless a restore is done from a FULL backup file, Photos DO NOT sync across devices.
           </div>
         </div>
       </section>

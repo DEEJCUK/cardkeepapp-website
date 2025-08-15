@@ -50,7 +50,6 @@
       CardKeepApp - Your Digital Card Collection Manager | Card Organiser App
     </title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="launch.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -65,212 +64,6 @@
   <body role="document">
     <a href="#main" class="skip-link">Skip to main content</a>
 
-    <!-- Launch Animation Overlay -->
-    <div id="launchOverlay" class="launch-overlay" style="display: none">
-      <div class="video-container">
-        <button class="launch-skip-button" onclick="closeLaunchAnimation()">
-          Skip
-        </button>
-
-        <!-- Slide 1: Title -->
-        <div class="launch-slide launch-slide-1 active">
-          <div class="launch-app-icon">
-            <span class="launch-heart-icon">♡</span>
-          </div>
-          <div class="launch-version-badge">v1.2.0</div>
-          <h1 class="launch-title">CardKeepApp</h1>
-          <p class="launch-subtitle">Edit Cards & Choose Photos</p>
-          <div class="launch-floating-hearts">
-            <span class="launch-heart" style="left: 10%; animation-delay: 0s"
-              >♥</span
-            >
-            <span class="launch-heart" style="left: 30%; animation-delay: 1s"
-              >♥</span
-            >
-            <span class="launch-heart" style="left: 50%; animation-delay: 2s"
-              >♥</span
-            >
-            <span class="launch-heart" style="left: 70%; animation-delay: 3s"
-              >♥</span
-            >
-            <span class="launch-heart" style="left: 90%; animation-delay: 4s"
-              >♥</span
-            >
-          </div>
-        </div>
-
-        <!-- Slide 2: Card Editing -->
-        <div class="launch-slide launch-slide-2">
-          <h2 class="launch-title">Edit Your Cards</h2>
-          <p class="launch-subtitle">
-            Full card editing! Change sender, occasion, dates, notes, tags, and
-            photos
-          </p>
-          <div class="launch-phone-mockup">
-            <div class="launch-screen">
-              <div class="launch-app-ui">
-                <div
-                  style="
-                    width: 120px;
-                    height: 30px;
-                    background: linear-gradient(135deg, #f093fb, #f5576c);
-                    border-radius: 15px;
-                    margin: 10px 0;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    color: white;
-                    font-size: 12px;
-                    font-weight: 600;
-                  "
-                >
-                  Memories
-                </div>
-                <div
-                  style="
-                    width: 100px;
-                    height: 60px;
-                    background: linear-gradient(135deg, #4facfe, #00f2fe);
-                    border-radius: 10px;
-                    margin: 5px 0;
-                  "
-                ></div>
-                <div
-                  style="
-                    width: 100px;
-                    height: 60px;
-                    background: linear-gradient(135deg, #43e97b, #38f9d7);
-                    border-radius: 10px;
-                    margin: 5px 0;
-                  "
-                ></div>
-                <div
-                  style="
-                    width: 100px;
-                    height: 60px;
-                    background: linear-gradient(135deg, #fa709a, #fee140);
-                    border-radius: 10px;
-                    margin: 5px 0;
-                  "
-                ></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3: Photo Library -->
-        <div class="launch-slide launch-slide-3">
-          <h2 class="launch-title">Choose Photos</h2>
-          <p class="launch-subtitle">
-            Select existing photos from your library or take new ones
-          </p>
-          <div class="launch-phone-mockup">
-            <div class="launch-screen">
-              <div class="launch-app-ui">
-                <div
-                  style="
-                    width: 120px;
-                    height: 60px;
-                    background: linear-gradient(135deg, #a8edea, #fed6e3);
-                    border-radius: 10px;
-                    margin: 8px 0;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 10px;
-                    color: #333;
-                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-                  "
-                >
-                  Thank You Card
-                </div>
-                <div
-                  style="
-                    width: 120px;
-                    height: 60px;
-                    background: linear-gradient(135deg, #a8edea, #fed6e3);
-                    border-radius: 10px;
-                    margin: 8px 0;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 10px;
-                    color: #333;
-                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-                  "
-                >
-                  🎂 Birthday Card
-                </div>
-                <div
-                  style="
-                    width: 120px;
-                    height: 60px;
-                    background: linear-gradient(135deg, #a8edea, #fed6e3);
-                    border-radius: 10px;
-                    margin: 8px 0;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 10px;
-                    color: #333;
-                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-                  "
-                >
-                  💐 Congratulations Card
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 4: All Features -->
-        <div class="launch-slide launch-slide-4">
-          <h2 class="launch-title">What's New</h2>
-          <div class="launch-feature-item">
-            <div class="launch-feature-title">Edit Cards</div>
-            <div class="launch-feature-desc">Change any card details</div>
-          </div>
-          <div class="launch-feature-item">
-            <div class="launch-feature-title">Photo Library</div>
-            <div class="launch-feature-desc">Choose existing photos</div>
-          </div>
-          <div class="launch-feature-item">
-            <div class="launch-feature-title">Weekly Backups</div>
-            <div class="launch-feature-desc">Smarter reminder system</div>
-          </div>
-        </div>
-
-        <!-- Slide 5: Call to Action -->
-        <div class="launch-slide launch-slide-5">
-          <div class="launch-app-icon">
-            <span class="launch-heart-icon">♡</span>
-          </div>
-          <h1 class="launch-title">Update Now</h1>
-          <p class="launch-subtitle">
-            CardKeepApp v1.2.0<br />Available on the App Store
-          </p>
-          <a
-            href="https://apps.apple.com/us/app/cardkeep/id6749583192"
-            target="_blank"
-            class="launch-cta-button"
-            >Update Today</a
-          >
-          <div
-            style="
-              margin-top: 20px;
-              font-size: 12px;
-              color: rgba(255, 255, 255, 0.7);
-            "
-          >
-            iOS 16.0+ • iPhone & iPad
-          </div>
-        </div>
-
-        <div class="launch-progress-bar">
-          <div class="launch-progress-fill"></div>
-        </div>
-      </div>
-    </div>
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
       {
@@ -726,7 +519,7 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-brand">
-            <h3>CardKeepApp 💖</h3>
+            <h3>CardKeepApp</h3>
             <p>
               Making card collection management simple, beautiful, and
               absolutely delightful!
@@ -790,7 +583,7 @@
       <div class="welcome-popup-content">
         <div class="welcome-header">
           <span class="welcome-emoji">✨</span>
-          <h3 id="welcome-title">Welcome to CardKeepApp! 💖</h3>
+          <h3 id="welcome-title">Welcome to CardKeepApp!</h3>
           <button
             class="welcome-close"
             onclick="closeWelcomePopup()"
@@ -811,13 +604,13 @@
           </p>
           <div class="welcome-actions">
             <a href="documentation.html#backup-export" class="welcome-docs-btn">
-              💾 Learn About Dual Backup System
+              Learn About Dual Backup System
             </a>
             <a href="faq.html" class="welcome-docs-btn">
               ❓ Got Questions? Check Our FAQ
             </a>
             <button onclick="closeWelcomePopup()" class="welcome-continue-btn">
-              💜 Explore v1.3.0 Features
+              Explore v1.3.0 Features
             </button>
           </div>
           <p class="welcome-note">

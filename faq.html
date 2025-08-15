@@ -502,60 +502,73 @@
         <div class="faq-item">
           <div class="faq-question">Will my photos work when I restore to a new device?</div>
           <div class="faq-answer">
-            <div class="warning">
-              <strong>Critical Information: New Device Photo Limitation</strong>
+            <div class="tip">
+              <strong>Great News: Complete Backup Solves This!</strong>
             </div>
-            When restoring CardKeepApp backups to a <strong>completely new device</strong>:
+            CardKeepApp v1.2.1+ offers two backup options with different photo handling:
             <br /><br />
-            <strong>What works perfectly:</strong>
+            <strong>Complete Backup (Recommended for New Devices):</strong>
             <ul>
-              <li>All card information (sender, occasion, dates, notes, tags)</li>
-              <li>Your complete card collection structure</li>
-              <li>All app settings and preferences</li>
+              <li><strong>100% photo restoration</strong> - photos restore automatically with card data</li>
+              <li><strong>No manual work required</strong> - everything works immediately</li>
+              <li><strong>No dependency on iCloud Photos sync</strong> or photo identifiers</li>
+              <li><strong>Larger file sizes</strong> but guaranteed success</li>
+              <li><strong>May create duplicate photos</strong> in Photos app, but ensures complete preservation</li>
             </ul>
-            <strong>What requires manual work:</strong>
+            <strong>Quick Backup (Photo Reference Limitations):</strong>
             <ul>
-              <li><strong>ALL photos must be manually re-added to each card</strong></li>
-              <li>Photo links break due to Apple's iOS photo identifier system</li>
+              <li>All card information restores perfectly (sender, occasion, dates, notes, tags)</li>
+              <li><strong>Photos require manual re-linking</strong> due to Apple's photo identifier changes</li>
               <li>Use CardKeepApp's edit feature to re-select photos from your iCloud Photos</li>
+              <li>Ultra-lightweight files but requires photo management</li>
             </ul>
             <div class="tip">
-              <strong>Why this happens:</strong> Apple assigns new unique identifiers (PHAsset IDs) to all photos on new devices. The alternative would require CardKeepApp to store full-resolution photos internally, consuming massive storage (potentially gigabytes). Our lightweight approach preserves your card data while keeping storage minimal.
+              <strong>Recommendation:</strong> Use Complete Backup when moving to a new device for seamless photo restoration. Use Quick Backup for regular backups on the same device or when you have reliable iCloud Photos sync.
             </div>
-            <strong>Bottom line:</strong> Your precious card memories and information are completely preserved, but photos need to be re-linked manually on new devices.
+            <strong>Bottom line:</strong> Complete Backup eliminates the traditional photo restoration complications - choose the backup type that fits your needs!
           </div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-question">How does the new backup system work?</div>
+          <div class="faq-question">How does the dual backup system work?</div>
           <div class="faq-answer">
-            CardKeepApp now includes a comprehensive backup system:
+            CardKeepApp v1.2.1+ includes two backup types to meet different needs:
             <br /><br />
-            <strong>Export Process:</strong>
+            <strong>Quick Backup (Photo References Only):</strong>
             <ul>
               <li>
-                <strong>Backup Files:</strong> Creates ultra-lightweight backup
-                files (less than 1KB per card vs previous 23MB)
+                <strong>Ultra-lightweight:</strong> Less than 1KB per card
               </li>
               <li>
-                <strong>Complete Data:</strong> Includes all card information,
-                tags, notes, and photo references
+                <strong>Fast:</strong> Quick export and import process
               </li>
               <li>
-                <strong>Easy Sharing:</strong> Export via email, AirDrop, Files
-                app, or cloud storage
+                <strong>Photo links:</strong> References photos in your Photos app
+              </li>
+              <li>
+                <strong>Best for:</strong> Regular backups, same device restore, reliable iCloud Photos sync
               </li>
             </ul>
-            <strong>Import Process:</strong>
+            <strong>Complete Backup (Includes Photo Data):</strong>
             <ul>
               <li>
-                <strong>Duplicate Detection:</strong> Automatically prevents
-                importing the same cards twice
+                <strong>Self-contained:</strong> Includes full-resolution photo data
               </li>
               <li>
-                <strong>Photo Reconnection:</strong> Links backup data to
-                existing photos in your Photos app
+                <strong>Guaranteed restoration:</strong> Works regardless of Photos app contents
               </li>
+              <li>
+                <strong>Larger files:</strong> Several MB per card (depends on photo count/quality)
+              </li>
+              <li>
+                <strong>Best for:</strong> Device migrations, long-term archival, unreliable iCloud sync
+              </li>
+            </ul>
+            <strong>Both Types Include:</strong>
+            <ul>
+              <li>Complete card data (sender, occasion, dates, tags, notes)</li>
+              <li>Duplicate detection during import</li>
+              <li>Easy sharing via email, AirDrop, Files app, or cloud storage</li>
             </ul>
             <a href="documentation.html#backup-export"
               >Read the complete backup guide →</a
@@ -725,68 +738,59 @@
         </div>
 
         <div class="faq-item">
-          <div class="faq-question">How exactly does photo restore work?</div>
+          <div class="faq-question">How exactly does photo restore work with the new backup system?</div>
           <div class="faq-answer">
-            <strong>Understanding Photo References:</strong>
+            <strong>Two Different Photo Restoration Methods:</strong>
             <br /><br />
-            CardKeepApp uses iOS Photos library identifiers (not actual photo
-            files) to reference your images. Here's what happens during restore:
+            CardKeepApp v1.2.1+ uses different approaches depending on your backup type:
             <br /><br />
-            <strong>Yes: What Gets Restored:</strong>
+            <strong>Complete Backup - Direct Photo Restoration:</strong>
             <ul>
               <li>
-                <strong>Card metadata:</strong> Sender, occasion, dates, notes,
-                tags
+                <strong>Embedded photos:</strong> Actual photo data is stored in the backup file
               </li>
               <li>
-                <strong>Photo identifiers:</strong> iOS Photos library
-                references to your photos
+                <strong>100% reliable:</strong> Photos restore automatically with card data
+              </li>
+              <li>
+                <strong>No dependencies:</strong> Works regardless of Photos app contents or iCloud sync
+              </li>
+              <li>
+                <strong>Result:</strong> Immediate, complete restoration on any device
+              </li>
+              <li>
+                <strong>Note:</strong> May create duplicate photos in Photos app, but ensures complete preservation
               </li>
             </ul>
-            <strong>Photo Availability Depends on iCloud Photos:</strong>
-            <br /><br />
-            <strong>If iCloud Photos is ON and synced:</strong>
+            <strong>Quick Backup - Photo Reference Restoration:</strong>
             <ul>
-              <li>Photos will be available across all your devices</li>
-              <li>Restore will work seamlessly on new iPhone/iPad</li>
-              <li>Photo references will resolve to actual images</li>
               <li>
-                <strong>Result:</strong> Complete restore with all photos
-                visible
-              </li>
-            </ul>
-            <strong>If iCloud Photos is OFF or not fully synced:</strong>
-            <ul>
-              <li>Card metadata restores successfully</li>
-              <li>Photo references exist but images won't display</li>
-              <li>
-                Cards will show as "missing photos" until photos are available
+                <strong>Photo references:</strong> Uses iOS Photos library identifiers
               </li>
               <li>
-                <strong>Result:</strong> Cards without photos - may restore
-                correctly and will need to be added again
+                <strong>iCloud dependency:</strong> Requires photos to exist in Photos app
+              </li>
+              <li>
+                <strong>Same device:</strong> Works well for restoring to the same device
+              </li>
+              <li>
+                <strong>New device limitation:</strong> Photo links may break due to Apple's photo ID changes
+              </li>
+              <li>
+                <strong>Result:</strong> Card data always restores, photos depend on Photos app availability
               </li>
             </ul>
 
-            <div class="warning">
-              <strong>Critical: New Device Limitation</strong>
-              <br /><br />
-              <strong>When restoring to a completely new device (not the same device with a fresh iOS install):</strong>
+            <div class="tip">
+              <strong>Which should you choose?</strong>
               <ul>
-                <li>Apple's iOS assigns new unique identifiers (PHAsset IDs) to all photos</li>
-                <li><strong>ALL photo links will be broken</strong> regardless of iCloud Photos settings</li>
-                <li>Card data restores perfectly (names, dates, tags, notes)</li>
-                <li><strong>You must manually re-add all photos</strong> using the edit feature</li>
-                <li>This is an Apple iOS system limitation, not a CardKeepApp issue</li>
+                <li><strong>Complete Backup:</strong> Moving to new device, long-term archival, guaranteed photo restoration</li>
+                <li><strong>Quick Backup:</strong> Regular backups, same device restore, minimal file size</li>
               </ul>
-              <strong>Why this limitation exists:</strong> The alternative would require CardKeepApp to store full-resolution photos internally, consuming massive device storage (potentially gigabytes per user).
             </div>
 
             <div class="tip">
-              <strong>Tip: Best Results:</strong> Enable iCloud Photos before
-              creating backups. If photos don't appear immediately after
-              restore, wait for iCloud sync to complete. The photo references
-              will automatically resolve as photos become available!
+              <strong>Best Results:</strong> Use Complete Backup for device migrations and important archival. Use Quick Backup for routine protection when you have reliable iCloud Photos sync.
             </div>
           </div>
         </div>
@@ -1405,23 +1409,21 @@
             </ul>
             <strong>Data Protection (Manual):</strong>
             <ul>
-              <li>Export backup monthly from CardKeepApp</li>
-              <li>Email backup files to yourself</li>
-              <li>Save copies to Files app or cloud storage</li>
-              <li>Name files with dates: "CardKeep_Backup_2024_Jan.json"</li>
+              <li><strong>Regular backups:</strong> Export Quick Backup monthly from CardKeepApp for routine protection</li>
+              <li><strong>Device migration backups:</strong> Export Complete Backup before major device changes</li>
+              <li>Email backup files to yourself or save to Files app/cloud storage</li>
+              <li>Files are automatically named with backup type and date</li>
             </ul>
             <strong>Transfer Process:</strong>
             <ul>
               <li>
-                Before phone upgrades: Export fresh backup + ensure iCloud
-                Photos is synced
+                <strong>Before phone upgrades:</strong> Export Complete Backup (ensures 100% photo restoration)
               </li>
               <li>
-                On new device: Install CardKeepApp, wait for photos to sync,
-                then import backup
+                <strong>On new device:</strong> Install CardKeepApp, import Complete Backup - photos restore automatically
               </li>
               <li>
-                Result: Complete collection restored with all photos and data!
+                <strong>Result:</strong> Complete collection restored with all photos and data instantly!
               </li>
             </ul>
           </div>

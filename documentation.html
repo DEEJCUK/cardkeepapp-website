@@ -387,55 +387,70 @@
       <section id="backup-export" class="doc-section">
         <h2>Backup & Export System</h2>
         <p>
-          CardKeepApp includes a comprehensive backup system to protect your
-          precious memories and allow you to transfer your collection between
-          devices.
+          CardKeepApp v1.2.1+ includes a comprehensive dual backup system to protect your precious memories and allow you to transfer your collection between devices with complete reliability.
         </p>
 
-        <h3>Backup Export</h3>
-        <p>
-          Export your entire card collection to a lightweight file format that
-          contains all your card information and photo references:
-        </p>
+        <h3>Two Backup Types Available</h3>
+        <p>Choose the backup type that best fits your needs:</p>
+
         <div class="feature-grid">
           <div class="feature-item">
-            <h4>Complete Card Data</h4>
-            <p>
-              All card information including sender, occasion, dates, tags, and
-              personal notes
-            </p>
+            <h4>Quick Backup</h4>
+            <p><strong>Small files, photo references only</strong></p>
+            <ul>
+              <li>Ultra-lightweight (less than 1KB per card)</li>
+              <li>Fast export and import</li>
+              <li>Requires photos to exist in Photos app</li>
+              <li>Perfect for regular backups and same-device restores</li>
+            </ul>
           </div>
           <div class="feature-item">
-            <h4>Photo References</h4>
-            <p>
-              Links to your photos in the Photos app (photos remain in your
-              Photos library)
-            </p>
-          </div>
-          <div class="feature-item">
-            <h4>Ultra-Lightweight</h4>
-            <p>Export files are less than 1KB per card)</p>
-          </div>
-          <div class="feature-item">
-            <h4>Easy Sharing</h4>
-            <p>Share via email, AirDrop, or save to Files app</p>
+            <h4>Complete Backup</h4>
+            <p><strong>Larger files, includes actual photo data</strong></p>
+            <ul>
+              <li>Guaranteed cross-device restoration</li>
+              <li>Includes full-resolution photo data</li>
+              <li>Larger file sizes but 100% reliable</li>
+              <li>Perfect for device migrations and long-term archival</li>
+            </ul>
           </div>
         </div>
 
+        <h3>When to Use Each Backup Type</h3>
+        <div class="tip">
+          <strong>Quick Backup - Use for:</strong>
+          <ul>
+            <li>Regular daily/weekly backups</li>
+            <li>Restoring to the same device</li>
+            <li>When you have reliable iCloud Photos sync</li>
+            <li>Sharing backup files via email (small size)</li>
+          </ul>
+        </div>
+
+        <div class="tip">
+          <strong>Complete Backup - Use for:</strong>
+          <ul>
+            <li>Moving to a new device</li>
+            <li>Long-term archival storage</li>
+            <li>When iCloud Photos sync is unreliable</li>
+            <li>Ensuring 100% photo restoration regardless of circumstances</li>
+          </ul>
+        </div>
+
         <h3>Import & Restore</h3>
-        <p>Restore your collection from backup files:</p>
+        <p>Both backup types support comprehensive restore capabilities:</p>
         <ul>
           <li>
-            <strong>Duplicate Detection:</strong> Automatically identifies and
-            prevents duplicate cards during import
+            <strong>Duplicate Detection:</strong> Automatically identifies and prevents duplicate cards during import
           </li>
           <li>
-            <strong>Data Validation:</strong> Ensures backup files are valid
-            before importing
+            <strong>Data Validation:</strong> Ensures backup files are valid before importing
           </li>
           <li>
-            <strong>Photo Reference Recovery:</strong> Attempts to reconnect
-            with photos in your Photos app
+            <strong>Smart Photo Handling:</strong> Quick Backup reconnects to existing photos, Complete Backup restores photo data directly
+          </li>
+          <li>
+            <strong>Backup Type Auto-Detection:</strong> CardKeepApp automatically detects and handles both backup types seamlessly
           </li>
         </ul>
 
@@ -479,34 +494,33 @@
         </ul>
 
         <div class="limitation">
-          <strong>Important Backup Notes:</strong>
+          <strong>Backup Type Considerations:</strong>
           <ul>
             <li>
-              Backup files contain photo references, not the actual photos
+              <strong>Quick Backup:</strong> Contains photo references only - requires photos to exist in Photos app for restore
             </li>
             <li>
-              Photos must remain in your Photos app for successful restore
+              <strong>Complete Backup:</strong> Contains actual photo data - larger files but guaranteed restoration regardless of Photos app contents
             </li>
             <li>
-              When moving to a new device, transfer photos first, then import
-              backup
+              <strong>File Size:</strong> Quick Backup ~1KB per card, Complete Backup includes full photo data (several MB per card depending on photo count/quality)
             </li>
             <li>
-              Backup files work best when photos are synced via iCloud Photos
+              <strong>Cross-Device Migration:</strong> Always use Complete Backup when moving to a new device for guaranteed photo restoration
             </li>
           </ul>
         </div>
 
-        <div class="limitation">
-          <strong>Critical New Device Limitation:</strong>
-          <p>When restoring to a new device, Apple's photo system assigns new unique identifiers to all photos. This means:</p>
+        <div class="tip">
+          <strong>Complete Backup Advantages for New Devices:</strong>
+          <p>Complete Backup solves the traditional Apple iOS photo identifier limitation by embedding actual photo data in the backup file. This means:</p>
           <ul>
-            <li><strong>Card data will restore completely</strong> (names, dates, tags, notes)</li>
-            <li><strong>Photo links will be broken</strong> and must be manually re-added to each card</li>
-            <li><strong>This is an Apple iOS limitation</strong> - the alternative would require storing full-resolution photos in CardKeepApp, consuming massive device storage</li>
-            <li><strong>Use the new edit feature</strong> to easily re-add photos from your synced iCloud Photos library</li>
+            <li><strong>100% reliable restoration</strong> to any device regardless of Apple's photo ID changes</li>
+            <li><strong>No need to manually re-add photos</strong> - they restore automatically with the card data</li>
+            <li><strong>No dependency on iCloud Photos sync</strong> for photo restoration</li>
+            <li><strong>May create duplicate photos</strong> in your Photos app, but ensures your card memories are completely preserved</li>
           </ul>
-          <p>This trade-off keeps CardKeepApp lightweight while preserving your precious card memories and metadata.</p>
+          <p>Choose Complete Backup for device migrations and long-term archival to eliminate photo restoration complications.</p>
         </div>
       </section>
 

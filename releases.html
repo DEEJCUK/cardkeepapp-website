@@ -410,13 +410,13 @@
           <div class="feature-item">
             <h4>Quick Backup</h4>
             <p>
-              <strong>Fast & Lightweight:</strong> Small files with photo references only (~1KB per card). Perfect for regular backups, same device restore, and when you have reliable iCloud Photos sync. Fast operation maintains the original efficient workflow.
+              <strong>Fast & Lightweight:</strong> Tiny files with photo references only (~1KB per card). Perfect for regular backups, same device restore, and when you have reliable iCloud Photos sync. Super fast operation maintains the original efficient workflow.
             </p>
           </div>
           <div class="feature-item">
             <h4>Complete Backup</h4>
             <p>
-              <strong>100% Guaranteed Restoration:</strong> Larger files that include actual photo data. Guaranteed cross-device restoration regardless of Photos app contents or iCloud sync. Perfect for device migrations and long-term archival.
+              <strong>100% Guaranteed Restoration:</strong> Larger files that include your actual photos (~400KB per card, so 25 cards = ~10MB, 50 cards = ~20MB). Guaranteed cross-device restoration regardless of Photos app contents or iCloud sync. Perfect for device migrations and long-term archival.
             </p>
           </div>
         </div>
@@ -425,50 +425,24 @@
       <section class="release-section">
         <h2>Key Features</h2>
 
-        <h3>Backup Type Selection</h3>
+        <h3>Easy Backup Choice</h3>
         <div class="improvement">
-          <strong>Professional Selection Interface:</strong> Clear backup type selection modal with descriptions and visual selection. Choose the backup method that fits your specific needs with full understanding of the trade-offs.
+          <strong>Simple Selection Screen:</strong> When you backup your cards, you'll see a clear choice between Quick and Complete backup. Each option explains exactly what it does, so you can pick what works best for your situation.
         </div>
 
-        <h3>Cross-Device Photo Solution</h3>
+        <h3>Finally, Photos That Work Everywhere!</h3>
         <div class="improvement">
-          <strong>Solves the PHAsset Problem:</strong> Complete Backup includes Base64-encoded photo data for 100% restoration reliability. No more broken photo links when moving to new devices - photos restore automatically with card data.
+          <strong>No More Missing Photos:</strong> The biggest frustration with card apps has always been photos disappearing when you get a new phone. Complete Backup solves this forever - your photos restore perfectly every single time.
         </div>
 
-        <h3>Enhanced File Management</h3>
+        <h3>Smart File Organization</h3>
         <div class="improvement">
-          <strong>Smart File Naming:</strong> Updated file naming includes backup type (CardKeep_Quick/Complete_Backup_timestamp.json). Automatic backup type detection during import with full backward compatibility for existing backups.
+          <strong>Clearly Named Backups:</strong> Your backup files now show whether they're Quick or Complete right in the filename, so you always know what type you're working with. Your old backup files still work perfectly too!
         </div>
 
-        <h3>Thread-Safe Photo Restoration</h3>
+        <h3>Reliable Photo Restoration</h3>
         <div class="improvement">
-          <strong>Professional Implementation:</strong> Enhanced PhotoLibraryManager with saveImageAndGetIdentifier() method. Thread-safe photo restoration with proper async handling and success messaging indicates backup type for user clarity.
-        </div>
-      </section>
-
-      <section class="release-section">
-        <h2>Technical Implementation</h2>
-
-        <div class="technical-note">
-          <strong>Backend Architecture:</strong>
-          <ul>
-            <li>New BackupType enum with Quick/Complete options and user-friendly descriptions</li>
-            <li>Enhanced CardBackup structure with optional photoData field for complete backups</li>
-            <li>BackupFile versioned to 2.0 with full backward compatibility for 1.0 format</li>
-            <li>PhotoData structure for Base64 image storage with type mapping</li>
-            <li>BackupTypeSelectionView with professional UI matching app design</li>
-            <li>Updated import logic handles both PHAsset references and actual photo data</li>
-          </ul>
-        </div>
-
-        <div class="technical-note">
-          <strong>Photo Extraction Process:</strong>
-          <ul>
-            <li>Complete backup extracts actual images from PHAssets using PHImageManager</li>
-            <li>Import recreates photos in Photos library with new PHAsset identifiers</li>
-            <li>Maintains photo type mapping (Front, Inside, Back, Extra 1, Extra 2)</li>
-            <li>May create duplicate photos in Photos app, but ensures complete preservation</li>
-          </ul>
+          <strong>It Just Works:</strong> Photos now save more reliably and restore perfectly across all your devices. No more worrying about whether your precious card memories will survive a phone upgrade.
         </div>
       </section>
 
@@ -476,14 +450,14 @@
         <h2>What's New Summary</h2>
 
         <ul class="checklist">
-          <li>Dual backup system: Quick (lightweight) & Complete (with photos)</li>
-          <li>Backup type selection modal with clear descriptions</li>
-          <li>Complete backup solves cross-device photo restoration issues</li>
-          <li>Enhanced file naming with backup type indicators</li>
-          <li>Thread-safe photo restoration with async handling</li>
-          <li>Backward compatibility with existing backup files</li>
-          <li>Professional UI matching app design throughout</li>
-          <li>100% reliable device migration with Complete Backup</li>
+          <li>Choose between Quick Backup (small files) or Complete Backup (includes photos)</li>
+          <li>Easy selection screen that explains each backup type clearly</li>
+          <li>Photos finally work properly when moving to new devices!</li>
+          <li>Backup files are clearly labeled so you know which type you have</li>
+          <li>Much more reliable photo saving and restoring</li>
+          <li>Your existing backup files still work perfectly</li>
+          <li>Beautiful interface that matches the rest of the app</li>
+          <li>Stress-free phone upgrades with guaranteed photo restoration</li>
         </ul>
 
         <div

@@ -18,8 +18,6 @@ xcuserdata/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-# End of https://www.toptal.com/developers/gitignore/api/xcode
-
 # macOS
 .DS_Store
 .DS_Store?
@@ -30,8 +28,7 @@ ehthumbs.db
 Thumbs.db
 *claude*
 
-*claude*# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode
+*claude*
 
 ### VisualStudioCode ###
 .vscode/*

@@ -14,9 +14,16 @@
     <meta name="author" content="CardKeepApp Team" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#6366f1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self';"
+    />
 
     <title>Terms of Service - CardKeepApp | Legal Terms</title>
+    <link rel="preload" href="styles.css" as="style" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -463,11 +470,15 @@
                   <a
                     href="https://www.instagram.com/cardkeepapp/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     >Instagram</a
                   >
                 </li>
                 <li>
-                  <a href="https://x.com/CardKeepAppApp" target="_blank"
+                  <a
+                    href="https://x.com/CardKeepAppApp"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >X (Twitter)</a
                   >
                 </li>

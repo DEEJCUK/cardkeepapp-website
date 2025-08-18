@@ -14,12 +14,19 @@
     <meta name="author" content="CardKeepApp Team" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#6366f1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self';"
+    />
 
     <title>
       Documentation - CardKeepApp | How to Use Your Digital Card Collection
       Manager
     </title>
+    <link rel="preload" href="styles.css" as="style" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -387,7 +394,9 @@
       <section id="backup-export" class="doc-section">
         <h2>Backup & Export System</h2>
         <p>
-          CardKeepApp v1.3.0+ includes a comprehensive dual backup system to protect your precious memories and allow you to transfer your collection between devices with complete reliability.
+          CardKeepApp v1.3.0+ includes a comprehensive dual backup system to
+          protect your precious memories and allow you to transfer your
+          collection between devices with complete reliability.
         </p>
 
         <h3>Two Backup Types Available</h3>
@@ -441,16 +450,21 @@
         <p>Both backup types support comprehensive restore capabilities:</p>
         <ul>
           <li>
-            <strong>Quick Backup Duplicate Detection:</strong> Automatically identifies and prevents duplicate cards during import
+            <strong>Quick Backup Duplicate Detection:</strong> Automatically
+            identifies and prevents duplicate cards during import
           </li>
           <li>
-            <strong>Data Validation:</strong> Ensures backup files are valid before importing
+            <strong>Data Validation:</strong> Ensures backup files are valid
+            before importing
           </li>
           <li>
-            <strong>Smart Photo Handling:</strong> Quick Backup reconnects to existing photos, Complete Backup restores photo data directly (this may lead to duplicate Photos)
+            <strong>Smart Photo Handling:</strong> Quick Backup reconnects to
+            existing photos, Complete Backup restores photo data directly (this
+            may lead to duplicate Photos)
           </li>
           <li>
-            <strong>Backup Type Auto-Detection:</strong> CardKeepApp automatically detects and handles both backup types seamlessly
+            <strong>Backup Type Auto-Detection:</strong> CardKeepApp
+            automatically detects and handles both backup types seamlessly
           </li>
         </ul>
 
@@ -490,33 +504,60 @@
           <strong>Backup Type Considerations:</strong>
           <ul>
             <li>
-              <strong>Quick Backup:</strong> Contains photo references only - requires photos to exist in Photos app for restore
+              <strong>Quick Backup:</strong> Contains photo references only -
+              requires photos to exist in Photos app for restore
             </li>
             <li>
-              <strong>Complete Backup:</strong> Contains actual photo data - larger files but guaranteed restoration regardless of Photos app contents
+              <strong>Complete Backup:</strong> Contains actual photo data -
+              larger files but guaranteed restoration regardless of Photos app
+              contents
             </li>
             <li>
-              <strong>File Size Expectations:</strong> Quick Backup ~1KB per card, Complete Backup ~400KB per card with typical photos (3-4 photos each)
+              <strong>File Size Expectations:</strong> Quick Backup ~1KB per
+              card, Complete Backup ~400KB per card with typical photos (3-4
+              photos each)
             </li>
             <li>
-              <strong>Collection Size Examples:</strong> 25 cards (~20MB), 50 cards (~40MB), 100 cards (~50MB) for Complete Backup
+              <strong>Collection Size Examples:</strong> 25 cards (~20MB), 50
+              cards (~40MB), 100 cards (~50MB) for Complete Backup
             </li>
             <li>
-              <strong>Cross-Device Migration:</strong> Always use Complete Backup when moving to a new device for guaranteed photo restoration
+              <strong>Cross-Device Migration:</strong> Always use Complete
+              Backup when moving to a new device for guaranteed photo
+              restoration
             </li>
           </ul>
         </div>
 
         <div class="tip">
           <strong>Complete Backup Advantages for New Devices:</strong>
-          <p>Complete Backup solves the traditional Apple iOS photo identifier limitation by embedding actual photo data in the backup file. This means:</p>
+          <p>
+            Complete Backup solves the traditional Apple iOS photo identifier
+            limitation by embedding actual photo data in the backup file. This
+            means:
+          </p>
           <ul>
-            <li><strong>100% reliable restoration</strong> to any device regardless of Apple's photo ID changes</li>
-            <li><strong>No need to manually re-add photos</strong> - they restore automatically with the card data</li>
-            <li><strong>No dependency on iCloud Photos sync</strong> for photo restoration</li>
-            <li><strong>May create duplicate photos</strong> in your Photos app, but ensures your card memories are completely preserved</li>
+            <li>
+              <strong>100% reliable restoration</strong> to any device
+              regardless of Apple's photo ID changes
+            </li>
+            <li>
+              <strong>No need to manually re-add photos</strong> - they restore
+              automatically with the card data
+            </li>
+            <li>
+              <strong>No dependency on iCloud Photos sync</strong> for photo
+              restoration
+            </li>
+            <li>
+              <strong>May create duplicate photos</strong> in your Photos app,
+              but ensures your card memories are completely preserved
+            </li>
           </ul>
-          <p>Choose Complete Backup for device migrations and long-term archival to eliminate photo restoration complications.</p>
+          <p>
+            Choose Complete Backup for device migrations and long-term archival
+            to eliminate photo restoration complications.
+          </p>
         </div>
       </section>
 
@@ -642,11 +683,24 @@
 
         <div class="limitation">
           <strong>Photo Library Cropping Limitation:</strong>
-          <p>When selecting photos from your existing photo library, cropping is not available within CardKeepApp. Existing photos are imported in their current format.</p>
+          <p>
+            When selecting photos from your existing photo library, cropping is
+            not available within CardKeepApp. Existing photos are imported in
+            their current format.
+          </p>
           <ul>
-            <li><strong>For best results:</strong> Use the Photos app to crop your images to the desired format before selecting them in CardKeepApp</li>
-            <li><strong>Camera photos:</strong> Full cropping and framing options are available when taking new photos</li>
-            <li><strong>Editing existing cards:</strong> You can replace library photos with new camera photos that include cropping options</li>
+            <li>
+              <strong>For best results:</strong> Use the Photos app to crop your
+              images to the desired format before selecting them in CardKeepApp
+            </li>
+            <li>
+              <strong>Camera photos:</strong> Full cropping and framing options
+              are available when taking new photos
+            </li>
+            <li>
+              <strong>Editing existing cards:</strong> You can replace library
+              photos with new camera photos that include cropping options
+            </li>
           </ul>
         </div>
 
@@ -846,9 +900,9 @@
 
         <div class="tip">
           <strong>Production-Ready Architecture:</strong> CardKeepApp uses
-          professional-grade Data integration, smart caching systems, and
-          the latest iOS photo management APIs to ensure reliability,
-          performance, and future compatibility.
+          professional-grade Data integration, smart caching systems, and the
+          latest iOS photo management APIs to ensure reliability, performance,
+          and future compatibility.
         </div>
 
         <h3>Permissions</h3>
@@ -867,19 +921,19 @@
           Understanding these limitations helps you use CardKeepApp most
           effectively.
         </p>
-		<br>
+        <br />
         <div class="feature-highlight">
           <strong>Full Card Editing:</strong> You can now edit any saved card!
           Change sender, occasion, dates, notes, tags, and even swap out photos.
           No need to delete and recreate cards anymore.
         </div>
-		<br>
+        <br />
         <div class="feature-highlight">
           <strong>Photo Management:</strong> You can now add photos from your
           library or replace existing photos on saved cards! Choose from
           existing photos or take new ones with smart duplicate prevention.
         </div>
-		
+
         <div class="limitation">
           <strong>Note: iOS Only:</strong> Currently CardKeepApp is available
           for iPhone and iPad. Android version is planned for the future.
@@ -1062,11 +1116,15 @@
                   <a
                     href="https://www.instagram.com/cardkeepapp/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     >Instagram</a
                   >
                 </li>
                 <li>
-                  <a href="https://x.com/CardKeepAppApp" target="_blank"
+                  <a
+                    href="https://x.com/CardKeepAppApp"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >X (Twitter)</a
                   >
                 </li>

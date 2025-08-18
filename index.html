@@ -15,6 +15,10 @@
     <meta name="robots" content="index, follow" />
     <meta name="language" content="English" />
     <meta name="theme-color" content="#6366f1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self';"
+    />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -49,7 +53,10 @@
     <title>
       CardKeepApp - Your Digital Card Collection Manager | Card Organiser App
     </title>
+    <link rel="preload" href="styles.css" as="style" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -174,6 +181,7 @@
             <a
               href="https://apps.apple.com/us/app/cardkeep/id6749583192"
               target="_blank"
+              rel="noopener noreferrer"
               class="btn btn-primary btn-large"
               aria-describedby="download-desc"
               >Download Now!</a
@@ -195,6 +203,7 @@
                   src="Screenshots/card_collection_screen.png?v=1.3.0"
                   alt="CardKeepApp v1.3.0 card collection view displaying saved birthday and greeting cards in an elegant grid layout"
                   class="card-image-real"
+                  loading="lazy"
                 />
                 <div class="card-name">Your Cards</div>
               </div>
@@ -205,6 +214,7 @@
                   src="Screenshots/photo_selection_screen.png?v=1.3.0"
                   alt="CardKeepApp v1.3.0 photo selection screen with camera and photo library options for choosing card photos"
                   class="card-image-real"
+                  loading="lazy"
                 />
                 <div class="card-name">Choose Photos</div>
               </div>
@@ -215,6 +225,7 @@
                   src="Screenshots/initial_screen.png?v=1.3.0"
                   alt="CardKeepApp v1.3.0 Your Memory Box welcome screen with Add New Card and Import Previous Backup options"
                   class="card-image-real app-preview"
+                  loading="lazy"
                 />
                 <div class="card-name">Your Memory Box</div>
               </div>
@@ -311,8 +322,8 @@
               <h3>Backup & Export</h3>
               <p>
                 Dual backup system: Quick Backup (tiny, 1KB per card) or
-                Complete Backup (includes photos, ~400KB per card, guaranteed restoration).
-                Choose what fits your needs!
+                Complete Backup (includes photos, ~400KB per card, guaranteed
+                restoration). Choose what fits your needs!
                 <a
                   href="documentation.html#backup-export"
                   style="
@@ -362,8 +373,8 @@
               </p>
               <ul class="about-features">
                 <li>
-                  Beautiful and intuitive iOS 16.0+ design with enhanced
-                  photo organisation
+                  Beautiful and intuitive iOS 16.0+ design with enhanced photo
+                  organisation
                 </li>
                 <li>
                   Complete privacy with professional-grade error handling and
@@ -375,16 +386,13 @@
                 </li>
                 <li>Made specifically for iPhone/iPad</li>
                 <li>Fully localised interface available in 8+ languages</li>
-                <li>
-                  Smart date handling that adapts to your region's format
-                </li>
+                <li>Smart date handling that adapts to your region's format</li>
                 <li>
                   90% storage optimisation with backward compatibility for
                   existing cards
                 </li>
                 <li>
-                  Professional Photos integration with robust reference
-                  system
+                  Professional Photos integration with robust reference system
                 </li>
                 <li>Costs less than a standard greeting card</li>
               </ul>
@@ -395,11 +403,13 @@
                   src="Screenshots/card_collection_screen.png?v=1.3.0"
                   alt="CardKeepApp v1.3.0 collection view displaying saved birthday and thinking of you cards in a beautiful grid layout"
                   class="app-screenshot main-screenshot"
+                  loading="lazy"
                 />
                 <img
                   src="Screenshots/add_new_screen.png?v=1.3.0"
                   alt="CardKeepApp v1.3.0 add new card form with photo capture, sender details, and editing capabilities"
                   class="app-screenshot secondary-screenshot"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -416,36 +426,56 @@
             Real screenshots from the actual app - beautifully designed for your
             precious memories
           </p>
-          
-          <div class="app-video-container" style="text-align: center; margin: 2rem 0;">
-            <video 
-              controls 
-              autoplay 
-              muted 
-              loop 
+
+          <div
+            class="app-video-container"
+            style="text-align: center; margin: 2rem 0"
+          >
+            <video
+              controls
+              autoplay
+              muted
+              loop
               playsinline
-              style="max-width: 350px; width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);"
+              style="
+                max-width: 350px;
+                width: 100%;
+                border-radius: 20px;
+                box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+              "
               poster="Screenshots/initial_screen.png?v=1.3.0"
             >
-              <source src="Screenshots/app_preview_iphone.mp4" type="video/mp4">
+              <source
+                src="Screenshots/app_preview_iphone.mp4"
+                type="video/mp4"
+              />
               Your browser does not support the video tag.
             </video>
-            <p style="font-style: italic; color: var(--text-secondary); margin-top: 1rem; font-size: 0.9rem;">
+            <p
+              style="
+                font-style: italic;
+                color: var(--text-secondary);
+                margin-top: 1rem;
+                font-size: 0.9rem;
+              "
+            >
               CardKeepApp in action
             </p>
           </div>
-          
+
           <div class="screenshot-gallery">
             <div class="screenshot-item">
               <img
                 src="Screenshots/initial_screen.png?v=1.3.0"
                 alt="CardKeepApp v1.3.0 first launch screen showing app introduction and getting started guide"
                 class="gallery-screenshot"
+                loading="lazy"
               />
               <div class="screenshot-caption">
                 <h4>First Launch</h4>
                 <p>
-                  Welcome guide when you first open CardKeepApp with helpful introduction
+                  Welcome guide when you first open CardKeepApp with helpful
+                  introduction
                 </p>
               </div>
             </div>
@@ -454,11 +484,13 @@
                 src="Screenshots/first_open_page.png?v=1.3.0"
                 alt="CardKeepApp v1.3.0 main screen with Add New Card and Import Backup options"
                 class="gallery-screenshot"
+                loading="lazy"
               />
               <div class="screenshot-caption">
                 <h4>Main Screen</h4>
                 <p>
-                  Your Memory Box with options to add new cards or import previous backups
+                  Your Memory Box with options to add new cards or import
+                  previous backups
                 </p>
               </div>
             </div>
@@ -467,11 +499,13 @@
                 src="Screenshots/photo_selection_screen.png?v=1.3.0"
                 alt="CardKeepApp v1.3.0 photo capture interface with camera and photo library options"
                 class="gallery-screenshot"
+                loading="lazy"
               />
               <div class="screenshot-caption">
                 <h4>Take Photos</h4>
                 <p>
-                  Capture card photos or choose from your library with multiple photo type options
+                  Capture card photos or choose from your library with multiple
+                  photo type options
                 </p>
               </div>
             </div>
@@ -480,11 +514,13 @@
                 src="Screenshots/card_collection_screen.png?v=1.3.0"
                 alt="CardKeepApp v1.3.0 card collection grid view showing saved greeting cards"
                 class="gallery-screenshot"
+                loading="lazy"
               />
               <div class="screenshot-caption">
                 <h4>Your Collection</h4>
                 <p>
-                  Beautiful grid layout displaying your saved cards with occasions and dates
+                  Beautiful grid layout displaying your saved cards with
+                  occasions and dates
                 </p>
               </div>
             </div>
@@ -493,6 +529,7 @@
                 src="Screenshots/card_detail_screen.png?v=1.3.0"
                 alt="CardKeepApp v1.3.0 card detail view showing full card information and photos"
                 class="gallery-screenshot"
+                loading="lazy"
               />
               <div class="screenshot-caption">
                 <h4>Card Details</h4>
@@ -506,11 +543,13 @@
                 src="Screenshots/edit_vcard_page.png?v=1.3.0"
                 alt="CardKeepApp v1.3.0 card editing interface for modifying card details"
                 class="gallery-screenshot"
+                loading="lazy"
               />
               <div class="screenshot-caption">
                 <h4>Edit Cards</h4>
                 <p>
-                  Full card editing - change sender, occasion, dates, notes, tags, and photos
+                  Full card editing - change sender, occasion, dates, notes,
+                  tags, and photos
                 </p>
               </div>
             </div>
@@ -519,11 +558,13 @@
                 src="Screenshots/backup_screen.png?v=1.3.0"
                 alt="CardKeepApp v1.3.0 dual backup system showing Quick and Complete backup options"
                 class="gallery-screenshot"
+                loading="lazy"
               />
               <div class="screenshot-caption">
                 <h4>Dual Backup System</h4>
                 <p>
-                  Choose Quick Backup for speed or Complete Backup for guaranteed restoration
+                  Choose Quick Backup for speed or Complete Backup for
+                  guaranteed restoration
                 </p>
               </div>
             </div>
@@ -532,11 +573,13 @@
                 src="Screenshots/successfull_import_page.png?v=1.3.0"
                 alt="CardKeepApp v1.3.0 successful backup import confirmation screen"
                 class="gallery-screenshot"
+                loading="lazy"
               />
               <div class="screenshot-caption">
                 <h4>Import Success</h4>
                 <p>
-                  Successful backup restoration with confirmation of imported cards
+                  Successful backup restoration with confirmation of imported
+                  cards
                 </p>
               </div>
             </div>
@@ -545,12 +588,11 @@
                 src="Screenshots/about_screen.png?v=1.3.0"
                 alt="CardKeepApp v1.3.0 about page showing app information and version details"
                 class="gallery-screenshot"
+                loading="lazy"
               />
               <div class="screenshot-caption">
                 <h4>About & Info</h4>
-                <p>
-                  App information, version details, and helpful links
-                </p>
+                <p>App information, version details, and helpful links</p>
               </div>
             </div>
           </div>
@@ -581,6 +623,7 @@
             <a
               href="https://apps.apple.com/us/app/cardkeep/id6749583192"
               target="_blank"
+              rel="noopener noreferrer"
               class="download-btn ios"
               aria-label="Download CardKeepApp for iOS on App Store"
             >
@@ -647,11 +690,15 @@
                   <a
                     href="https://www.instagram.com/cardkeepapp/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     >Instagram</a
                   >
                 </li>
                 <li>
-                  <a href="https://x.com/CardKeepAppApp" target="_blank"
+                  <a
+                    href="https://x.com/CardKeepAppApp"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >X (Twitter)</a
                   >
                 </li>
@@ -690,12 +737,10 @@
           <p>Hey there, lovely! 👋</p>
           <p>
             Welcome to CardKeepApp v1.3.0! We've just launched our revolutionary
-            <strong>dual backup system</strong> that finally solves cross-device photo restoration.
+            <strong>dual backup system</strong> that finally solves cross-device
+            photo restoration.
           </p>
-          <p>
-
-            for guaranteed photo restoration when moving to new devices!
-          </p>
+          <p>for guaranteed photo restoration when moving to new devices!</p>
           <div class="welcome-actions">
             <a href="documentation.html#backup-export" class="welcome-docs-btn">
               Learn About Dual Backup System

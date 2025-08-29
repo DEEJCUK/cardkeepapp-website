@@ -709,13 +709,13 @@
                 </li>
                 <li>
                   <strong>New phone:</strong> Install CardKeepApp on new device
-                  and import backup
+                  and import FULL backup
                 </li>
               </ul>
               <strong>What you need for successful restore:</strong>
               <ul>
                 <li>
-                  <strong>Backup file:</strong> The export file from CardKeepApp
+                  <strong>Backup file:</strong> The export file from CardKeepApp (FULL BACKUP FILE)
                 </li>
                 <li>
                   <strong>Photos available:</strong> Card photos accessible
@@ -733,14 +733,61 @@
                   sync status
                 </li>
                 <li>
-                  <strong>Best case:</strong> Complete restore with all photos
-                  (iCloud Photos enabled)
+                  <strong>Best case:</strong> Complete restore with all photos on the same device with
+                  iCloud Photos enabled
+                </li>
+              </ul>
+              <div class="warning">
+                <strong>Note: No backup = No recovery:</strong> Without a backup
+                file, you cannot restore deleted cards. Photos remain safe
+                in your Photos app on your original device, but all card information is lost.
+              </div>
+            </div>
+          </div>
+		            <div class="faq-item">
+            <div class="faq-question">
+              I restored my backup and i dont see my photos
+            </div>
+            <div class="faq-answer">
+			  <div class="tip">
+              <strong>Tip:</strong>WAIT and then WAIT a bit longer</div>
+			</div>
+              <br /><br />
+              <strong>Import scenarios:</strong>
+              <ul>
+                <li>
+                  <strong>Wait some time:</strong> Due to the way iOS works, sometimes it will not display all the photos on import, Especially if you are importing a large collection, scroll up and down and open a few photos and eventually you should see them</li>
+                <li>
+                  <strong>i see only some of my photos:</strong> Wait a bit longer, the app MUST be open while importing and large collections can take some time
+                </li>
+				<li>
+                  <strong>Testing:</strong> During testing of imports, it was found to take up to 5 minutes to import 500 cards with between 1 and 4 photos each on older iPhones / iPads, it will also depend on the size of the photo being restored</li>
+				<br>
+              <strong>What you need for successful restore:</strong>
+              <ul>
+                <li>
+                  <strong>Backup file:</strong> The export file from CardKeepApp
+                </li>
+                <li>
+                  <strong>Photos available:</strong> Card photos accessible
+                  through iCloud Photos sync on original device or FULL backups file for new ;/ restored device
+                </li>
+              </ul>
+              <strong>Restore Results:</strong>
+              <ul>
+                <li>
+                  <strong>Card data:</strong> Always restores completely
+                  (sender, dates, tags, notes)
+                </li>
+                <li>
+                  <strong>Photo visibility:</strong> Depends on iCloud Photos
+                  sync status or FULL backup file
                 </li>
               </ul>
               <div class="warning">
                 <strong>Note: No backup = No recovery:</strong> Without a backup
                 file, you cannot restore deleted card data. Photos remain safe
-                in your Photos app, but all card information is lost.
+                in your Photos app on your original device, but all card information is lost.
               </div>
             </div>
           </div>
@@ -754,19 +801,19 @@
               <ul>
                 <li>
                   <strong>Monthly:</strong> Export a backup at the beginning of
-                  each month
+                  each month (Quick Backup)
                 </li>
                 <li>
                   <strong>After bulk adding:</strong> When you add 10+ cards in
-                  a session
+                  a session (Quick Backup)
                 </li>
                 <li>
                   <strong>Before major events:</strong> Phone upgrades, iOS
-                  updates, etc.
+                  updates, etc. (Full Backup)
                 </li>
                 <li>
                   <strong>Seasonal cleanup:</strong> When organising or
-                  reviewing your collection
+                  reviewing your collection (Full Backup)
                 </li>
               </ul>
               <strong>Storage Strategy:</strong>
@@ -786,7 +833,7 @@
               </ul>
               <div class="tip">
                 <strong>Tip: The app helps:</strong> CardKeepApp uses smart
-                reminders (after 7+ days OR 5+ new cards) and shows how many
+                reminders (after 7+ days OR 10+ new cards) and shows how many
                 cards you have to backup, making it easy to stay protected!
               </div>
             </div>
@@ -810,7 +857,7 @@
                 </li>
                 <li>
                   <strong>100% reliable:</strong> Photos restore automatically
-                  with card data
+                  with card data but bigger file sizes
                 </li>
                 <li>
                   <strong>No dependencies:</strong> Works regardless of Photos
@@ -881,7 +928,7 @@
           <div class="faq-answer">
             <div class="tip">
               <strong>Yes! CardKeepApp has full card editing.</strong>
-              You can now edit any saved card including sender, occasion, dates,
+              You can edit any saved card including sender, occasion, dates,
               tags, notes, and even replace photos.
             </div>
             <strong>How to edit cards:</strong>
@@ -906,7 +953,7 @@
           <div class="faq-answer">
             <div class="tip">
               <strong
-                >Yes! Yes! CardKeepApp lets you choose photos from your
+                >Yes! CardKeepApp lets you choose photos from your
                 library.</strong
               >
             </div>
@@ -1134,7 +1181,7 @@
               <strong>No automatic cloud sync:</strong> Cards don't sync
               automatically, but backup/restore available<br />
               <strong>Data loss risk:</strong> Deleting the app without backup
-              loses card data (photos remain safe)
+              loses card data (photos remain safe on original device)
             </div>
             <a href="documentation.html#limitations"
               >Read full limitations guide →</a
@@ -1360,23 +1407,6 @@
         <h2>Cost & Purchase</h2>
 
         <div class="faq-item">
-          <div class="faq-question">
-            Is it really a one-time purchase with no subscriptions?
-          </div>
-          <div class="faq-answer">
-            <strong>Yes, absolutely!</strong> CardKeepApp is a one-time purchase
-            with no recurring charges: <br /><br />
-            • No monthly fees<br />
-            • No yearly subscriptions<br />
-            • No in-app purchases<br />
-            • No premium tiers<br />
-            • No Ads<br />
-            <br />
-            Pay once, own forever! ♡
-          </div>
-        </div>
-
-        <div class="faq-item">
           <div class="faq-question">What if I want a refund?</div>
           <div class="faq-answer">
             Refunds are handled by Apple through the App Store. You can:
@@ -1532,12 +1562,11 @@
             <strong>Data Protection (Manual):</strong>
             <ul>
               <li>
-                <strong>Regular backups:</strong> Export Quick Backup monthly
+                <strong>Regular backups:</strong> Backup monthly
                 from CardKeepApp for routine protection
               </li>
               <li>
-                <strong>Device migration backups:</strong> Export Complete
-                Backup before major device changes
+                <strong>Device migration backups:</strong> Full Backup before major device changes
               </li>
               <li>
                 Email backup files to yourself or save to Files app/cloud
@@ -1548,12 +1577,12 @@
             <strong>Transfer Process:</strong>
             <ul>
               <li>
-                <strong>Before phone upgrades:</strong> Export Complete Backup
+                <strong>Before phone upgrades:</strong> Export Full Backup
                 (ensures 100% photo restoration)
               </li>
               <li>
                 <strong>On new device:</strong> Install CardKeepApp, import
-                Complete Backup - photos restore automatically
+                Full Backup - photos restore automatically
               </li>
               <li>
                 <strong>Result:</strong> Complete collection restored with all

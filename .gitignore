@@ -27,8 +27,7 @@ xcuserdata/
 ehthumbs.db
 Thumbs.db
 *claude*
-
-*claude*
+*.trunk/*
 
 ### VisualStudioCode ###
 .vscode/*

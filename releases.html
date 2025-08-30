@@ -1,637 +1,627 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="CardKeep Version 1.3.0 Release Notes - Dual backup system with guaranteed cross-device photo restoration. Choose Quick Backup for speed or Complete Backup for 100% reliability."
-    />
-    <meta
-      name="keywords"
-      content="CardKeep 1.3.0, release notes, dual backup, cross-device restoration, photo backup, Complete Backup, Quick Backup, app update, greeting card app"
-    />
-    <meta name="author" content="CardKeepApp Team" />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#2C1F21" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self';"
-    />
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
-    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-    <meta
-      http-equiv="Referrer-Policy"
-      content="strict-origin-when-cross-origin"
-    />
-    <meta
-      http-equiv="Permissions-Policy"
-      content="camera=(), microphone=(), geolocation=(), payment=()"
-    />
-
-    <title>CardKeep 1.3.0 Release Notes - Dual Backup System</title>
-    <link rel="preload" href="styles.css" as="style" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="canonical" href="https://cardkeep.app/releases.html" />
+<head>
+	<meta charset="UTF-8" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<meta
+    name="description"
+    content="CardKeep Version 1.3.0 Release Notes - Dual backup system with guaranteed cross-device photo restoration. Choose Quick Backup for speed or Complete Backup for 100% reliability." />
+	
+	<meta
+    name="keywords"
+    content="CardKeep 1.3.0, release notes, dual backup, cross-device restoration, photo backup, Complete Backup, Quick Backup, app update, greeting card app" />
+	
+	<meta name="author" content="CardKeepApp Team" />
+	
+	<meta name="robots" content="index, follow" />
+	
+	<meta name="theme-color" content="#2C1F21" />
+	
+	<meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self';" />
+	
+	<meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+	
+	<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+	
+	<meta
+    http-equiv="Referrer-Policy"
+    content="strict-origin-when-cross-origin" />
+	
+	<meta
+    http-equiv="Permissions-Policy"
+    content="camera=(), microphone=(), geolocation=(), payment=()" />
+	
+	<title>CardKeep 1.3.0 Release Notes - Dual Backup System</title>
+	
+	<link rel="preload" href="styles.css" as="style" />
+	
+	<link rel="stylesheet" href="styles.css" />
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	
+	<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+	
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+	
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+	
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+	
+	<link rel="manifest" href="site.webmanifest" />
+	
+	<link rel="canonical" href="https://cardkeep.app/releases.html" />
 
     <style>
       .release-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 8rem 2rem 2rem 2rem;
-        line-height: 1.6;
-      }
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 8rem 2rem 2rem 2rem;
+	line-height: 1.6;
+}
 
-      .release-header {
-        text-align: center;
-        margin-bottom: 3rem;
-        padding: 3rem 2rem;
-        background: linear-gradient(135deg, #fdf8fc 0%, #f0e6f5 100%);
-        border-radius: 20px;
-        box-shadow: 0 10px 30px rgba(99, 102, 241, 0.1);
-      }
+.release-header {
+	text-align: center;
+	margin-bottom: 3rem;
+	padding: 3rem 2rem;
+	background: linear-gradient(135deg, #fdf8fc 0%, #f0e6f5 100%);
+	border-radius: 20px;
+	box-shadow: 0 10px 30px rgba(99, 102, 241, 0.1);
+}
 
-      .release-header h1 {
-        color: var(--gradient-start);
-        font-size: 3rem;
-        margin: 0 0 1rem 0;
-        font-weight: 700;
-      }
+.release-header h1 {
+	color: var(--gradient-start);
+	font-size: 3rem;
+	margin: 0 0 1rem 0;
+	font-weight: 700;
+}
 
-      .release-subtitle {
-        color: var(--text-secondary);
-        font-size: 1.3rem;
-        margin: 1rem 0;
-        font-weight: 500;
-      }
+.release-subtitle {
+	color: var(--text-secondary);
+	font-size: 1.3rem;
+	margin: 1rem 0;
+	font-weight: 500;
+}
 
-      .release-info {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1rem;
-        margin: 2rem 0;
-        background: var(--card-bg);
-        padding: 2rem;
-        border-radius: 12px;
-        border: 1px solid var(--border-color);
-      }
+.release-info {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1rem;
+	margin: 2rem 0;
+	background: var(--card-bg);
+	padding: 2rem;
+	border-radius: 12px;
+	border: 1px solid var(--border-color);
+}
 
-      .release-info-item {
-        text-align: center;
-      }
+.release-info-item {
+	text-align: center;
+}
 
-      .release-info-label {
-        font-weight: 600;
-        color: var(--gradient-start);
-        margin-bottom: 0.5rem;
-      }
+.release-info-label {
+	font-weight: 600;
+	color: var(--gradient-start);
+	margin-bottom: 0.5rem;
+}
 
-      .release-info-value {
-        color: var(--text-primary);
-        font-size: 1.1rem;
-      }
+.release-info-value {
+	color: var(--text-primary);
+	font-size: 1.1rem;
+}
 
-      .release-section {
-        margin-bottom: 3rem;
-        background: var(--card-bg);
-        border-radius: 16px;
-        padding: 2.5rem;
-        border: 1px solid var(--border-color);
-        box-shadow: 0 8px 25px rgba(99, 102, 241, 0.1);
-        position: relative;
-        overflow: hidden;
-      }
+.release-section {
+	margin-bottom: 3rem;
+	background: var(--card-bg);
+	border-radius: 16px;
+	padding: 2.5rem;
+	border: 1px solid var(--border-color);
+	box-shadow: 0 8px 25px rgba(99, 102, 241, 0.1);
+	position: relative;
+	overflow: hidden;
+}
 
-      .release-section::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: linear-gradient(
-          90deg,
-          var(--gradient-start),
-          var(--gradient-mid),
-          var(--gradient-end)
-        );
-        border-radius: 16px 16px 0 0;
-      }
+.release-section::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: linear-gradient(
+    90deg,
+    var(--gradient-start),
+    var(--gradient-mid),
+    var(--gradient-end)
+  );
+	border-radius: 16px 16px 0 0;
+}
 
-      .release-section h2 {
-        color: var(--gradient-start);
-        margin-top: 0;
-        margin-bottom: 1.5rem;
-        font-size: 2rem;
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-      }
+.release-section h2 {
+	color: var(--gradient-start);
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+	font-size: 2rem;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
 
-      .release-section h3 {
-        color: var(--gradient-mid);
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        font-size: 1.3rem;
-        font-weight: 600;
-      }
+.release-section h3 {
+	color: var(--gradient-mid);
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
 
-      .feature-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1.5rem;
-        margin: 1.5rem 0;
-      }
+.feature-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1.5rem;
+	margin: 1.5rem 0;
+}
 
-      .feature-item {
-        background: var(--bg-color);
-        border-radius: 12px;
-        padding: 1.5rem;
-        border: 1px solid var(--border-color);
-        transition:
-          transform 0.3s ease,
-          box-shadow 0.3s ease;
-      }
+.feature-item {
+	background: var(--bg-color);
+	border-radius: 12px;
+	padding: 1.5rem;
+	border: 1px solid var(--border-color);
+	transition: transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
 
-      .feature-item:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(99, 102, 241, 0.15);
-      }
+.feature-item:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 25px rgba(99, 102, 241, 0.15);
+}
 
-      .feature-item h4 {
-        color: var(--gradient-start);
-        margin: 0 0 0.75rem 0;
-        font-size: 1.1rem;
-        font-weight: 600;
-      }
+.feature-item h4 {
+	color: var(--gradient-start);
+	margin: 0 0 0.75rem 0;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
 
-      .feature-item p {
-        margin: 0;
-        color: var(--text-primary);
-      }
+.feature-item p {
+	margin: 0;
+	color: var(--text-primary);
+}
 
-      .improvement {
-        background: linear-gradient(
-          135deg,
-          rgba(60, 44, 53, 0.1) 0%,
-          rgba(245, 225, 228, 0.2) 100%
-        );
-        border-left: 4px solid rgba(44, 31, 33, 0.4);
-        border-radius: 8px;
-        padding: 1rem;
-        margin: 1rem 0;
-      }
+.improvement {
+	background: linear-gradient(
+    135deg,
+    rgba(60, 44, 53, 0.1) 0%,
+    rgba(245, 225, 228, 0.2) 100%
+  );
+	border-left: 4px solid rgba(44, 31, 33, 0.4);
+	border-radius: 8px;
+	padding: 1rem;
+	margin: 1rem 0;
+}
 
-      .improvement strong {
-        color: #2c1f21;
-      }
+.improvement strong {
+	color: #2c1f21;
+}
 
-      .bug-fix {
-        background: linear-gradient(
-          135deg,
-          rgba(107, 82, 102, 0.1) 0%,
-          rgba(153, 102, 128, 0.15) 100%
-        );
-        border-left: 4px solid rgba(107, 82, 102, 0.4);
-        border-radius: 8px;
-        padding: 1rem;
-        margin: 1rem 0;
-      }
+.bug-fix {
+	background: linear-gradient(
+    135deg,
+    rgba(107, 82, 102, 0.1) 0%,
+    rgba(153, 102, 128, 0.15) 100%
+  );
+	border-left: 4px solid rgba(107, 82, 102, 0.4);
+	border-radius: 8px;
+	padding: 1rem;
+	margin: 1rem 0;
+}
 
-      .bug-fix strong {
-        color: #6b5266;
-      }
+.bug-fix strong {
+	color: #6b5266;
+}
 
-      .technical-note {
-        background: linear-gradient(
-          135deg,
-          rgba(60, 44, 53, 0.08) 0%,
-          rgba(245, 225, 228, 0.15) 100%
-        );
-        border-left: 4px solid rgba(44, 31, 33, 0.3);
-        border-radius: 8px;
-        padding: 1rem;
-        margin: 1rem 0;
-      }
+.technical-note {
+	background: linear-gradient(
+    135deg,
+    rgba(60, 44, 53, 0.08) 0%,
+    rgba(245, 225, 228, 0.15) 100%
+  );
+	border-left: 4px solid rgba(44, 31, 33, 0.3);
+	border-radius: 8px;
+	padding: 1rem;
+	margin: 1rem 0;
+}
 
-      .technical-note strong {
-        color: #2c1f21;
-      }
+.technical-note strong {
+	color: #2c1f21;
+}
 
-      .checklist {
-        list-style: none;
-        padding: 0;
-      }
+.checklist {
+	list-style: none;
+	padding: 0;
+}
 
-      .checklist li {
-        padding: 0.5rem 0;
-        display: flex;
-        align-items: flex-start;
-        gap: 0.5rem;
-      }
+.checklist li {
+	padding: 0.5rem 0;
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5rem;
+}
 
-      .checklist li::before {
-        content: "✅";
-        flex-shrink: 0;
-        margin-top: 0.1rem;
-      }
+.checklist li::before {
+	content: "✅";
+	flex-shrink: 0;
+	margin-top: 0.1rem;
+}
 
-      .download-section {
-        background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-        color: white;
-        border-radius: 16px;
-        padding: 3rem;
-        text-align: center;
-        margin: 3rem 0;
-        border: 1px solid #475569;
-      }
+.download-section {
+	background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+	color: white;
+	border-radius: 16px;
+	padding: 3rem;
+	text-align: center;
+	margin: 3rem 0;
+	border: 1px solid #475569;
+}
 
-      .download-section h3 {
-        color: white;
-        font-size: 2rem;
-        margin: 0 0 1rem 0;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-      }
+.download-section h3 {
+	color: white;
+	font-size: 2rem;
+	margin: 0 0 1rem 0;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
 
-      .download-section p {
-        color: #e2e8f0;
-        font-size: 1.1rem;
-        margin-bottom: 1.5rem;
-      }
+.download-section p {
+	color: #e2e8f0;
+	font-size: 1.1rem;
+	margin-bottom: 1.5rem;
+}
 
-      .download-btn-release {
-        display: inline-block;
-        background: var(--gradient-start);
-        color: white;
-        text-decoration: none;
-        padding: 1rem 2rem;
-        border-radius: 12px;
-        font-weight: 600;
-        font-size: 1.1rem;
-        border: 1px solid var(--gradient-mid);
-        transition: all 0.3s ease;
-        margin: 1rem;
-        box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
-      }
+.download-btn-release {
+	display: inline-block;
+	background: var(--gradient-start);
+	color: white;
+	text-decoration: none;
+	padding: 1rem 2rem;
+	border-radius: 12px;
+	font-weight: 600;
+	font-size: 1.1rem;
+	border: 1px solid var(--gradient-mid);
+	transition: all 0.3s ease;
+	margin: 1rem;
+	box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
 
-      .download-btn-release:hover {
-        background: var(--gradient-mid);
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
-        color: white;
-      }
+.download-btn-release:hover {
+	background: var(--gradient-mid);
+	transform: translateY(-2px);
+	box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+	color: white;
+}
 
-      .download-requirements {
-        margin-top: 2rem;
-        padding-top: 1.5rem;
-        border-top: 1px solid #475569;
-      }
+.download-requirements {
+	margin-top: 2rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid #475569;
+}
 
-      .download-requirements p {
-        color: #cbd5e1;
-        font-size: 0.95rem;
-        margin: 0.5rem 0;
-      }
+.download-requirements p {
+	color: #cbd5e1;
+	font-size: 0.95rem;
+	margin: 0.5rem 0;
+}
 
-      .download-requirements strong {
-        color: #f1f5f9;
-      }
+.download-requirements strong {
+	color: #f1f5f9;
+}
 
-      @media (max-width: 768px) {
-        .release-container {
-          padding: 6rem 1rem 1rem 1rem;
-        }
-
-        .release-header h1 {
-          font-size: 2.2rem;
-        }
-
-        .release-subtitle {
-          font-size: 1.1rem;
-        }
-
-        .release-info {
-          grid-template-columns: 1fr;
-        }
-
-        .feature-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .release-section {
-          padding: 1.5rem;
-        }
-      }
-    </style>
-  </head>
-  <body role="document">
-    <a href="#main" class="skip-link">Skip to main content</a>
-
-    <header class="header" role="banner">
-      <nav class="nav" role="navigation" aria-label="Main navigation">
-        <div class="nav-brand">
-          <h1 class="logo" aria-label="CardKeepApp - Home">
-            <a href="index.html">CardKeepApp</a>
-          </h1>
-        </div>
-        <ul class="nav-menu" id="nav-menu" role="menubar">
-          <li role="none">
-            <a href="index.html" class="nav-link" role="menuitem">Home</a>
-          </li>
-          <li role="none">
-            <a href="index.html#features" class="nav-link" role="menuitem"
-              >Features</a
-            >
-          </li>
-          <li role="none">
-            <a href="index.html#about" class="nav-link" role="menuitem"
-              >About</a
-            >
-          </li>
-          <li role="none">
-            <a href="index.html#download" class="nav-link" role="menuitem"
-              >Download</a
-            >
-          </li>
-          <li role="none">
-            <a href="documentation.html" class="nav-link" role="menuitem"
-              >Documentation</a
-            >
-          </li>
-          <li role="none">
-            <a href="faq.html" class="nav-link" role="menuitem">FAQ</a>
-          </li>
-          <li role="none">
-            <a
-              href="releases.html"
-              class="nav-link"
-              role="menuitem"
-              style="color: var(--gradient-start)"
-              >Releases</a
-            >
-          </li>
-          <li role="none">
-            <a href="index.html#contact" class="nav-link" role="menuitem"
-              >Contact</a
-            >
-          </li>
-        </ul>
-        <button
-          class="hamburger"
-          aria-label="Toggle navigation menu"
-          aria-expanded="false"
-          aria-controls="nav-menu"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </button>
-      </nav>
-    </header>
-
-    <main role="main" id="main" class="release-container">
-      <div class="release-header">
-        <h1>CardKeep 1.3.0: Dual Backup System</h1>
-        <p class="release-subtitle">
-          New dual backup system solves cross-device photo restoration. Choose
-          Quick Backup for speed or Complete Backup for guaranteed reliability
-          across any device.
-        </p>
-
-        <div class="release-info">
-          <div class="release-info-item">
-            <div class="release-info-label">Version</div>
-            <div class="release-info-value">1.3.0</div>
-          </div>
-          <div class="release-info-item">
-            <div class="release-info-label">Release Date</div>
-            <div class="release-info-value">August 15, 2025</div>
-          </div>
-          <div class="release-info-item">
-            <div class="release-info-label">Platform</div>
-            <div class="release-info-value">iOS 16.0+</div>
-          </div>
-          <div class="release-info-item">
-            <div class="release-info-label">Compatibility</div>
-            <div class="release-info-value">iPhone & iPad</div>
-          </div>
-        </div>
-      </div>
-
-      <section class="release-section">
-        <h2>Revolutionary Dual Backup System</h2>
-
-        <div class="feature-grid">
-          <div class="feature-item">
-            <h4>Quick Backup</h4>
-            <p>
-              <strong>Fast & Lightweight:</strong> Tiny files with photo
-              references only (~1KB per card). Perfect for regular backups, same
-              device restore, and when you have reliable iCloud Photos sync.
-              Super fast operation maintains the original efficient workflow.
-            </p>
-          </div>
-          <div class="feature-item">
-            <h4>Complete Backup</h4>
-            <p>
-              <strong>100% Restoration:</strong> Larger files that include your
-              actual photos (~600KB per card, so 25 cards = ~20MB, 50 cards =
-              ~60MB). Guaranteed cross-device restoration regardless of Photos
-              app contents or iCloud sync. Perfect for device migrations and
-              long-term archival.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="release-section">
-        <h2>Key Features</h2>
-
-        <h3>Easy Backup Choice</h3>
-        <div class="improvement">
-          <strong>Simple Selection Screen:</strong> When you backup your cards,
-          you'll see a clear choice between Quick and Complete backup. Each
-          option explains exactly what it does, so you can pick what works best
-          for your situation.
-        </div>
-
-        <h3>Finally, Photos That Work Everywhere!</h3>
-        <div class="improvement">
-          <strong>No More Missing Photos:</strong> The biggest frustration with
-          card apps has always been photos disappearing when you get a new
-          phone. Complete Backup solves this forever - your photos restore
-          perfectly every single time.
-        </div>
-
-        <h3>Smart File Organization</h3>
-        <div class="improvement">
-          <strong>Clearly Named Backups:</strong> Your backup files now show
-          whether they're Quick or Complete right in the filename, so you always
-          know what type you're working with. Your old backup files still work
-          perfectly too!
-        </div>
-
-        <h3>Reliable Photo Restoration</h3>
-        <div class="improvement">
-          <strong>It Just Works:</strong> Photos now save more reliably and
-          restore perfectly across all your devices. No more worrying about
-          whether your precious card memories will survive a phone upgrade.
-        </div>
-      </section>
-
-      <section class="release-section">
-        <h2>What's New Summary</h2>
-
-        <ul class="checklist">
-          <li>
-            Choose between Quick Backup (small files) or Complete Backup
-            (includes photos)
-          </li>
-          <li>Easy selection screen that explains each backup type clearly</li>
-          <li>
-            Photos restore properly when moving to new devices! (when using
-            Complete backup
-          </li>
-          <li>
-            Backup files are clearly labeled so you know which type you have
-          </li>
-          <li>Much more reliable photo saving and restoring</li>
-          <li>Your existing backup files still work perfectly</li>
-          <li>Beautiful interface that matches the rest of the app</li>
-          <li>Stress-free phone upgrades with full photo restoration</li>
-        </ul>
-
-        <div
-          class="feature-highlight"
-          style="
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background: linear-gradient(135deg, #fff5f5 0%, #fef7ff 100%);
-            border-radius: 12px;
-            border-left: 4px solid var(--gradient-start);
-          "
-        >
-          <h4 style="margin-top: 0; color: var(--gradient-start)">
-            Finally, bulletproof backup and restore!
-          </h4>
-          <p style="margin-bottom: 0">
-            This enhancement provides 100% photo restoration for device
-            migrations while preserving the efficiency of the original quick
-            backup system for regular use. No more broken photo links when
-            moving to new devices!
-          </p>
-        </div>
-      </section>
-
-      <section class="release-section">
-        <h2>Previous Releases</h2>
-        <div class="feature-item" style="margin-bottom: 2rem">
-          <h4>CardKeep 1.2.0: Edit Cards & Choose Photos (August 12, 2025)</h4>
-          <p>
-            Major update with full card editing, photo library selection,
-            smarter backup system, and performance improvements. Full card
-            editing capabilities, photo library selection, weekly backup
-            reminders, better text display, proper landscape cropping, more
-            vibrant colors, and enhanced performance.
-          </p>
-        </div>
-      </section>
-
-      <div class="download-section">
-        <h3>Download & Update</h3>
-        <p>
-          Version 1.3.0 is available now with automatic updates for existing
-          users
-        </p>
-        <a
-          href="https://apps.apple.com/us/app/cardkeep/id6749583192"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="download-btn-release"
-        >
-          Download on App Store
-        </a>
-        <a href="index.html" class="download-btn-release"> Back to Home </a>
-
-        <div class="download-requirements">
-          <p><strong>Requirements:</strong> iOS 16.0 or later</p>
-          <p><strong>Devices:</strong> iPhone & iPad (optimised for both)</p>
-        </div>
-      </div>
-    </main>
-
-    <footer id="contact" class="footer" role="contentinfo">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <h3>CardKeepApp</h3>
-            <p>
-              Making card collection management simple, beautiful, and
-              absolutely delightful!
-            </p>
-          </div>
-          <div class="footer-links">
-            <div class="footer-column">
-              <h4>Product</h4>
-              <ul>
-                <li><a href="index.html#features">Features</a></li>
-                <li><a href="index.html#download">Download</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="documentation.html">Documentation</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="releases.html">Release Notes</a></li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h4>Support</h4>
-              <ul>
-                <li><a href="mailto:memories@cardkeep.app">Contact Us</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="terms.html">Terms of Service</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h4>Connect</h4>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.instagram.com/cardkeepapp/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Instagram</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://x.com/CardKeepAppApp"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >X (Twitter)</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2024 CardKeepApp. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+@media (max-width: 768px) {
+	.release-container {
+		padding: 6rem 1rem 1rem 1rem;
+	}
+	
+	.release-header h1 {
+		font-size: 2.2rem;
+	}
+	
+	.release-subtitle {
+		font-size: 1.1rem;
+	}
+	
+	.release-info {
+		grid-template-columns: 1fr;
+	}
+	
+	.feature-grid {
+		grid-template-columns: 1fr;
+	}
+	
+	.release-section {
+		padding: 1.5rem;
+	}
+}
+  </style>
+</head>
+<body role="document"><a href="#main" class="skip-link">Skip to main content</a>
+	
+	<header class="header" role="banner">
+		<nav class="nav" role="navigation" aria-label="Main navigation">
+			<div class="nav-brand">
+				<h1 class="logo" aria-label="CardKeepApp - Home"><a href="index.html">CardKeepApp</a></h1>
+			</div>
+			
+			<ul class="nav-menu" id="nav-menu" role="menubar">
+				<li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+				<li role="none"><a href="index.html#features" class="nav-link" role="menuitem"
+		              >Features</a
+		            ></li>
+				<li role="none"><a href="index.html#about" class="nav-link" role="menuitem"
+		              >About</a
+		            ></li>
+				<li role="none"><a href="index.html#download" class="nav-link" role="menuitem"
+		              >Download</a
+		            ></li>
+				<li role="none"><a href="documentation.html" class="nav-link" role="menuitem"
+		              >Documentation</a
+		            ></li>
+				<li role="none"><a href="faq.html" class="nav-link" role="menuitem">FAQ</a></li>
+				<li role="none"><a
+		              href="releases.html"
+		              class="nav-link"
+		              role="menuitem"
+		              style="color: var(--gradient-start)"
+		              >Releases</a
+		            ></li>
+				<li role="none"><a href="index.html#contact" class="nav-link" role="menuitem"
+		              >Contact</a
+		            ></li>
+			</ul>
+			
+			<button
+	          class="hamburger"
+	          aria-label="Toggle navigation menu"
+	          aria-expanded="false"
+	          aria-controls="nav-menu"
+	        ><span aria-hidden="true"></span>
+		          <span aria-hidden="true"></span>
+		          <span aria-hidden="true"></span></button>
+		</nav>
+	</header>
+	
+	<main role="main" id="main" class="release-container">
+		<div class="release-header">
+			<h1>CardKeep 1.3.0: Dual Backup System</h1>
+			
+			<p class="release-subtitle">New dual backup system solves cross-device photo restoration. Choose
+		          Quick Backup for speed or Complete Backup for guaranteed reliability
+		          across any device.</p>
+			
+			<div class="release-info">
+				<div class="release-info-item">
+					<div class="release-info-label">Version</div>
+					
+					<div class="release-info-value">1.3.0</div>
+				</div>
+				
+				<div class="release-info-item">
+					<div class="release-info-label">Release Date</div>
+					
+					<div class="release-info-value">August 15, 2025</div>
+				</div>
+				
+				<div class="release-info-item">
+					<div class="release-info-label">Platform</div>
+					
+					<div class="release-info-value">iOS 16.0+</div>
+				</div>
+				
+				<div class="release-info-item">
+					<div class="release-info-label">Compatibility</div>
+					
+					<div class="release-info-value">iPhone & iPad</div>
+				</div>
+			</div>
+		</div>
+		
+		<section class="release-section">
+			<h2>Revolutionary Dual Backup System</h2>
+			
+			<div class="feature-grid">
+				<div class="feature-item">
+					<h4>Quick Backup</h4>
+					
+					<p><strong>Fast & Lightweight:</strong> Tiny files with photo
+			              references only (~1KB per card). Perfect for regular backups, same
+			              device restore, and when you have reliable iCloud Photos sync.
+			              Super fast operation maintains the original efficient workflow.</p>
+				</div>
+				
+				<div class="feature-item">
+					<h4>Complete Backup</h4>
+					
+					<p><strong>100% Restoration:</strong> Larger files that include your
+			              actual photos (~600KB per card, so 25 cards = ~20MB, 50 cards =
+			              ~60MB). Guaranteed cross-device restoration regardless of Photos
+			              app contents or iCloud sync. Perfect for device migrations and
+			              long-term archival.</p>
+				</div>
+			</div>
+		</section>
+		
+		<section class="release-section">
+			<h2>Key Features</h2>
+			
+			<h3>Easy Backup Choice</h3>
+			
+			<div class="improvement"><strong>Simple Selection Screen:</strong> When you backup your cards,
+		          you'll see a clear choice between Quick and Complete backup. Each
+		          option explains exactly what it does, so you can pick what works best
+		          for your situation.</div>
+			
+			<h3>Finally, Photos That Work Everywhere!</h3>
+			
+			<div class="improvement"><strong>No More Missing Photos:</strong> The biggest frustration with
+		          card apps has always been photos disappearing when you get a new
+		          phone. Complete Backup solves this forever - your photos restore
+		          perfectly every single time.</div>
+			
+			<h3>Smart File Organization</h3>
+			
+			<div class="improvement"><strong>Clearly Named Backups:</strong> Your backup files now show
+		          whether they're Quick or Complete right in the filename, so you always
+		          know what type you're working with. Your old backup files still work
+		          perfectly too!</div>
+			
+			<h3>Reliable Photo Restoration</h3>
+			
+			<div class="improvement"><strong>It Just Works:</strong> Photos now save more reliably and
+		          restore perfectly across all your devices. No more worrying about
+		          whether your precious card memories will survive a phone upgrade.</div>
+		</section>
+		
+		<section class="release-section">
+			<h2>What's New Summary</h2>
+			
+			<ul class="checklist">
+				<li>Choose between Quick Backup (small files) or Complete Backup
+		            (includes photos)</li>
+				<li>Easy selection screen that explains each backup type clearly</li>
+				<li>Photos restore properly when moving to new devices! (when using
+		            Complete backup</li>
+				<li>Backup files are clearly labeled so you know which type you have</li>
+				<li>Much more reliable photo saving and restoring</li>
+				<li>Your existing backup files still work perfectly</li>
+				<li>Beautiful interface that matches the rest of the app</li>
+				<li>Stress-free phone upgrades with full photo restoration</li>
+			</ul>
+			
+			<div
+	          class="feature-highlight"
+	          style="
+	            margin-top: 2rem;
+	            padding: 1.5rem;
+	            background: linear-gradient(135deg, #fff5f5 0%, #fef7ff 100%);
+	            border-radius: 12px;
+	            border-left: 4px solid var(--gradient-start);
+	          "
+	        >
+				<h4 style="margin-top: 0; color: var(--gradient-start)">Finally, bulletproof backup and restore!</h4>
+				
+				<p style="margin-bottom: 0">This enhancement provides 100% photo restoration for device
+		            migrations while preserving the efficiency of the original quick
+		            backup system for regular use. No more broken photo links when
+		            moving to new devices!</p>
+			</div>
+		</section>
+		
+		<section class="release-section">
+			<h2>Previous Releases</h2>
+			
+			<div class="feature-item" style="margin-bottom: 2rem">
+				<h4>CardKeep 1.2.0: Edit Cards & Choose Photos (August 12, 2025)</h4>
+				
+				<p>Major update with full card editing, photo library selection,
+		            smarter backup system, and performance improvements. Full card
+		            editing capabilities, photo library selection, weekly backup
+		            reminders, better text display, proper landscape cropping, more
+		            vibrant colors, and enhanced performance.</p>
+			</div>
+		</section>
+		
+		<div class="download-section">
+			<h3>Download & Update</h3>
+			
+			<p>Version 1.3.0 is available now with automatic updates for existing
+		          users</p>
+	        <a
+	          href="https://apps.apple.com/us/app/cardkeep/id6749583192"
+	          target="_blank"
+	          rel="noopener noreferrer"
+	          class="download-btn-release"
+	        >
+	          Download on App Store
+	        </a>
+	        <a href="index.html" class="download-btn-release"> Back to Home </a>
+			
+			<div class="download-requirements">
+				<p><strong>Requirements:</strong> iOS 16.0 or later</p>
+				
+				<p><strong>Devices:</strong> iPhone & iPad (optimised for both)</p>
+			</div>
+		</div>
+	</main>
+	
+	<footer id="contact" class="footer" role="contentinfo">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-brand">
+					<h3>CardKeepApp</h3>
+					
+					<p>Making card collection management simple, beautiful, and
+			              absolutely delightful!</p>
+				</div>
+				
+				<div class="footer-links">
+					<div class="footer-column">
+						<h4>Product</h4>
+						
+						<ul>
+							<li><a href="index.html#features">Features</a></li>
+							<li><a href="index.html#download">Download</a></li>
+							<li><a href="index.html#about">About</a></li>
+							<li><a href="documentation.html">Documentation</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="releases.html">Release Notes</a></li>
+						</ul>
+					</div>
+					
+					<div class="footer-column">
+						<h4>Support</h4>
+						
+						<ul>
+							<li><a href="mailto:memories@cardkeep.app">Contact Us</a></li>
+							<li><a href="privacy.html">Privacy Policy</a></li>
+							<li><a href="terms.html">Terms of Service</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+						</ul>
+					</div>
+					
+					<div class="footer-column">
+						<h4>Connect</h4>
+						
+						<ul>
+							<li><a
+			                    href="https://www.instagram.com/cardkeepapp/"
+			                    target="_blank"
+			                    rel="noopener noreferrer"
+			                    >Instagram</a
+				                  ></li>
+							<li><a
+			                    href="https://x.com/CardKeepAppApp"
+			                    target="_blank"
+			                    rel="noopener noreferrer"
+			                    >X (Twitter)</a
+				                  ></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer-bottom">
+				<p>&copy; 2024 CardKeepApp. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+	
+	    <script src="script.js"></script>
+</body>
 </html>

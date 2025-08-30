@@ -1,1685 +1,1638 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="CardKeepApp FAQ - Frequently asked questions about using CardKeepApp, data backup, limitations, and features."
-    />
-    <meta
-      name="keywords"
-      content="CardKeepApp FAQ, greeting card app help, frequently asked questions, CardKeepApp support"
-    />
-    <meta name="author" content="CardKeepApp Team" />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#2C1F21" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self';"
-    />
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
-    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
-    <meta
-      http-equiv="Permissions-Policy"
-      content="camera=(), microphone=(), geolocation=(), payment=()"
-    />
-
-    <title>FAQ - CardKeepApp | Frequently Asked Questions</title>
-    <link rel="preload" href="styles.css" as="style" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="canonical" href="https://cardkeep.app/faq.html" />
+<head>
+	<meta charset="UTF-8" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<meta
+    name="description"
+    content="CardKeepApp FAQ - Frequently asked questions about using CardKeepApp, data backup, limitations, and features." />
+	
+	<meta
+    name="keywords"
+    content="CardKeepApp FAQ, greeting card app help, frequently asked questions, CardKeepApp support" />
+	
+	<meta name="author" content="CardKeepApp Team" />
+	
+	<meta name="robots" content="index, follow" />
+	
+	<meta name="theme-color" content="#2C1F21" />
+	
+	<meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self';" />
+	
+	<meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+	
+	<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+	
+	<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+	
+	<meta
+    http-equiv="Permissions-Policy"
+    content="camera=(), microphone=(), geolocation=(), payment=()" />
+	
+	<title>FAQ - CardKeepApp | Frequently Asked Questions</title>
+	
+	<link rel="preload" href="styles.css" as="style" />
+	
+	<link rel="stylesheet" href="styles.css" />
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	
+	<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+	
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+	
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+	
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+	
+	<link rel="manifest" href="site.webmanifest" />
+	
+	<link rel="canonical" href="https://cardkeep.app/faq.html" />
 
     <style>
       .faq-container {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 8rem 2rem 2rem 2rem;
-        line-height: 1.6;
-      }
-
-      .faq-header {
-        text-align: center;
-        margin-bottom: 3rem;
-        padding-bottom: 2rem;
-        border-bottom: 2px solid #2C1F21;
-        background: linear-gradient(135deg, #F5E1E4 0%, #FEF8E9 100%);
-        border-radius: 20px;
-        padding: 2rem;
-        box-shadow: 0 10px 30px rgba(153, 102, 128, 0.15);
-      }
-
-      .faq-header h1 {
-        color: #2C1F21;
-        font-size: 2.5rem;
-        margin: 0 0 1rem 0;
-        font-weight: 700;
-      }
-
-      .faq-header p {
-        color: rgb(107, 82, 102);
-        font-size: 1.2rem;
-        margin: 0;
-      }
-
-      .faq-nav {
-        background: #FFFFFF;
-        border-radius: 12px;
-        padding: 1.5rem;
-        margin-bottom: 2rem;
-        border: 1px solid rgba(153, 102, 128, 0.2);
-        box-shadow: 0 4px 15px rgba(153, 102, 128, 0.15);
-      }
-
-      .faq-nav h3 {
-        margin: 0 0 1rem 0;
-        color: #2C1F21;
-      }
-
-      .faq-nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 0.5rem;
-      }
-
-      .faq-nav a {
-        color: #2C1F21;
-        text-decoration: none;
-        padding: 0.5rem 0;
-        display: block;
-        border-radius: 6px;
-        transition: all 0.3s ease;
-      }
-
-      .faq-nav a:hover {
-        color: #2C1F21;
-        padding-left: 0.5rem;
-        background: rgba(245, 225, 228, 0.4);
-      }
-
-      .faq-section {
-        margin-bottom: 3rem;
-        background: #FFFFFF;
-        border-radius: 16px;
-        padding: 2.5rem;
-        border: 1px solid rgba(153, 102, 128, 0.2);
-        box-shadow: 0 8px 25px rgba(153, 102, 128, 0.15);
-        position: relative;
-        overflow: hidden;
-      }
-
-      .faq-section::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: linear-gradient(
-          90deg,
-          #2C1F21,
-          #3A2835,
-          #2C1F21
-        );
-        border-radius: 16px 16px 0 0;
-      }
-
-      .faq-section h2 {
-        color: #2C1F21;
-        margin-top: 0;
-        margin-bottom: 1.5rem;
-        font-size: 1.8rem;
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-      }
-
-      .faq-item {
-        margin-bottom: 2rem;
-        padding-bottom: 1.5rem;
-        border-bottom: 1px solid rgba(153, 102, 128, 0.15);
-      }
-
-      .faq-item:last-child {
-        margin-bottom: 0;
-        padding-bottom: 0;
-        border-bottom: none;
-      }
-
-      .faq-question {
-        color: #3A2835;
-        font-size: 1.2rem;
-        font-weight: 600;
-        margin-bottom: 0.8rem;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.5rem 0;
-        transition: color 0.3s ease;
-      }
-
-      .faq-question:hover {
-        color: #2C1F21;
-      }
-
-      .faq-question::before {
-        content: "●";
-        font-size: 0.8em;
-        color: #2C1F21;
-        opacity: 0.8;
-      }
-
-      .faq-answer {
-        color: #2C1F21;
-        font-size: 1.1rem;
-        line-height: 1.7;
-        margin-left: 2rem;
-      }
-
-      .faq-answer strong {
-        color: #2C1F21;
-        font-weight: 600;
-      }
-
-      .faq-answer a {
-        color: #2C1F21;
-        text-decoration: none;
-        font-weight: 600;
-        transition: all 0.3s ease;
-      }
-
-      .faq-answer a:hover {
-        color: #3A2835;
-        text-decoration: underline;
-      }
-
-      .warning {
-        background: linear-gradient(135deg, rgba(107, 82, 102, 0.1) 0%, rgba(153, 102, 128, 0.15) 100%);
-        border-left: 4px solid rgba(107, 82, 102, 0.4);
-        border-radius: 8px;
-        padding: 1rem;
-        margin: 1rem 0;
-        font-weight: 500;
-      }
-
-      .warning strong {
-        color: #6B5266;
-      }
-
-      .tip {
-        background: linear-gradient(135deg, rgba(60, 44, 53, 0.1) 0%, rgba(245, 225, 228, 0.2) 100%);
-        border-left: 4px solid rgba(44, 31, 33, 0.4);
-        border-radius: 8px;
-        padding: 1rem;
-        margin: 1rem 0;
-      }
-
-      .tip strong {
-        color: #2C1F21;
-      }
-
-      .back-section {
-        text-align: center;
-        margin-top: 3rem;
-        padding-top: 2rem;
-        border-top: 1px solid rgba(153, 102, 128, 0.2);
-        background: linear-gradient(135deg, #F5E1E4 0%, #FEF8E9 100%);
-        border-radius: 16px;
-        padding: 2rem;
-      }
-
-      .back-section p {
-        margin-bottom: 1.5rem;
-        color: rgb(107, 82, 102);
-      }
-
-      .back-section a[href^="mailto"] {
-        color: #2C1F21;
-        text-decoration: none;
-        font-weight: 600;
-        transition: all 0.3s ease;
-      }
-
-      .back-section a[href^="mailto"]:hover {
-        color: #3A2835;
-        text-decoration: underline;
-      }
-
-      @media (max-width: 768px) {
-        .faq-container {
-          padding: 6rem 1rem 1rem 1rem;
-        }
-
-        .faq-header {
-          padding: 1.5rem;
-        }
-
-        .faq-header h1 {
-          font-size: 2rem;
-        }
-
-        .faq-nav ul {
-          grid-template-columns: 1fr;
-        }
-
-        .faq-section {
-          padding: 1.5rem;
-        }
-
-        .faq-section h2 {
-          font-size: 1.5rem;
-        }
-
-        .faq-question {
-          font-size: 1.1rem;
-        }
-
-        .faq-answer {
-          margin-left: 1rem;
-          font-size: 1rem;
-        }
-      }
-    </style>
-  </head>
-  <body role="document">
-    <a href="#main" class="skip-link">Skip to main content</a>
-
-    <header class="header" role="banner">
-      <nav class="nav" role="navigation" aria-label="Main navigation">
-        <div class="nav-brand">
-          <h1 class="logo" aria-label="CardKeepApp - Home">
-            <a href="index.html">CardKeepApp</a>
-          </h1>
-        </div>
-        <ul class="nav-menu" id="nav-menu" role="menubar">
-          <li role="none">
-            <a href="index.html" class="nav-link" role="menuitem">Home</a>
-          </li>
-          <li role="none">
-            <a href="index.html#features" class="nav-link" role="menuitem"
-              >Features</a
-            >
-          </li>
-          <li role="none">
-            <a href="index.html#about" class="nav-link" role="menuitem"
-              >About</a
-            >
-          </li>
-          <li role="none">
-            <a href="index.html#download" class="nav-link" role="menuitem"
-              >Download</a
-            >
-          </li>
-          <li role="none">
-            <a href="documentation.html" class="nav-link" role="menuitem"
-              >Documentation</a
-            >
-          </li>
-          <li role="none">
-            <a
-              href="faq.html"
-              class="nav-link"
-              role="menuitem"
-              style="color: var(--gradient-start)"
-              >FAQ</a
-            >
-          </li>
-          <li role="none">
-            <a href="releases.html" class="nav-link" role="menuitem"
-              >Releases</a
-            >
-          </li>
-          <li role="none">
-            <a href="index.html#contact" class="nav-link" role="menuitem"
-              >Contact</a
-            >
-          </li>
-        </ul>
-        <button
-          class="hamburger"
-          aria-label="Toggle navigation menu"
-          aria-expanded="false"
-          aria-controls="nav-menu"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </button>
-      </nav>
-    </header>
-
-    <main role="main" id="main" class="faq-container">
-      <div class="faq-header">
-        <h1>Frequently Asked Questions</h1>
-        <p>Quick answers to common questions about CardKeepApp</p>
-      </div>
-
-      <div class="faq-nav">
-        <h3>Jump to Section</h3>
-        <ul>
-          <li><a href="#data-backup">Data & Backup</a></li>
-          <li><a href="#functionality">App Features</a></li>
-          <li><a href="#limitations">Limitations</a></li>
-          <li><a href="#technical">Technical</a></li>
-          <li>
-            <a href="#errors-troubleshooting">Errors & Troubleshooting</a>
-          </li>
-          <li><a href="#cost-purchase">Cost & Purchase</a></li>
-          <li><a href="#usage-tips">Usage Tips</a></li>
-        </ul>
-      </div>
-
-      <section id="data-backup" class="faq-section">
-        <h2>♡ Data & Backup Questions</h2>
-
-        <div class="faq-item">
-          <div class="faq-question">What happens if I delete the app?</div>
-          <div class="faq-answer">
-            <div class="warning">
-              <strong>Note: Important:</strong> If you delete CardKeepApp, all
-              your saved card data will be lost forever! This includes all the
-              information you entered (sender names, occasions, dates, tags,
-              notes).
-              <br />
-              We provide an Export function to allow you to save your precious
-              memory data and this feature allows a full restore.
-            </div>
-            <strong>Your photos are safe!</strong> All the card photos you took
-            are automatically saved to your iPhone's Photos app assigned to an
-            album called "CardKeepApp". These photos will remain on your device
-            even if you delete the app.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">Are my cards backed up anywhere?</div>
-          <div class="faq-answer">
-            Your card data (text information) is
-            <strong>only stored locally</strong> on your device - we don't have
-            any servers or cloud backup. However: <br /><br />
-            <strong>Photos:</strong> If you have iCloud Photos enabled, your
-            card photos automatically sync to iCloud as part of your regular
-            photo backup. <br /><br />
-            <strong>Backup reminders:</strong> The app uses smart reminders
-            (after 7+ days OR 5+ new cards) to suggest exporting your memory
-            data for extra protection
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            Can I transfer my cards to a new phone?
-          </div>
-          <div class="faq-answer">
-            <strong>Yes! The backup system makes this easy:</strong>
-            <br /><br />
-            <strong>Step-by-step transfer:</strong>
-            <ol>
-              <li>
-                <strong>Before switching:</strong> Export a backup from your old
-                phone
-              </li>
-              <li>
-                <strong>Photo transfer:</strong> Ensure iCloud Photos is enabled
-                for automatic photo sync
-              </li>
-              <li>
-                <strong>On new phone:</strong> Download CardKeepApp and import
-                your backup file
-              </li>
-              <li>
-                <strong>Restore complete:</strong> All your cards, photos, and
-                data are back!
-              </li>
-            </ol>
-            <div class="tip">
-              <strong>Tip:</strong> The FULL backup file contains copies of your
-              actual photos allowing full restore on another device
-              <br />
-              The QUICK backup file contains photo references that automatically
-              reconnect to your synced photos.
-            </div>
-            <a href="documentation.html#backup-export"
-              >Read the complete backup guide →</a
-            >
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">How much storage does the app use?</div>
-          <div class="faq-answer">
-            CardKeepApp now uses an ultra-efficient photo reference system:
-            <br /><br />
-            • <strong>App size:</strong> About 10-20MB<br />
-            • <strong>Card data:</strong> Extremely small (just text info +
-            photo references)<br />
-            • <strong>Photos:</strong> Only stored in your Photos app, not in
-            CardKeepApp<br />
-            • <strong>100 cards:</strong> App data only ~2-5MB (previously was
-            50MB+)<br />
-            • <strong>1000+ cards:</strong> Still under 50MB of app data<br />
-            <br />
-            <div class="tip">
-              <strong>Tip:</strong> Massive Storage Savings: The new photo
-              reference architecture means CardKeepApp uses 90%+ less storage
-              than before. Photos live in your Photos app where they belong, and
-              CardKeepApp just remembers where to find them!
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            What happens if I delete photos from my Photos app?
-          </div>
-          <div class="faq-answer">
-            <div class="warning">
-              <strong>Note: Critical:</strong> If you delete photos from the
-              "CardKeepApp" album in your Photos app, those cards will show
-              broken image links in CardKeepApp!
-            </div>
-            Since CardKeepApp now references photos stored in your Photos app
-            rather than keeping copies:
-            <br /><br />
-            • <strong>Deleted photos = broken cards:</strong> The card
-            information remains, but photos won't display<br />
-            • <strong>Re-add:</strong> You can now re-add photos to existing
-            cards from your photo library<br />
-            <br />
-            <div class="tip">
-              <strong>Tip: Protection tip:</strong> Be very careful when
-              managing photos in your Photos app. Consider creating a backup
-              before deleting photos from the CardKeepApp album.
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="backup-system" class="faq-section">
-        <h2>♡ Backup System</h2>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            Will my photos work when I restore to a new device?
-          </div>
-          <div class="faq-answer">
-            <div class="tip">
-              <strong>Great News: Complete Backup Solves This!</strong>
-            </div>
-            CardKeepApp v1.3.0+ offers two backup options with different photo
-            handling:
-            <br /><br />
-            <strong>Complete Backup (Recommended for New Devices):</strong>
-            <ul>
-              <li>
-                <strong>100% photo restoration</strong> - photos restore
-                automatically with card data
-              </li>
-              <li>
-                <strong>No manual work required</strong> - everything works
-                immediately
-              </li>
-              <li>
-                <strong>No dependency on iCloud Photos sync</strong> or photo
-                identifiers
-              </li>
-              <li><strong>Larger file sizes</strong> but guaranteed success</li>
-              <li>
-                <strong>May create duplicate photos</strong> in Photos app, but
-                ensures complete preservation
-              </li>
-            </ul>
-            <br />
-            <strong>Quick Backup (Photo Reference Limitations):</strong>
-            <ul>
-              <li>
-                All card information restores perfectly (sender, occasion,
-                dates, notes, tags)
-              </li>
-              <li>
-                <strong>Photos require manual re-linking</strong> due to Apple's
-                photo identifier changes
-              </li>
-              <li>
-                Use CardKeepApp's edit feature to re-select photos from your
-                iCloud Photos
-              </li>
-              <li>
-                Ultra-lightweight files but requires photo management if moving
-                to a new device
-              </li>
-            </ul>
-            <div class="tip">
-              <strong>Recommendation:</strong> Use Complete Backup when moving
-              to a new device for seamless photo restoration. Use Quick Backup
-              for regular backups on the same device or when you have reliable
-              iCloud Photos sync.
-            </div>
-            <strong>Bottom line:</strong> Complete Backup eliminates the
-            traditional photo restoration complications - choose the backup type
-            that fits your needs!
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">How does the dual backup system work?</div>
-          <div class="faq-answer">
-            CardKeepApp v1.3.0+ includes two backup types to meet different
-            needs:
-            <br /><br />
-            <strong>Quick Backup (Photo References Only):</strong>
-            <ul>
-              <li>
-                <strong>Ultra-lightweight:</strong> Less than 1KB per card
-              </li>
-              <li><strong>Fast:</strong> Quick export and import process</li>
-              <li>
-                <strong>Photo links:</strong> References photos in your Photos
-                app
-              </li>
-              <li>
-                <strong>Best for:</strong> Regular backups, same device restore,
-                reliable iCloud Photos sync
-              </li>
-            </ul>
-            <br />
-            <strong>Complete Backup (Includes Photo Data):</strong>
-            <ul>
-              <li>
-                <strong>Self-contained:</strong> Includes full-resolution photo
-                data
-              </li>
-              <li>
-                <strong>Guaranteed restoration:</strong> Works regardless of
-                Photos app contents
-              </li>
-              <li>
-                <strong>File sizes:</strong> About 400KB per card with typical
-                photos (25 cards = ~10MB, 50 cards = ~30MB, 100 cards = ~50MB)
-              </li>
-              <li>
-                <strong>Best for:</strong> Device migrations, long-term
-                archival, unreliable iCloud sync
-              </li>
-            </ul>
-            <strong>Both Types Include:</strong>
-            <ul>
-              <li>Complete card data (sender, occasion, dates, tags, notes)</li>
-              <li>
-                Easy sharing via email, AirDrop, Files app, or cloud storage
-              </li>
-            </ul>
-            <a href="documentation.html#backup-export"
-              >Read the complete backup guide →</a
-            >
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            Do I need to backup manually or is it automatic?
-          </div>
-          <div class="faq-answer">
-            <strong>Manual backup with smart reminders:</strong>
-            <br /><br />
-            • <strong>Manual Export:</strong> You control when and where to save
-            backup files<br />
-            • <strong>Weekly Reminders:</strong> Shows reminders after 7+ days
-            OR 5+ new cards since last backup<br />
-            • <strong>Intelligent Triggers:</strong> Checks on app launch and
-            after saving new cards<br />
-            • <strong>User Control:</strong> "Remind Later" (7 days) or "Don't
-            Remind" (365 days) options<br />
-            • <strong>Card Count Tracking:</strong> Shows how many cards you
-            have to backup<br />
-            • <strong>Last Backup Date:</strong> Tracks when you last created a
-            backup<br />
-            <br />
-            <div class="tip">
-              <strong>Tip: Recommendation:</strong> Export a backup monthly and
-              after adding many new cards. Store backup files in multiple
-              locations for extra safety!
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            What's the difference between photo backup and card data backup?
-          </div>
-          <div class="faq-answer">
-            CardKeepApp handles two types of data:
-            <br /><br />
-            <strong>Photos (Automatic via iCloud Photos):</strong>
-            <ul>
-              <li>Saved to your Photos app "CardKeepApp" album</li>
-              <li>Automatically backed up if iCloud Photos is enabled</li>
-              <li>Remain safe even if you delete the app</li>
-            </ul>
-            <strong>Card Data (Manual Export):</strong>
-            <ul>
-              <li>Sender names, occasions, dates, tags, personal notes</li>
-              <li>Must be exported manually to backup files</li>
-              <li>Lost if app is deleted without backup</li>
-              <li>Ultra-lightweight files for easy storage and sharing</li>
-            </ul>
-            <div class="tip">
-              <strong>Tip: Best Protection:</strong> Enable iCloud Photos +
-              Export backups regularly = Complete protection on the SAME device
-            </div>
-            <div class="tip">
-              <strong>Tip: Best Protection:</strong> Enable iCloud Photos +
-              Export FULL backups regularly = Complete protection on a NEW
-              device
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              Can I restore my cards if I accidentally delete them?
-            </div>
-            <div class="faq-answer">
-              <strong>Yes, if you have a backup!</strong>
-              <br /><br />
-              <strong>Deletion scenarios:</strong>
-              <ul>
-                <li>
-                  <strong>Individual cards deleted:</strong> Import from most
-                  recent backup to restore them
-                </li>
-                <li>
-                  <strong>App deleted:</strong> Reinstall CardKeepApp and import
-                  your backup file
-                </li>
-                <li>
-                  <strong>New phone:</strong> Install CardKeepApp on new device
-                  and import FULL backup
-                </li>
-              </ul>
-              <strong>What you need for successful restore:</strong>
-              <ul>
-                <li>
-                  <strong>Backup file:</strong> The export file from CardKeepApp (FULL BACKUP FILE)
-                </li>
-                <li>
-                  <strong>Photos available:</strong> Card photos accessible
-                  through iCloud Photos sync or FULL backups file
-                </li>
-              </ul>
-              <strong>Restore Results:</strong>
-              <ul>
-                <li>
-                  <strong>Card data:</strong> Always restores completely
-                  (sender, dates, tags, notes)
-                </li>
-                <li>
-                  <strong>Photo visibility:</strong> Depends on iCloud Photos
-                  sync status
-                </li>
-                <li>
-                  <strong>Best case:</strong> Complete restore with all photos on the same device with
-                  iCloud Photos enabled
-                </li>
-              </ul>
-              <div class="warning">
-                <strong>Note: No backup = No recovery:</strong> Without a backup
-                file, you cannot restore deleted cards. Photos remain safe
-                in your Photos app on your original device, but all card information is lost.
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              I restored my backup and i dont see my photos
-            </div>
-            <div class="faq-answer">
-              <div class="tip">
-                <strong>Tip:</strong> WAIT and then WAIT a bit longer
-              </div>
-              <br /><br />
-              <strong>Import scenarios:</strong>
-              <ul>
-                <li>
-                  <strong>Wait some time:</strong> Due to the way iOS works, sometimes it will not display all the photos on import, Especially if you are importing a large collection, scroll up and down and open a few photos and eventually you should see them</li>
-                <li>
-                  <strong>i see only some of my photos:</strong> Wait a bit longer, the app MUST be open while importing and large collections can take some time
-                </li>
-				<li>
-                  <strong>Testing:</strong> During testing of imports, it was found to take up to 5 minutes to import 500 cards with between 1 and 4 photos each on older iPhones / iPads, it will also depend on the size of the photo being restored</li>
-				<br>
-              <strong>What you need for successful restore:</strong>
-              <ul>
-                <li>
-                  <strong>Backup file:</strong> The export file from CardKeepApp
-                </li>
-                <li>
-                  <strong>Photos available:</strong> Card photos accessible
-                  through iCloud Photos sync on original device or FULL backups file for new ;/ restored device
-                </li>
-              </ul>
-              <strong>Restore Results:</strong>
-              <ul>
-                <li>
-                  <strong>Card data:</strong> Always restores completely
-                  (sender, dates, tags, notes)
-                </li>
-                <li>
-                  <strong>Photo visibility:</strong> Depends on iCloud Photos
-                  sync status or FULL backup file
-                </li>
-              </ul>
-          </div>
-          
-          <div class="faq-item">
-            <div class="faq-question">How often should I create backups?</div>
-            <div class="faq-answer">
-              <strong>Recommended backup schedule:</strong>
-              <br /><br />
-              <strong>Regular Schedule:</strong>
-              <ul>
-                <li>
-                  <strong>Monthly:</strong> Export a backup at the beginning of
-                  each month (Quick Backup)
-                </li>
-                <li>
-                  <strong>After bulk adding:</strong> When you add 10+ cards in
-                  a session (Quick Backup)
-                </li>
-                <li>
-                  <strong>Before major events:</strong> Phone upgrades, iOS
-                  updates, etc. (Full Backup)
-                </li>
-                <li>
-                  <strong>Seasonal cleanup:</strong> When organising or
-                  reviewing your collection (Full Backup)
-                </li>
-              </ul>
-              <strong>Storage Strategy:</strong>
-              <ul>
-                <li>
-                  <strong>Multiple locations:</strong> Save to Files app, email
-                  yourself, cloud storage
-                </li>
-                <li>
-                  <strong>Name with dates:</strong>
-                  "CardKeep_Backup_2024_January.json"
-                </li>
-                <li>
-                  <strong>Keep recent backups:</strong> Store last 3-6 months of
-                  backups
-                </li>
-              </ul>
-              <div class="tip">
-                <strong>Tip: The app helps:</strong> CardKeepApp uses smart
-                reminders (after 7+ days OR 10+ new cards) and shows how many
-                cards you have to backup, making it easy to stay protected!
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              How exactly does photo restore work with the new backup system?
-            </div>
-            <div class="faq-answer">
-              <strong>Two Different Photo Restoration Methods:</strong>
-              <br /><br />
-              CardKeepApp v1.3.0+ uses different approaches depending on your
-              backup type:
-              <br /><br />
-              <strong>Complete Backup - Direct Photo Restoration:</strong>
-              <ul>
-                <li>
-                  <strong>Embedded photos:</strong> Actual photo data is stored
-                  in the backup file
-                </li>
-                <li>
-                  <strong>100% reliable:</strong> Photos restore automatically
-                  with card data but bigger file sizes
-                </li>
-                <li>
-                  <strong>No dependencies:</strong> Works regardless of Photos
-                  app contents or iCloud sync
-                </li>
-                <li>
-                  <strong>Result:</strong> Immediate, complete restoration on
-                  any device
-                </li>
-                <li>
-                  <strong>Note:</strong> May create duplicate photos in Photos
-                  app, but ensures complete preservation
-                </li>
-              </ul>
-              <strong>Quick Backup - Photo Reference Restoration:</strong>
-              <ul>
-                <li>
-                  <strong>Photo references:</strong> Uses iOS Photos library
-                  identifiers
-                </li>
-                <li>
-                  <strong>iCloud dependency:</strong> Requires photos to exist
-                  in Photos app on the same device the backup was taken
-                </li>
-                <li>
-                  <strong>Same device:</strong> Works well for restoring to the
-                  same device
-                </li>
-                <li>
-                  <strong>New device limitation:</strong> Photo links may break
-                  due to Apple's photo ID changes
-                </li>
-                <li>
-                  <strong>Result:</strong> Card data always restores, photos
-                  depend on Photos app availability
-                </li>
-              </ul>
-
-              <div class="tip">
-                <strong>Which should you choose?</strong>
-                <ul>
-                  <li>
-                    <strong>Complete Backup:</strong> Moving to new device,
-                    long-term archival, guaranteed photo restoration
-                  </li>
-                  <li>
-                    <strong>Quick Backup:</strong> Regular backups, same device
-                    restore, minimal file size
-                  </li>
-                </ul>
-              </div>
-
-              <div class="tip">
-                <strong>Best Results:</strong> Use Complete Backup for device
-                migrations and important archival. Use Quick Backup for routine
-                protection when you have reliable iCloud Photos sync.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="functionality" class="faq-section">
-        <h2>♡ App Features & Functionality</h2>
-
-        <div class="faq-item">
-          <div class="faq-question">Can I edit cards after saving them?</div>
-          <div class="faq-answer">
-            <div class="tip">
-              <strong>Yes! CardKeepApp has full card editing.</strong>
-              You can edit any saved card including sender, occasion, dates,
-              tags, notes, and even replace photos.
-            </div>
-            <strong>How to edit cards:</strong>
-            <ol>
-              <li>Open any saved card from your collection</li>
-              <li>Tap the "Pencil" button in the card detail view</li>
-              <li>Make your changes to any field</li>
-              <li>Tap "Save" to keep your updates</li>
-            </ol>
-            No more deleting and recreating cards for simple changes!
-            <br /><br />
-            <a href="documentation.html#card-editing"
-              >Learn more about card editing →</a
-            >
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            Can I use photos from my photo library?
-          </div>
-          <div class="faq-answer">
-            <div class="tip">
-              <strong
-                >Yes! CardKeepApp lets you choose photos from your
-                library.</strong
-              >
-            </div>
-            <strong>Photo options:</strong>
-            <ul>
-              <li>
-                <strong>Take Photo:</strong> Use your camera to capture new
-                photos with portrait or landscape framing and cropping options
-              </li>
-              <li>
-                <strong>Choose from Library:</strong> Select existing photos
-                from your photo library - photos are used as-is without cropping
-              </li>
-              <li>
-                <strong>Smart Management:</strong> The app intelligently
-                prevents photo duplicates
-              </li>
-            </ul>
-            <div class="limitation">
-              <strong>Note: Library Photo Cropping:</strong> When selecting
-              photos from your library, cropping is not available. For best
-              results, use the Photos app to crop images to your desired format
-              before selecting them in CardKeepApp.
-            </div>
-            This is perfect for adding older greeting cards to your collection
-            using photos you've already taken!
-            <br /><br />
-            <a href="documentation.html#photo-library"
-              >Learn more about photo options →</a
-            >
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            Can I crop photos from my library after selecting them?
-          </div>
-          <div class="faq-answer">
-            <strong>No, cropping is not available for library photos.</strong>
-            <br /><br />
-            When you select existing photos from your photo library, they are
-            imported in their current format without cropping options. Here's
-            what you need to know:
-            <br /><br />
-            <strong>For library photos:</strong>
-            <ul>
-              <li>Photos are used exactly as they appear in your library</li>
-              <li>
-                No cropping or editing options are available within CardKeepApp
-              </li>
-              <li>
-                <strong>Tip:</strong> Use the Photos app to crop images to your
-                desired format before selecting them
-              </li>
-            </ul>
-            <strong>For camera photos:</strong>
-            <ul>
-              <li>Full cropping and framing options are available</li>
-              <li>Choose portrait or landscape orientation</li>
-              <li>
-                Adjust the crop area to focus on the important parts of your
-                card
-              </li>
-            </ul>
-            <div class="tip">
-              <strong>Best practice:</strong> If you need to crop an existing
-              photo, edit it in the Photos app first, then select the cropped
-              version in CardKeepApp for the best results.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">How many photos can I add per card?</div>
-          <div class="faq-answer">
-            You can add up to <strong>5 photos per card</strong> with our
-            improved photo type selection: <br /><br />
-            • <strong>Front:</strong> The outside cover design<br />
-            • <strong>Inside:</strong> The heartfelt message inside<br />
-            • <strong>Back:</strong> Any special notes or signatures<br />
-            • <strong>Extra 1:</strong> Additional details or close-ups<br />
-            • <strong>Extra 2:</strong> More special details<br />
-            <br />
-            <div class="tip">
-              <strong>Update: Recent Improvement:</strong> We've enhanced the
-              photo type selection interface to make it clearer and more
-              intuitive when choosing which part of your card you're
-              photographing!
-            </div>
-            This lets you capture every detail of your greeting cards with
-            proper organisation!
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">Does the app work without internet?</div>
-          <div class="faq-answer">
-            <strong>Yes, completely!</strong> CardKeepApp works 100% offline.
-            You don't need internet to: <br /><br />
-            • Add new cards<br />
-            • View your collection<br />
-            • Search through cards<br />
-            • Take photos<br />
-            <br />
-            Everything is stored locally on your device.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">Can I delete multiple cards at once?</div>
-          <div class="faq-answer">
-            <strong>No, you can only delete cards one at a time.</strong> This
-            is an intentional design decision for safety! <br /><br />
-            <strong>Why we designed it this way:</strong>
-            <ul>
-              <li>
-                <strong>Prevent accidents:</strong> Multiple deletion could
-                accidentally remove precious memories
-              </li>
-              <li>
-                <strong>Encourage reflection:</strong> Each card deserves
-                individual consideration before deletion
-              </li>
-              <li>
-                <strong>Safety first:</strong> We want to prevent irreversible
-                bulk mistakes
-              </li>
-              <li>
-                <strong>Backup reminder:</strong> Gives you time to create a
-                backup if you're doing major cleanup
-              </li>
-            </ul>
-            <div class="tip">
-              <strong>Tip: Pro tip:</strong> If you need to delete many cards,
-              export a backup first! Then you can always restore if you
-              accidentally delete something important.
-            </div>
-            We know it's slower, but we'd rather protect your precious memories
-            than prioritise speed! ♡
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            Why does the backup export say "Move" instead of "Save"?
-          </div>
-          <div class="faq-answer">
-            <strong
-              >This is an Apple iOS limitation, not a CardKeepApp
-              choice!</strong
-            >
-            <br /><br />
-            <strong>Technical explanation:</strong>
-            <ul>
-              <li>
-                <strong>iOS behaviour:</strong> When using Apple's document
-                export system, iOS shows "Move" instead of "Save"
-              </li>
-              <li>
-                <strong>File handling:</strong> The system is technically moving
-                the file from the app's temporary directory to your chosen
-                location
-              </li>
-              <li>
-                <strong>Standard practice:</strong> You'll see this "Move"
-                behaviour in many other iOS apps that export documents
-              </li>
-              <li>
-                <strong>More accurate:</strong> "Move" is actually more
-                technically correct than "Save" in this context
-              </li>
-            </ul>
-            <strong>Your backup file:</strong>
-            <ul>
-              <li>
-                Gets safely moved to your chosen location (Files app, cloud
-                storage, etc.)
-              </li>
-              <li>Remains accessible for future imports</li>
-              <li>Works exactly the same as if it said "Save"</li>
-            </ul>
-            <div class="tip">
-              <strong>Tip: Don't worry:</strong> The "Move" button works
-              perfectly for creating backups! It's just Apple's terminology for
-              document export across the entire iOS system.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            Can I share my cards with family/friends?
-          </div>
-          <div class="faq-answer">
-            Yes! You can share your card information and photos, but it shares
-            the basic data (not the exact app display format). The share feature
-            includes:
-            <br /><br />
-            • Card photos<br />
-            • Sender information<br />
-            • Occasion and dates<br />
-            • Your personal notes<br />
-            <br />
-            Recipients will get this as a standard message (Shared via Email,
-            iMessage etc) with photos, not as a CardKeepApp card.
-          </div>
-        </div>
-      </section>
-
-      <section id="limitations" class="faq-section">
-        <h2>♡ Important Limitations</h2>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            What are the biggest limitations I should know about?
-          </div>
-          <div class="faq-answer">
-            Here are the key limitations to be aware of:
-            <br /><br />
-            <div class="warning">
-              <strong>Note: iOS only:</strong> Currently iPhone and iPad only,
-              no Android version<br />
-              <strong>Portrait only:</strong> iPhone won't rotate to landscape
-              mode (iPad supports both)<br />
-              <strong>No automatic cloud sync:</strong> Cards don't sync
-              automatically, but backup/restore available<br />
-              <strong>Data loss risk:</strong> Deleting the app without backup
-              loses card data (photos remain safe on original device)
-            </div>
-            <a href="documentation.html#limitations"
-              >Read full limitations guide →</a
-            >
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            Why can't I rotate the app to landscape mode on iPhone?
-          </div>
-          <div class="faq-answer">
-            On <strong>iPhone</strong>, CardKeepApp is designed exclusively for
-            <strong>portrait mode</strong>. The interface is optimised for
-            iPhone's portrait orientation to provide the best experience for
-            viewing and managing greeting cards. <br /><br />
-            <strong>iPad users:</strong> The app supports both portrait and
-            landscape orientations on iPad for a more flexible experience on the
-            larger screen. <br /><br />
-            The card layouts and photo viewing work best in portrait mode, which
-            is why iPhone is locked to this orientation.
-          </div>
-        </div>
-      </section>
-
-      <section id="technical" class="faq-section">
-        <h2>♡ Technical Questions</h2>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            Why is CardKeepApp only available for iPhone / iPad?
-          </div>
-          <div class="faq-answer">
-            Currently, CardKeepApp is built specifically for iOS to provide the
-            best possible experience on Apple devices. We chose to focus on one
-            platform first to perfect the user experience.
-            <br /><br />
-            <strong>Android version:</strong> It's planned for the future, but
-            we don't have a specific timeline yet.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">Does it work on iPad?</div>
-          <div class="faq-answer">
-            <strong>Yes!</strong> CardKeepApp is fully compatible with iPad and
-            supports both portrait and landscape orientations on the larger
-            screen. <br /><br />
-            <strong>iPad advantages:</strong>
-            <ul>
-              <li>Larger screen for better photo viewing</li>
-              <li>Portrait and landscape orientation support</li>
-              <li>Same full feature set as iPhone version</li>
-            </ul>
-            The app works great on both iPhone and iPad, giving you flexibility
-            to use whichever device you prefer!
-            <br /><br />
-            <div class="tip">
-              <strong>Update: Recent iPad Improvement:</strong> We fixed the
-              export backup issue that was causing blank screens on iPad. iPad
-              backup export now works seamlessly!
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">What iOS version do I need?</div>
-          <div class="faq-answer">
-            CardKeepApp requires <strong>iOS 16.0 or later</strong> for the best
-            performance and access to all features. <br /><br />
-            <strong>Why iOS 16.0+:</strong>
-            <ul>
-              <li>
-                <strong>Modern photo handling:</strong> Latest identifier system
-                for better photo references
-              </li>
-              <li>
-                <strong>Enhanced performance:</strong> Optimised for current iOS
-                capabilities
-              </li>
-              <li>
-                <strong>Security:</strong> Latest privacy and security
-                frameworks
-              </li>
-              <li>
-                <strong>Reliability:</strong> Access to most stable iOS APIs
-              </li>
-            </ul>
-            <div class="tip">
-              <strong>Tip: Check your version:</strong> Go to Settings > General
-              > About > iOS Version. Most devices from iPhone 8 and newer
-              support iOS 16.0+.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">What permissions does the app need?</div>
-          <div class="faq-answer">
-            CardKeepApp only requests essential permissions:
-            <br /><br />
-            • <strong>Camera:</strong> To photograph your greeting cards<br />
-            • <strong>Photo Library:</strong> To save card photos to your
-            device<br />
-            <br />
-            That's it! No location, contacts, or other unnecessary permissions.
-            <br /><br />
-            <a href="privacy.html">Read our privacy policy →</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="errors-troubleshooting" class="faq-section">
-        <h2>♡ Errors & Troubleshooting</h2>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            The app says "Camera access denied" or won't let me take photos
-          </div>
-          <div class="faq-answer">
-            CardKeepApp needs camera permission to photograph your greeting
-            cards. To fix this:
-            <br /><br />
-            1. Go to <strong>Settings > Privacy & Security > Camera</strong
-            ><br />
-            2. Find <strong>CardKeepApp</strong> in the list<br />
-            3. Toggle it <strong>ON</strong><br />
-            4. Return to CardKeepApp and try taking photos again<br />
-            <br />
-            <div class="tip">
-              <strong>Tip: Note:</strong> You might need to completely close and
-              reopen CardKeepApp after changing permissions.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            I get "Photos access denied" or can't save cards
-          </div>
-          <div class="faq-answer">
-            CardKeepApp needs Photos access to save your card images. To enable
-            this:
-            <br /><br />
-            1. Go to <strong>Settings > Privacy & Security > Photos</strong
-            ><br />
-            2. Find <strong>CardKeepApp</strong> in the list<br />
-            3. Select <strong>"All Photos"</strong><br />
-            4. Return to CardKeepApp and try saving again<br />
-            <br />
-            <strong>Note:</strong> CardKeepApp requires "All Photos" access
-            because it needs to read the photos it saves to display them in your
-            card collection. Since photos are now referenced from your Photos
-            app rather than stored as copies, the app must be able to access
-            them to show your cards.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            My card photos show up as blank or broken images
-          </div>
-          <div class="faq-answer">
-            This usually happens when:
-            <br /><br />
-            • <strong>Photos were deleted:</strong> Someone deleted photos from
-            the "CardKeepApp" album in your Photos app<br />
-            • <strong>Storage full:</strong> Your device ran out of storage
-            while saving<br />
-            <br />
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            The app crashes when I try to take photos
-          </div>
-          <div class="faq-answer">
-            Try these troubleshooting steps:
-            <br /><br />
-            1. <strong>Close and reopen</strong> CardKeepApp completely<br />
-            2. <strong>Check permissions:</strong> Ensure Camera and Photos
-            access are enabled<br />
-            3. <strong>Check storage:</strong> Make sure you have at least 100MB
-            free space<br />
-            4. <strong>Restart your iPhone</strong> if the problem persists<br />
-            5. <strong>Update the app</strong> if there's a new version
-            available<br />
-            <br />
-            If crashes continue, please contact us at
-            <a href="mailto:memories@cardkeep.app">memories@cardkeep.app</a>
-            with your iPhone model and iOS version.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            I can't find the "CardKeepApp" album in my Photos
-          </div>
-          <div class="faq-answer">
-            The CardKeepApp album should appear automatically when you save your
-            first card. If it's missing:
-            <br /><br />
-            • <strong>Check Albums tab:</strong> Open Photos app > Albums tab >
-            scroll down to find "CardKeepApp"<br />
-            • <strong>Search for it:</strong> Use the search function in Photos
-            app<br />
-            • <strong>Save a test card:</strong> Try saving one card to trigger
-            album creation<br />
-            • <strong>Check permissions:</strong> Ensure CardKeepApp has Photos
-            access<br />
-            <br />
-            <div class="tip">
-              <strong>Tip:</strong> Albums are automatically created by iOS when
-              apps save photos. It might take a moment to appear after saving
-              your first card.
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="cost-purchase" class="faq-section">
-        <h2>♡ Cost & Purchase</h2>
-
-        <div class="faq-item">
-          <div class="faq-question">What if I want a refund?</div>
-          <div class="faq-answer">
-            Refunds are handled by Apple through the App Store. You can:
-            <br /><br />
-            1. Go to <strong>Settings > [Your Name] > Media & Purchases</strong
-            ><br />
-            2. Tap <strong>View Account</strong><br />
-            3. Find your purchase and request a refund<br />
-            <br />
-            Or visit
-            <a
-              href="https://reportaproblem.apple.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Apple's Report a Problem</a
-            >
-            website. <br /><br />
-            Apple typically offers refunds within a reasonable timeframe if
-            you're not satisfied.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">Do you offer family sharing?</div>
-          <div class="faq-answer">
-            Yes! CardKeepApp supports Apple's Family Sharing. One purchase can
-            be shared with your Apple iCloud family members.
-            <br /><br />
-            However, remember that each person's cards are stored locally on
-            their own device - family members won't see each other's card
-            collections unless a restore is done from a FULL backup file, Photos
-            DO NOT sync across devices.
-          </div>
-        </div>
-      </section>
-
-      <section id="usage-tips" class="faq-section">
-        <h2>♡ Usage Tips & Best Practices</h2>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            How should I organise my cards for easy searching?
-          </div>
-          <div class="faq-answer">
-            Here are some organisation strategies:
-            <br /><br />
-            <strong>Consistent naming:</strong> Always use the same format
-            (e.g., "Mum" not sometimes "Mother")<br />
-            <strong>Smart tags:</strong> Use tags like "Family", "Work",
-            "Special", "2024"<br />
-            <strong>Specific occasions:</strong> Be specific - "Birthday" vs
-            "Birthday-40th"<br />
-            <strong>Date accuracy:</strong> Enter when you received it, not when
-            it was given<br />
-            <br />
-            <a href="documentation.html#tags-organisation"
-              >Read our organisation guide →</a
-            >
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            What's the best way to photograph my cards?
-          </div>
-          <div class="faq-answer">
-            <div class="tip">
-              <strong>Photography tips:</strong><br /><br />
-              • Use good lighting (natural light works best)<br />
-              • Choose portrait or landscape orientation to match your card
-              format<br />
-              • Frame the card to fill most of the screen<br />
-              • Keep your hands steady<br />
-              • Make sure text is readable and in focus<br />
-              • Take photos of front, inside, and back<br />
-              • Capture any special details separately
-            </div>
-            <br /><br />
-            <a href="documentation.html#tips-tricks">More photography tips →</a>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">Can I search through old cards easily?</div>
-          <div class="faq-answer">
-            <strong>Absolutely!</strong> CardKeepApp has powerful search
-            features: <br /><br />
-            • Search by sender name<br />
-            • Search by occasion<br />
-            • Search by date or year<br />
-            • Search by custom tags<br />
-            • Combine multiple search terms<br />
-            <br />
-            The search is smart too - typing "birth" will find "Birthday" cards!
-            <br /><br />
-            <a href="documentation.html#search-features"
-              >Learn advanced search tips →</a
-            >
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            Should I enable iCloud Photos for backup?
-          </div>
-          <div class="faq-answer">
-            <div class="tip">
-              <strong>Tip: Essential for complete protection!</strong> Enable
-              iCloud Photos to automatically backup your card photos. Combined
-              with regular exports, this gives you complete protection for all
-              your memories.
-            </div>
-            <strong>Setup steps:</strong>
-            <ol>
-              <li>
-                Go to <strong>Settings > [Your Name] > iCloud > Photos</strong>
-              </li>
-              <li>Turn on "iCloud Photos"</li>
-              <li>Wait for photos to sync to iCloud</li>
-              <li>Export a backup from CardKeepApp monthly</li>
-            </ol>
-            <strong>Why both are important:</strong>
-            <ul>
-              <li>
-                <strong>iCloud Photos:</strong> Protects your actual card images
-              </li>
-              <li>
-                <strong>Export Backups:</strong> Protects all your card data
-                (sender info, tags, notes)
-              </li>
-              <li>
-                <strong>Together:</strong> Complete restoration ability on any
-                device!
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            What's the best backup strategy for complete protection?
-          </div>
-          <div class="faq-answer">
-            <div class="tip">
-              <strong>Protection: Complete Protection Strategy:</strong>
-            </div>
-            <strong>Photo Protection (Automatic):</strong>
-            <ul>
-              <li>Enable iCloud Photos in Settings</li>
-              <li>Let photos sync automatically to the cloud</li>
-              <li>Keep regular iPhone backups</li>
-            </ul>
-            <strong>Data Protection (Manual):</strong>
-            <ul>
-              <li>
-                <strong>Regular backups:</strong> Backup monthly
-                from CardKeepApp for routine protection
-              </li>
-              <li>
-                <strong>Device migration backups:</strong> Full Backup before major device changes
-              </li>
-              <li>
-                Email backup files to yourself or save to Files app/cloud
-                storage
-              </li>
-              <li>Files are automatically named with backup type and date</li>
-            </ul>
-            <strong>Transfer Process:</strong>
-            <ul>
-              <li>
-                <strong>Before phone upgrades:</strong> Export Full Backup
-                (ensures 100% photo restoration)
-              </li>
-              <li>
-                <strong>On new device:</strong> Install CardKeepApp, import
-                Full Backup - photos restore automatically
-              </li>
-              <li>
-                <strong>Result:</strong> Complete collection restored with all
-                photos and data instantly!
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <div class="back-section">
-        <p>
-          Still have questions? Contact us at
-          <a href="mailto:memories@cardkeep.app">memories@cardkeep.app</a>
-        </p>
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 8rem 2rem 2rem 2rem;
+	line-height: 1.6;
+}
+
+.faq-header {
+	text-align: center;
+	margin-bottom: 3rem;
+	padding-bottom: 2rem;
+	border-bottom: 2px solid #2C1F21;
+	background: linear-gradient(135deg, #F5E1E4 0%, #FEF8E9 100%);
+	border-radius: 20px;
+	padding: 2rem;
+	box-shadow: 0 10px 30px rgba(153, 102, 128, 0.15);
+}
+
+.faq-header h1 {
+	color: #2C1F21;
+	font-size: 2.5rem;
+	margin: 0 0 1rem 0;
+	font-weight: 700;
+}
+
+.faq-header p {
+	color: rgb(107, 82, 102);
+	font-size: 1.2rem;
+	margin: 0;
+}
+
+.faq-nav {
+	background: #FFFFFF;
+	border-radius: 12px;
+	padding: 1.5rem;
+	margin-bottom: 2rem;
+	border: 1px solid rgba(153, 102, 128, 0.2);
+	box-shadow: 0 4px 15px rgba(153, 102, 128, 0.15);
+}
+
+.faq-nav h3 {
+	margin: 0 0 1rem 0;
+	color: #2C1F21;
+}
+
+.faq-nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 0.5rem;
+}
+
+.faq-nav a {
+	color: #2C1F21;
+	text-decoration: none;
+	padding: 0.5rem 0;
+	display: block;
+	border-radius: 6px;
+	transition: all 0.3s ease;
+}
+
+.faq-nav a:hover {
+	color: #2C1F21;
+	padding-left: 0.5rem;
+	background: rgba(245, 225, 228, 0.4);
+}
+
+.faq-section {
+	margin-bottom: 3rem;
+	background: #FFFFFF;
+	border-radius: 16px;
+	padding: 2.5rem;
+	border: 1px solid rgba(153, 102, 128, 0.2);
+	box-shadow: 0 8px 25px rgba(153, 102, 128, 0.15);
+	position: relative;
+	overflow: hidden;
+}
+
+.faq-section::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: linear-gradient(
+    90deg,
+    #2C1F21,
+    #3A2835,
+    #2C1F21
+  );
+	border-radius: 16px 16px 0 0;
+}
+
+.faq-section h2 {
+	color: #2C1F21;
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+	font-size: 1.8rem;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.faq-item {
+	margin-bottom: 2rem;
+	padding-bottom: 1.5rem;
+	border-bottom: 1px solid rgba(153, 102, 128, 0.15);
+}
+
+.faq-item:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+.faq-question {
+	color: #3A2835;
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-bottom: 0.8rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.5rem 0;
+	transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+	color: #2C1F21;
+}
+
+.faq-question::before {
+	content: "●";
+	font-size: 0.8em;
+	color: #2C1F21;
+	opacity: 0.8;
+}
+
+.faq-answer {
+	color: #2C1F21;
+	font-size: 1.1rem;
+	line-height: 1.7;
+	margin-left: 2rem;
+}
+
+.faq-answer strong {
+	color: #2C1F21;
+	font-weight: 600;
+}
+
+.faq-answer a {
+	color: #2C1F21;
+	text-decoration: none;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.faq-answer a:hover {
+	color: #3A2835;
+	text-decoration: underline;
+}
+
+.warning {
+	background: linear-gradient(135deg, rgba(107, 82, 102, 0.1) 0%, rgba(153, 102, 128, 0.15) 100%);
+	border-left: 4px solid rgba(107, 82, 102, 0.4);
+	border-radius: 8px;
+	padding: 1rem;
+	margin: 1rem 0;
+	font-weight: 500;
+}
+
+.warning strong {
+	color: #6B5266;
+}
+
+.tip {
+	background: linear-gradient(135deg, rgba(60, 44, 53, 0.1) 0%, rgba(245, 225, 228, 0.2) 100%);
+	border-left: 4px solid rgba(44, 31, 33, 0.4);
+	border-radius: 8px;
+	padding: 1rem;
+	margin: 1rem 0;
+}
+
+.tip strong {
+	color: #2C1F21;
+}
+
+.back-section {
+	text-align: center;
+	margin-top: 3rem;
+	padding-top: 2rem;
+	border-top: 1px solid rgba(153, 102, 128, 0.2);
+	background: linear-gradient(135deg, #F5E1E4 0%, #FEF8E9 100%);
+	border-radius: 16px;
+	padding: 2rem;
+}
+
+.back-section p {
+	margin-bottom: 1.5rem;
+	color: rgb(107, 82, 102);
+}
+
+.back-section a[href^="mailto"] {
+	color: #2C1F21;
+	text-decoration: none;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.back-section a[href^="mailto"]:hover {
+	color: #3A2835;
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+	.faq-container {
+		padding: 6rem 1rem 1rem 1rem;
+	}
+	
+	.faq-header {
+		padding: 1.5rem;
+	}
+	
+	.faq-header h1 {
+		font-size: 2rem;
+	}
+	
+	.faq-nav ul {
+		grid-template-columns: 1fr;
+	}
+	
+	.faq-section {
+		padding: 1.5rem;
+	}
+	
+	.faq-section h2 {
+		font-size: 1.5rem;
+	}
+	
+	.faq-question {
+		font-size: 1.1rem;
+	}
+	
+	.faq-answer {
+		margin-left: 1rem;
+		font-size: 1rem;
+	}
+}
+  </style>
+</head>
+<body role="document"><a href="#main" class="skip-link">Skip to main content</a>
+	
+	<header class="header" role="banner">
+		<nav class="nav" role="navigation" aria-label="Main navigation">
+			<div class="nav-brand">
+				<h1 class="logo" aria-label="CardKeepApp - Home"><a href="index.html">CardKeepApp</a></h1>
+			</div>
+			
+			<ul class="nav-menu" id="nav-menu" role="menubar">
+				<li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+				<li role="none"><a href="index.html#features" class="nav-link" role="menuitem"
+		              >Features</a
+		            ></li>
+				<li role="none"><a href="index.html#about" class="nav-link" role="menuitem"
+		              >About</a
+		            ></li>
+				<li role="none"><a href="index.html#download" class="nav-link" role="menuitem"
+		              >Download</a
+		            ></li>
+				<li role="none"><a href="documentation.html" class="nav-link" role="menuitem"
+		              >Documentation</a
+		            ></li>
+				<li role="none"><a
+		              href="faq.html"
+		              class="nav-link"
+		              role="menuitem"
+		              style="color: var(--gradient-start)"
+		              >FAQ</a
+		            ></li>
+				<li role="none"><a href="releases.html" class="nav-link" role="menuitem"
+		              >Releases</a
+		            ></li>
+				<li role="none"><a href="index.html#contact" class="nav-link" role="menuitem"
+		              >Contact</a
+		            ></li>
+			</ul>
+			
+			<button
+	          class="hamburger"
+	          aria-label="Toggle navigation menu"
+	          aria-expanded="false"
+	          aria-controls="nav-menu"
+	        ><span aria-hidden="true"></span>
+		          <span aria-hidden="true"></span>
+		          <span aria-hidden="true"></span></button>
+		</nav>
+	</header>
+	
+	<main role="main" id="main" class="faq-container">
+		<div class="faq-header">
+			<h1>Frequently Asked Questions</h1>
+			
+			<p>Quick answers to common questions about CardKeepApp</p>
+		</div>
+		
+		<div class="faq-nav">
+			<h3>Jump to Section</h3>
+			
+			<ul>
+				<li><a href="#data-backup">Data & Backup</a></li>
+				<li><a href="#functionality">App Features</a></li>
+				<li><a href="#limitations">Limitations</a></li>
+				<li><a href="#technical">Technical</a></li>
+				<li><a href="#errors-troubleshooting">Errors & Troubleshooting</a></li>
+				<li><a href="#cost-purchase">Cost & Purchase</a></li>
+				<li><a href="#usage-tips">Usage Tips</a></li>
+			</ul>
+		</div>
+		
+		<section id="data-backup" class="faq-section">
+			<h2>♡ Data & Backup Questions</h2>
+			
+			<div class="faq-item">
+				<div class="faq-question">What happens if I delete the app?</div>
+				
+				<div class="faq-answer">
+					<div class="warning"><strong>Note: Important:</strong> If you delete CardKeepApp, all
+			              your saved card data will be lost forever! This includes all the
+			              information you entered (sender names, occasions, dates, tags,
+			              notes).
+						
+						<br />We provide an Export function to allow you to save your precious
+			              memory data and this feature allows a full restore.
+					</div>
+		            <strong>Your photos are safe!</strong> All the card photos you took
+		            are automatically saved to your iPhone's Photos app assigned to an
+		            album called "CardKeepApp". These photos will remain on your device
+		            even if you delete the app.</div>
+			</div>
+			
+			<div class="faq-item">
+				<div class="faq-question">Are my cards backed up anywhere?</div>
+				
+				<div class="faq-answer">Your card data (text information) is
+		            <strong>only stored locally</strong> on your device - we don't have
+		            any servers or cloud backup. However:
+					
+					<br />
+					
+					<br /><strong>Photos:</strong> If you have iCloud Photos enabled, your
+		            card photos automatically sync to iCloud as part of your regular
+		            photo backup.
+					
+					<br />
+					
+					<br /><strong>Backup reminders:</strong> The app uses smart reminders
+		            (after 7+ days OR 5+ new cards) to suggest exporting your memory
+		            data for extra protection</div>
+			</div>
+			
+			<div class="faq-item">
+				<div class="faq-question">Can I transfer my cards to a new phone?</div>
+				
+				<div class="faq-answer"><strong>Yes! The backup system makes this easy:</strong>
+					
+					<br />
+					
+					<br /><strong>Step-by-step transfer:</strong>
+					
+					<ol>
+						<li><strong>Before switching:</strong> Export a backup from your old
+			                phone</li>
+						<li><strong>Photo transfer:</strong> Ensure iCloud Photos is enabled
+			                for automatic photo sync</li>
+						<li><strong>On new phone:</strong> Download CardKeepApp and import
+			                your backup file</li>
+						<li><strong>Restore complete:</strong> All your cards, photos, and
+			                data are back!</li>
+					</ol>
+					
+					<div class="tip"><strong>Tip:</strong> The FULL backup file contains copies of your
+			              actual photos allowing full restore on another device
+						
+						<br />The QUICK backup file contains photo references that automatically
+			              reconnect to your synced photos.
+					</div>
+		            <a href="documentation.html#backup-export"
+		              >Read the complete backup guide →</a
+		            ></div>
+			</div>
+			
+			<div class="faq-item">
+				<div class="faq-question">How much storage does the app use?</div>
+				
+				<div class="faq-answer">CardKeepApp now uses an ultra-efficient photo reference system:
+					<br />
+					
+					<br />• <strong>App size:</strong> About 10-20MB
+					
+					<br />• <strong>Card data:</strong> Extremely small (just text info +
+		            photo references)
+					
+					<br />• <strong>Photos:</strong> Only stored in your Photos app, not in
+		            CardKeepApp
+					
+					<br />• <strong>100 cards:</strong> App data only ~2-5MB (previously was
+		            50MB+)
+					
+					<br />• <strong>1000+ cards:</strong> Still under 50MB of app data
+					
+					<br />
+					
+					<br />
+					
+					<div class="tip"><strong>Tip:</strong> Massive Storage Savings: The new photo
+			              reference architecture means CardKeepApp uses 90%+ less storage
+			              than before. Photos live in your Photos app where they belong, and
+			              CardKeepApp just remembers where to find them!</div>
+				</div>
+			</div>
+			
+			<div class="faq-item">
+				<div class="faq-question">What happens if I delete photos from my Photos app?</div>
+				
+				<div class="faq-answer">
+					<div class="warning"><strong>Note: Critical:</strong> If you delete photos from the
+			              "CardKeepApp" album in your Photos app, those cards will show
+			              broken image links in CardKeepApp!</div>
+		            Since CardKeepApp now references photos stored in your Photos app
+		            rather than keeping copies:
+					
+					<br />
+					
+					<br />• <strong>Deleted photos = broken cards:</strong> The card
+		            information remains, but photos won't display
+					
+					<br />• <strong>Re-add:</strong> You can now re-add photos to existing
+		            cards from your photo library
+					
+					<br />
+					
+					<br />
+					
+					<div class="tip"><strong>Tip: Protection tip:</strong> Be very careful when
+			              managing photos in your Photos app. Consider creating a backup
+			              before deleting photos from the CardKeepApp album.</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="backup-system" class="faq-section">
+			<h2>♡ Backup System</h2>
+			
+			<div class="faq-item">
+				<div class="faq-question">Will my photos work when I restore to a new device?</div>
+				
+				<div class="faq-answer">
+					<div class="tip"><strong>Great News: Complete Backup Solves This!</strong></div>
+		            CardKeepApp v1.3.0+ offers two backup options with different photo
+		            handling:
+					
+					<br />
+					
+					<br /><strong>Complete Backup (Recommended for New Devices):</strong>
+					
+					<ul>
+						<li><strong>100% photo restoration</strong> - photos restore
+			                automatically with card data</li>
+						<li><strong>No manual work required</strong> - everything works
+			                immediately</li>
+						<li><strong>No dependency on iCloud Photos sync</strong> or photo
+			                identifiers</li>
+						<li><strong>Larger file sizes</strong> but guaranteed success</li>
+						<li><strong>May create duplicate photos</strong> in Photos app, but
+			                ensures complete preservation</li>
+					</ul>
+					
+					<br /><strong>Quick Backup (Photo Reference Limitations):</strong>
+					
+					<ul>
+						<li>All card information restores perfectly (sender, occasion,
+			                dates, notes, tags)</li>
+						<li><strong>Photos require manual re-linking</strong> due to Apple's
+			                photo identifier changes</li>
+						<li>Use CardKeepApp's edit feature to re-select photos from your
+			                iCloud Photos</li>
+						<li>Ultra-lightweight files but requires photo management if moving
+			                to a new device</li>
+					</ul>
+					
+					<div class="tip"><strong>Recommendation:</strong> Use Complete Backup when moving
+			              to a new device for seamless photo restoration. Use Quick Backup
+			              for regular backups on the same device or when you have reliable
+			              iCloud Photos sync.</div>
+		            <strong>Bottom line:</strong> Complete Backup eliminates the
+		            traditional photo restoration complications - choose the backup type
+		            that fits your needs!</div>
+			</div>
+			
+			<div class="faq-item">
+				<div class="faq-question">How does the dual backup system work?</div>
+				
+				<div class="faq-answer">CardKeepApp v1.3.0+ includes two backup types to meet different
+		            needs:
+					<br />
+					
+					<br /><strong>Quick Backup (Photo References Only):</strong>
+					
+					<ul>
+						<li><strong>Ultra-lightweight:</strong> Less than 1KB per card</li>
+						<li><strong>Fast:</strong> Quick export and import process</li>
+						<li><strong>Photo links:</strong> References photos in your Photos
+			                app</li>
+						<li><strong>Best for:</strong> Regular backups, same device restore,
+			                reliable iCloud Photos sync</li>
+					</ul>
+					
+					<br /><strong>Complete Backup (Includes Photo Data):</strong>
+					
+					<ul>
+						<li><strong>Self-contained:</strong> Includes full-resolution photo
+			                data</li>
+						<li><strong>Guaranteed restoration:</strong> Works regardless of
+			                Photos app contents</li>
+						<li><strong>File sizes:</strong> About 400KB per card with typical
+			                photos (25 cards = ~10MB, 50 cards = ~30MB, 100 cards = ~50MB)</li>
+						<li><strong>Best for:</strong> Device migrations, long-term
+			                archival, unreliable iCloud sync</li>
+					</ul>
+		            <strong>Both Types Include:</strong>
+					
+					<ul>
+						<li>Complete card data (sender, occasion, dates, tags, notes)</li>
+						<li>Easy sharing via email, AirDrop, Files app, or cloud storage</li>
+					</ul>
+		            <a href="documentation.html#backup-export"
+		              >Read the complete backup guide →</a
+		            ></div>
+			</div>
+			
+			<div class="faq-item">
+				<div class="faq-question">Do I need to backup manually or is it automatic?</div>
+				
+				<div class="faq-answer"><strong>Manual backup with smart reminders:</strong>
+					
+					<br />
+					
+					<br />• <strong>Manual Export:</strong> You control when and where to save
+		            backup files
+					
+					<br />• <strong>Weekly Reminders:</strong> Shows reminders after 7+ days
+		            OR 5+ new cards since last backup
+					
+					<br />• <strong>Intelligent Triggers:</strong> Checks on app launch and
+		            after saving new cards
+					
+					<br />• <strong>User Control:</strong> "Remind Later" (7 days) or "Don't
+		            Remind" (365 days) options
+					
+					<br />• <strong>Card Count Tracking:</strong> Shows how many cards you
+		            have to backup
+					
+					<br />• <strong>Last Backup Date:</strong> Tracks when you last created a
+		            backup
+					
+					<br />
+					
+					<br />
+					
+					<div class="tip"><strong>Tip: Recommendation:</strong> Export a backup monthly and
+			              after adding many new cards. Store backup files in multiple
+			              locations for extra safety!</div>
+				</div>
+			</div>
+			
+			<div class="faq-item">
+				<div class="faq-question">What's the difference between photo backup and card data backup?</div>
+				
+				<div class="faq-answer">CardKeepApp handles two types of data:
+					<br />
+					
+					<br /><strong>Photos (Automatic via iCloud Photos):</strong>
+					
+					<ul>
+						<li>Saved to your Photos app "CardKeepApp" album</li>
+						<li>Automatically backed up if iCloud Photos is enabled</li>
+						<li>Remain safe even if you delete the app</li>
+					</ul>
+		            <strong>Card Data (Manual Export):</strong>
+					
+					<ul>
+						<li>Sender names, occasions, dates, tags, personal notes</li>
+						<li>Must be exported manually to backup files</li>
+						<li>Lost if app is deleted without backup</li>
+						<li>Ultra-lightweight files for easy storage and sharing</li>
+					</ul>
+					
+					<div class="tip"><strong>Tip: Best Protection:</strong> Enable iCloud Photos +
+			              Export backups regularly = Complete protection on the SAME device</div>
+					
+					<div class="tip"><strong>Tip: Best Protection:</strong> Enable iCloud Photos +
+			              Export FULL backups regularly = Complete protection on a NEW
+			              device</div>
+				</div>
+				
+				<div class="faq-item">
+					<div class="faq-question">Can I restore my cards if I accidentally delete them?</div>
+					
+					<div class="faq-answer"><strong>Yes, if you have a backup!</strong>
+						
+						<br />
+						
+						<br /><strong>Deletion scenarios:</strong>
+						
+						<ul>
+							<li><strong>Individual cards deleted:</strong> Import from most
+				                  recent backup to restore them</li>
+							<li><strong>App deleted:</strong> Reinstall CardKeepApp and import
+				                  your backup file</li>
+							<li><strong>New phone:</strong> Install CardKeepApp on new device
+				                  and import FULL backup</li>
+						</ul>
+			              <strong>What you need for successful restore:</strong>
+						
+						<ul>
+							<li><strong>Backup file:</strong> The export file from CardKeepApp (FULL BACKUP FILE)</li>
+							<li><strong>Photos available:</strong> Card photos accessible
+				                  through iCloud Photos sync or FULL backups file</li>
+						</ul>
+			              <strong>Restore Results:</strong>
+						
+						<ul>
+							<li><strong>Card data:</strong> Always restores completely
+				                  (sender, dates, tags, notes)</li>
+							<li><strong>Photo visibility:</strong> Depends on iCloud Photos
+				                  sync status</li>
+							<li><strong>Best case:</strong> Complete restore with all photos on the same device with
+				                  iCloud Photos enabled</li>
+						</ul>
+						
+						<div class="warning"><strong>Note: No backup = No recovery:</strong> Without a backup
+			                file, you cannot restore deleted cards. Photos remain safe
+			                in your Photos app on your original device, but all card information is lost.</div>
+					</div>
+				</div>
+				
+				<div class="faq-item">
+					<div class="faq-question">I restored my backup and i dont see my photos</div>
+					
+					<div class="faq-answer">
+						<div class="tip"><strong>Tip:</strong> WAIT and then WAIT a bit longer</div>
+						
+						<br />
+						
+						<br /><strong>Import scenarios:</strong>
+						
+						<ul>
+							<li><strong>Wait some time:</strong> Due to the way iOS works, sometimes it will not display all the photos on import, Especially if you are importing a large collection, scroll up and down and open a few photos and eventually you should see them</li>
+							<li><strong>i see only some of my photos:</strong> Wait a bit longer, the app MUST be open while importing and large collections can take some time</li>
+							<li><strong>Testing:</strong> During testing of imports, it was found to take up to 5 minutes to import 500 cards with between 1 and 4 photos each on older iPhones / iPads, it will also depend on the size of the photo being restored</li>
+							
+							<br><strong>What you need for successful restore:</strong>
+							
+							<ul>
+								<li><strong>Backup file:</strong> The export file from CardKeepApp</li>
+								<li><strong>Photos available:</strong> Card photos accessible
+					                  through iCloud Photos sync on original device or FULL backups file for new ;/ restored device</li>
+							</ul>
+				              <strong>Restore Results:</strong>
+							
+							<ul>
+								<li><strong>Card data:</strong> Always restores completely
+					                  (sender, dates, tags, notes)</li>
+								<li><strong>Photo visibility:</strong> Depends on iCloud Photos
+					                  sync status or FULL backup file</li>
+							</ul>
+							</div>
+							
+							<div class="faq-item">
+								<div class="faq-question">How often should I create backups?</div>
+								
+								<div class="faq-answer"><strong>Recommended backup schedule:</strong>
+									
+									<br />
+									
+									<br /><strong>Regular Schedule:</strong>
+									
+									<ul>
+										<li><strong>Monthly:</strong> Export a backup at the beginning of
+							                  each month (Quick Backup)</li>
+										<li><strong>After bulk adding:</strong> When you add 10+ cards in
+							                  a session (Quick Backup)</li>
+										<li><strong>Before major events:</strong> Phone upgrades, iOS
+							                  updates, etc. (Full Backup)</li>
+										<li><strong>Seasonal cleanup:</strong> When organising or
+							                  reviewing your collection (Full Backup)</li>
+									</ul>
+						              <strong>Storage Strategy:</strong>
+									
+									<ul>
+										<li><strong>Multiple locations:</strong> Save to Files app, email
+							                  yourself, cloud storage</li>
+										<li><strong>Name with dates:</strong>
+							                  "CardKeep_Backup_2024_January.json"</li>
+										<li><strong>Keep recent backups:</strong> Store last 3-6 months of
+							                  backups</li>
+									</ul>
+									
+									<div class="tip"><strong>Tip: The app helps:</strong> CardKeepApp uses smart
+						                reminders (after 7+ days OR 10+ new cards) and shows how many
+						                cards you have to backup, making it easy to stay protected!</div>
+								</div>
+							</div>
+							
+							<div class="faq-item">
+								<div class="faq-question">How exactly does photo restore work with the new backup system?</div>
+								
+								<div class="faq-answer"><strong>Two Different Photo Restoration Methods:</strong>
+									
+									<br />
+									
+									<br />CardKeepApp v1.3.0+ uses different approaches depending on your
+						              backup type:
+									
+									<br />
+									
+									<br /><strong>Complete Backup - Direct Photo Restoration:</strong>
+									
+									<ul>
+										<li><strong>Embedded photos:</strong> Actual photo data is stored
+							                  in the backup file</li>
+										<li><strong>100% reliable:</strong> Photos restore automatically
+							                  with card data but bigger file sizes</li>
+										<li><strong>No dependencies:</strong> Works regardless of Photos
+							                  app contents or iCloud sync</li>
+										<li><strong>Result:</strong> Immediate, complete restoration on
+							                  any device</li>
+										<li><strong>Note:</strong> May create duplicate photos in Photos
+							                  app, but ensures complete preservation</li>
+									</ul>
+						              <strong>Quick Backup - Photo Reference Restoration:</strong>
+									
+									<ul>
+										<li><strong>Photo references:</strong> Uses iOS Photos library
+							                  identifiers</li>
+										<li><strong>iCloud dependency:</strong> Requires photos to exist
+							                  in Photos app on the same device the backup was taken</li>
+										<li><strong>Same device:</strong> Works well for restoring to the
+							                  same device</li>
+										<li><strong>New device limitation:</strong> Photo links may break
+							                  due to Apple's photo ID changes</li>
+										<li><strong>Result:</strong> Card data always restores, photos
+							                  depend on Photos app availability</li>
+									</ul>
+									
+									<div class="tip"><strong>Which should you choose?</strong>
+										
+										<ul>
+											<li><strong>Complete Backup:</strong> Moving to new device,
+							                    long-term archival, guaranteed photo restoration</li>
+											<li><strong>Quick Backup:</strong> Regular backups, same device
+							                    restore, minimal file size</li>
+										</ul>
+									</div>
+									
+									<div class="tip"><strong>Best Results:</strong> Use Complete Backup for device
+						                migrations and important archival. Use Quick Backup for routine
+						                protection when you have reliable iCloud Photos sync.</div>
+								</div>
+							</div>
+							</div>
+							</section>
+							
+							<section id="functionality" class="faq-section">
+								<h2>♡ App Features & Functionality</h2>
+								
+								<div class="faq-item">
+									<div class="faq-question">Can I edit cards after saving them?</div>
+									
+									<div class="faq-answer">
+										<div class="tip"><strong>Yes! CardKeepApp has full card editing.</strong>
+								              You can edit any saved card including sender, occasion, dates,
+								              tags, notes, and even replace photos.</div>
+							            <strong>How to edit cards:</strong>
+										
+										<ol>
+											<li>Open any saved card from your collection</li>
+											<li>Tap the "Pencil" button in the card detail view</li>
+											<li>Make your changes to any field</li>
+											<li>Tap "Save" to keep your updates</li>
+										</ol>
+							            No more deleting and recreating cards for simple changes!
+										
+										<br />
+										
+										<br /><a href="documentation.html#card-editing"
+							              >Learn more about card editing →</a
+							            ></div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">Can I use photos from my photo library?</div>
+									
+									<div class="faq-answer">
+										<div class="tip"><strong
+							                >Yes! CardKeepApp lets you choose photos from your
+								                library.</strong
+								              ></div>
+							            <strong>Photo options:</strong>
+										
+										<ul>
+											<li><strong>Take Photo:</strong> Use your camera to capture new
+								                photos with portrait or landscape framing and cropping options</li>
+											<li><strong>Choose from Library:</strong> Select existing photos
+								                from your photo library - photos are used as-is without cropping</li>
+											<li><strong>Smart Management:</strong> The app intelligently
+								                prevents photo duplicates</li>
+										</ul>
+										
+										<div class="limitation"><strong>Note: Library Photo Cropping:</strong> When selecting
+								              photos from your library, cropping is not available. For best
+								              results, use the Photos app to crop images to your desired format
+								              before selecting them in CardKeepApp.</div>
+							            This is perfect for adding older greeting cards to your collection
+							            using photos you've already taken!
+										
+										<br />
+										
+										<br /><a href="documentation.html#photo-library"
+							              >Learn more about photo options →</a
+							            ></div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">Can I crop photos from my library after selecting them?</div>
+									
+									<div class="faq-answer"><strong>No, cropping is not available for library photos.</strong>
+										
+										<br />
+										
+										<br />When you select existing photos from your photo library, they are
+							            imported in their current format without cropping options. Here's
+							            what you need to know:
+										
+										<br />
+										
+										<br /><strong>For library photos:</strong>
+										
+										<ul>
+											<li>Photos are used exactly as they appear in your library</li>
+											<li>No cropping or editing options are available within CardKeepApp</li>
+											<li><strong>Tip:</strong> Use the Photos app to crop images to your
+								                desired format before selecting them</li>
+										</ul>
+							            <strong>For camera photos:</strong>
+										
+										<ul>
+											<li>Full cropping and framing options are available</li>
+											<li>Choose portrait or landscape orientation</li>
+											<li>Adjust the crop area to focus on the important parts of your
+								                card</li>
+										</ul>
+										
+										<div class="tip"><strong>Best practice:</strong> If you need to crop an existing
+								              photo, edit it in the Photos app first, then select the cropped
+								              version in CardKeepApp for the best results.</div>
+									</div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">How many photos can I add per card?</div>
+									
+									<div class="faq-answer">You can add up to <strong>5 photos per card</strong> with our
+							            improved photo type selection:
+										
+										<br />
+										
+										<br />• <strong>Front:</strong> The outside cover design
+										
+										<br />• <strong>Inside:</strong> The heartfelt message inside
+										
+										<br />• <strong>Back:</strong> Any special notes or signatures
+										
+										<br />• <strong>Extra 1:</strong> Additional details or close-ups
+										
+										<br />• <strong>Extra 2:</strong> More special details
+										
+										<br />
+										
+										<br />
+										
+										<div class="tip"><strong>Update: Recent Improvement:</strong> We've enhanced the
+								              photo type selection interface to make it clearer and more
+								              intuitive when choosing which part of your card you're
+								              photographing!</div>
+							            This lets you capture every detail of your greeting cards with
+							            proper organisation!
+									</div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">Does the app work without internet?</div>
+									
+									<div class="faq-answer"><strong>Yes, completely!</strong> CardKeepApp works 100% offline.
+							            You don't need internet to:
+										
+										<br />
+										
+										<br />• Add new cards
+										
+										<br />• View your collection
+										
+										<br />• Search through cards
+										
+										<br />• Take photos
+										
+										<br />
+										
+										<br />Everything is stored locally on your device.
+									</div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">Can I delete multiple cards at once?</div>
+									
+									<div class="faq-answer"><strong>No, you can only delete cards one at a time.</strong> This
+							            is an intentional design decision for safety!
+										
+										<br />
+										
+										<br /><strong>Why we designed it this way:</strong>
+										
+										<ul>
+											<li><strong>Prevent accidents:</strong> Multiple deletion could
+								                accidentally remove precious memories</li>
+											<li><strong>Encourage reflection:</strong> Each card deserves
+								                individual consideration before deletion</li>
+											<li><strong>Safety first:</strong> We want to prevent irreversible
+								                bulk mistakes</li>
+											<li><strong>Backup reminder:</strong> Gives you time to create a
+								                backup if you're doing major cleanup</li>
+										</ul>
+										
+										<div class="tip"><strong>Tip: Pro tip:</strong> If you need to delete many cards,
+								              export a backup first! Then you can always restore if you
+								              accidentally delete something important.</div>
+							            We know it's slower, but we'd rather protect your precious memories
+							            than prioritise speed! ♡
+									</div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">Why does the backup export say "Move" instead of "Save"?</div>
+									
+									<div class="faq-answer"><strong
+							              >This is an Apple iOS limitation, not a CardKeepApp
+							              choice!</strong
+							            >
+										
+										<br />
+										
+										<br /><strong>Technical explanation:</strong>
+										
+										<ul>
+											<li><strong>iOS behaviour:</strong> When using Apple's document
+								                export system, iOS shows "Move" instead of "Save"</li>
+											<li><strong>File handling:</strong> The system is technically moving
+								                the file from the app's temporary directory to your chosen
+								                location</li>
+											<li><strong>Standard practice:</strong> You'll see this "Move"
+								                behaviour in many other iOS apps that export documents</li>
+											<li><strong>More accurate:</strong> "Move" is actually more
+								                technically correct than "Save" in this context</li>
+										</ul>
+							            <strong>Your backup file:</strong>
+										
+										<ul>
+											<li>Gets safely moved to your chosen location (Files app, cloud
+								                storage, etc.)</li>
+											<li>Remains accessible for future imports</li>
+											<li>Works exactly the same as if it said "Save"</li>
+										</ul>
+										
+										<div class="tip"><strong>Tip: Don't worry:</strong> The "Move" button works
+								              perfectly for creating backups! It's just Apple's terminology for
+								              document export across the entire iOS system.</div>
+									</div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">Can I share my cards with family/friends?</div>
+									
+									<div class="faq-answer">Yes! You can share your card information and photos, but it shares
+							            the basic data (not the exact app display format). The share feature
+							            includes:
+										<br />
+										
+										<br />• Card photos
+										
+										<br />• Sender information
+										
+										<br />• Occasion and dates
+										
+										<br />• Your personal notes
+										
+										<br />
+										
+										<br />Recipients will get this as a standard message (Shared via Email,
+							            iMessage etc) with photos, not as a CardKeepApp card.
+									</div>
+								</div>
+							</section>
+							
+							<section id="limitations" class="faq-section">
+								<h2>♡ Important Limitations</h2>
+								
+								<div class="faq-item">
+									<div class="faq-question">What are the biggest limitations I should know about?</div>
+									
+									<div class="faq-answer">Here are the key limitations to be aware of:
+										<br />
+										
+										<br />
+										
+										<div class="warning"><strong>Note: iOS only:</strong> Currently iPhone and iPad only,
+								              no Android version
+											
+											<br /><strong>Portrait only:</strong> iPhone won't rotate to landscape
+								              mode (iPad supports both)
+											
+											<br /><strong>No automatic cloud sync:</strong> Cards don't sync
+								              automatically, but backup/restore available
+											
+											<br /><strong>Data loss risk:</strong> Deleting the app without backup
+								              loses card data (photos remain safe on original device)</div>
+							            <a href="documentation.html#limitations"
+							              >Read full limitations guide →</a
+							            ></div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">Why can't I rotate the app to landscape mode on iPhone?</div>
+									
+									<div class="faq-answer">On <strong>iPhone</strong>, CardKeepApp is designed exclusively for
+							            <strong>portrait mode</strong>. The interface is optimised for
+							            iPhone's portrait orientation to provide the best experience for
+							            viewing and managing greeting cards.
+										
+										<br />
+										
+										<br /><strong>iPad users:</strong> The app supports both portrait and
+							            landscape orientations on iPad for a more flexible experience on the
+							            larger screen.
+										
+										<br />
+										
+										<br />The card layouts and photo viewing work best in portrait mode, which
+							            is why iPhone is locked to this orientation.
+									</div>
+								</div>
+							</section>
+							
+							<section id="technical" class="faq-section">
+								<h2>♡ Technical Questions</h2>
+								
+								<div class="faq-item">
+									<div class="faq-question">Why is CardKeepApp only available for iPhone / iPad?</div>
+									
+									<div class="faq-answer">Currently, CardKeepApp is built specifically for iOS to provide the
+							            best possible experience on Apple devices. We chose to focus on one
+							            platform first to perfect the user experience.
+										<br />
+										
+										<br /><strong>Android version:</strong> It's planned for the future, but
+							            we don't have a specific timeline yet.</div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">Does it work on iPad?</div>
+									
+									<div class="faq-answer"><strong>Yes!</strong> CardKeepApp is fully compatible with iPad and
+							            supports both portrait and landscape orientations on the larger
+							            screen.
+										
+										<br />
+										
+										<br /><strong>iPad advantages:</strong>
+										
+										<ul>
+											<li>Larger screen for better photo viewing</li>
+											<li>Portrait and landscape orientation support</li>
+											<li>Same full feature set as iPhone version</li>
+										</ul>
+							            The app works great on both iPhone and iPad, giving you flexibility
+							            to use whichever device you prefer!
+										
+										<br />
+										
+										<br />
+										
+										<div class="tip"><strong>Update: Recent iPad Improvement:</strong> We fixed the
+								              export backup issue that was causing blank screens on iPad. iPad
+								              backup export now works seamlessly!</div>
+									</div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">What iOS version do I need?</div>
+									
+									<div class="faq-answer">CardKeepApp requires <strong>iOS 16.0 or later</strong> for the best
+							            performance and access to all features.
+										
+										<br />
+										
+										<br /><strong>Why iOS 16.0+:</strong>
+										
+										<ul>
+											<li><strong>Modern photo handling:</strong> Latest identifier system
+								                for better photo references</li>
+											<li><strong>Enhanced performance:</strong> Optimised for current iOS
+								                capabilities</li>
+											<li><strong>Security:</strong> Latest privacy and security
+								                frameworks</li>
+											<li><strong>Reliability:</strong> Access to most stable iOS APIs</li>
+										</ul>
+										
+										<div class="tip"><strong>Tip: Check your version:</strong> Go to Settings > General
+								              > About > iOS Version. Most devices from iPhone 8 and newer
+								              support iOS 16.0+.</div>
+									</div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">What permissions does the app need?</div>
+									
+									<div class="faq-answer">CardKeepApp only requests essential permissions:
+										<br />
+										
+										<br />• <strong>Camera:</strong> To photograph your greeting cards
+										
+										<br />• <strong>Photo Library:</strong> To save card photos to your
+							            device
+										
+										<br />
+										
+										<br />That's it! No location, contacts, or other unnecessary permissions.
+										
+										<br />
+										
+									<br /><a href="privacy.html">Read our privacy policy →</a></div>
+								</div>
+							</section>
+							
+							<section id="errors-troubleshooting" class="faq-section">
+								<h2>♡ Errors & Troubleshooting</h2>
+								
+								<div class="faq-item">
+									<div class="faq-question">The app says "Camera access denied" or won't let me take photos</div>
+									
+									<div class="faq-answer">CardKeepApp needs camera permission to photograph your greeting
+							            cards. To fix this:
+										<br />
+										
+										<br />1. Go to <strong>Settings > Privacy & Security > Camera</strong
+							            >
+										
+										<br />2. Find <strong>CardKeepApp</strong> in the list
+										
+										<br />3. Toggle it <strong>ON</strong>
+										
+										<br />4. Return to CardKeepApp and try taking photos again
+										
+										<br />
+										
+										<br />
+										
+										<div class="tip"><strong>Tip: Note:</strong> You might need to completely close and
+								              reopen CardKeepApp after changing permissions.</div>
+									</div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">I get "Photos access denied" or can't save cards</div>
+									
+									<div class="faq-answer">CardKeepApp needs Photos access to save your card images. To enable
+							            this:
+										<br />
+										
+										<br />1. Go to <strong>Settings > Privacy & Security > Photos</strong
+							            >
+										
+										<br />2. Find <strong>CardKeepApp</strong> in the list
+										
+										<br />3. Select <strong>"All Photos"</strong>
+										
+										<br />4. Return to CardKeepApp and try saving again
+										
+										<br />
+										
+										<br /><strong>Note:</strong> CardKeepApp requires "All Photos" access
+							            because it needs to read the photos it saves to display them in your
+							            card collection. Since photos are now referenced from your Photos
+							            app rather than stored as copies, the app must be able to access
+							            them to show your cards.</div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">My card photos show up as blank or broken images</div>
+									
+									<div class="faq-answer">This usually happens when:
+										<br />
+										
+										<br />• <strong>Photos were deleted:</strong> Someone deleted photos from
+							            the "CardKeepApp" album in your Photos app
+										
+										<br />• <strong>Storage full:</strong> Your device ran out of storage
+							            while saving
+										
+										<br />
+										
+										<br />
+									</div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">The app crashes when I try to take photos</div>
+									
+									<div class="faq-answer">Try these troubleshooting steps:
+										<br />
+										
+										<br />1. <strong>Close and reopen</strong> CardKeepApp completely
+										
+										<br />2. <strong>Check permissions:</strong> Ensure Camera and Photos
+							            access are enabled
+										
+										<br />3. <strong>Check storage:</strong> Make sure you have at least 100MB
+							            free space
+										
+										<br />4. <strong>Restart your iPhone</strong> if the problem persists
+										
+										<br />5. <strong>Update the app</strong> if there's a new version
+							            available
+										
+										<br />
+										
+										<br />If crashes continue, please contact us at
+							            <a href="mailto:memories@cardkeep.app">memories@cardkeep.app</a>
+							            with your iPhone model and iOS version.</div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">I can't find the "CardKeepApp" album in my Photos</div>
+									
+									<div class="faq-answer">The CardKeepApp album should appear automatically when you save your
+							            first card. If it's missing:
+										<br />
+										
+										<br />• <strong>Check Albums tab:</strong> Open Photos app > Albums tab >
+							            scroll down to find "CardKeepApp"
+										
+										<br />• <strong>Search for it:</strong> Use the search function in Photos
+							            app
+										
+										<br />• <strong>Save a test card:</strong> Try saving one card to trigger
+							            album creation
+										
+										<br />• <strong>Check permissions:</strong> Ensure CardKeepApp has Photos
+							            access
+										
+										<br />
+										
+										<br />
+										
+										<div class="tip"><strong>Tip:</strong> Albums are automatically created by iOS when
+								              apps save photos. It might take a moment to appear after saving
+								              your first card.</div>
+									</div>
+								</div>
+							</section>
+							
+							<section id="cost-purchase" class="faq-section">
+								<h2>♡ Cost & Purchase</h2>
+								
+								<div class="faq-item">
+									<div class="faq-question">What if I want a refund?</div>
+									
+									<div class="faq-answer">Refunds are handled by Apple through the App Store. You can:
+										<br />
+										
+										<br />1. Go to <strong>Settings > [Your Name] > Media & Purchases</strong
+							            >
+										
+										<br />2. Tap <strong>View Account</strong>
+										
+										<br />3. Find your purchase and request a refund
+										
+										<br />
+										
+										<br />Or visit
+							            <a
+							              href="https://reportaproblem.apple.com"
+							              target="_blank"
+							              rel="noopener noreferrer"
+							              >Apple's Report a Problem</a
+							            >
+							            website.
+										
+										<br />
+										
+										<br />Apple typically offers refunds within a reasonable timeframe if
+							            you're not satisfied.
+									</div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">Do you offer family sharing?</div>
+									
+									<div class="faq-answer">Yes! CardKeepApp supports Apple's Family Sharing. One purchase can
+							            be shared with your Apple iCloud family members.
+										<br />
+										
+										<br />However, remember that each person's cards are stored locally on
+							            their own device - family members won't see each other's card
+							            collections unless a restore is done from a FULL backup file, Photos
+							            DO NOT sync across devices.
+									</div>
+								</div>
+							</section>
+							
+							<section id="usage-tips" class="faq-section">
+								<h2>♡ Usage Tips & Best Practices</h2>
+								
+								<div class="faq-item">
+									<div class="faq-question">How should I organise my cards for easy searching?</div>
+									
+									<div class="faq-answer">Here are some organisation strategies:
+										<br />
+										
+										<br /><strong>Consistent naming:</strong> Always use the same format
+							            (e.g., "Mum" not sometimes "Mother")
+										
+										<br /><strong>Smart tags:</strong> Use tags like "Family", "Work",
+							            "Special", "2024"
+										
+										<br /><strong>Specific occasions:</strong> Be specific - "Birthday" vs
+							            "Birthday-40th"
+										
+										<br /><strong>Date accuracy:</strong> Enter when you received it, not when
+							            it was given
+										
+										<br />
+										
+										<br /><a href="documentation.html#tags-organisation"
+							              >Read our organisation guide →</a
+							            ></div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">What's the best way to photograph my cards?</div>
+									
+									<div class="faq-answer">
+										<div class="tip"><strong>Photography tips:</strong>
+											
+											<br />
+											
+											<br />• Use good lighting (natural light works best)
+											
+											<br />• Choose portrait or landscape orientation to match your card
+								              format
+											
+											<br />• Frame the card to fill most of the screen
+											
+											<br />• Keep your hands steady
+											
+											<br />• Make sure text is readable and in focus
+											
+											<br />• Take photos of front, inside, and back
+											
+											<br />• Capture any special details separately
+										</div>
+										
+										<br />
+										
+									<br /><a href="documentation.html#tips-tricks">More photography tips →</a></div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">Can I search through old cards easily?</div>
+									
+									<div class="faq-answer"><strong>Absolutely!</strong> CardKeepApp has powerful search
+							            features:
+										
+										<br />
+										
+										<br />• Search by sender name
+										
+										<br />• Search by occasion
+										
+										<br />• Search by date or year
+										
+										<br />• Search by custom tags
+										
+										<br />• Combine multiple search terms
+										
+										<br />
+										
+										<br />The search is smart too - typing "birth" will find "Birthday" cards!
+										
+										<br />
+										
+										<br /><a href="documentation.html#search-features"
+							              >Learn advanced search tips →</a
+							            ></div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">Should I enable iCloud Photos for backup?</div>
+									
+									<div class="faq-answer">
+										<div class="tip"><strong>Tip: Essential for complete protection!</strong> Enable
+								              iCloud Photos to automatically backup your card photos. Combined
+								              with regular exports, this gives you complete protection for all
+								              your memories.</div>
+							            <strong>Setup steps:</strong>
+										
+										<ol>
+											<li>Go to <strong>Settings > [Your Name] > iCloud > Photos</strong></li>
+											<li>Turn on "iCloud Photos"</li>
+											<li>Wait for photos to sync to iCloud</li>
+											<li>Export a backup from CardKeepApp monthly</li>
+										</ol>
+							            <strong>Why both are important:</strong>
+										
+										<ul>
+											<li><strong>iCloud Photos:</strong> Protects your actual card images</li>
+											<li><strong>Export Backups:</strong> Protects all your card data
+								                (sender info, tags, notes)</li>
+											<li><strong>Together:</strong> Complete restoration ability on any
+								                device!</li>
+										</ul>
+									</div>
+								</div>
+								
+								<div class="faq-item">
+									<div class="faq-question">What's the best backup strategy for complete protection?</div>
+									
+									<div class="faq-answer">
+										<div class="tip"><strong>Protection: Complete Protection Strategy:</strong></div>
+							            <strong>Photo Protection (Automatic):</strong>
+										
+										<ul>
+											<li>Enable iCloud Photos in Settings</li>
+											<li>Let photos sync automatically to the cloud</li>
+											<li>Keep regular iPhone backups</li>
+										</ul>
+							            <strong>Data Protection (Manual):</strong>
+										
+										<ul>
+											<li><strong>Regular backups:</strong> Backup monthly
+								                from CardKeepApp for routine protection</li>
+											<li><strong>Device migration backups:</strong> Full Backup before major device changes</li>
+											<li>Email backup files to yourself or save to Files app/cloud
+								                storage</li>
+											<li>Files are automatically named with backup type and date</li>
+										</ul>
+							            <strong>Transfer Process:</strong>
+										
+										<ul>
+											<li><strong>Before phone upgrades:</strong> Export Full Backup
+								                (ensures 100% photo restoration)</li>
+											<li><strong>On new device:</strong> Install CardKeepApp, import
+								                Full Backup - photos restore automatically</li>
+											<li><strong>Result:</strong> Complete collection restored with all
+								                photos and data instantly!</li>
+										</ul>
+									</div>
+								</div>
+							</section>
+							
+							<div class="back-section">
+								<p>Still have questions? Contact us at
+							          <a href="mailto:memories@cardkeep.app">memories@cardkeep.app</a></p>
         <style>
           .faq-btn {
-            position: relative;
-            overflow: hidden !important;
-          }
-          .faq-btn::before {
-            display: none !important;
-          }
-        </style>
-        <div style="text-align: center; margin: 2rem 0; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;">
-          <div style="flex-shrink: 0;">
-            <a
-              href="documentation.html"
-              class="btn btn-primary faq-btn"
-              >Read Full Documentation</a>
-          </div>
-          <div style="flex-shrink: 0;">
-            <a
-              href="index.html"
-              class="btn btn-primary faq-btn"
-              >← Back to Home</a>
-          </div>
-        </div>
-      </div>
-    </main>
+	position: relative;
+	overflow: hidden !important;
+}
 
-    <footer id="contact" class="footer" role="contentinfo">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <h3>CardKeepApp ♡</h3>
-            <p>
-              Making card collection management simple, beautiful, and
-              absolutely delightful!
-            </p>
-          </div>
-          <div class="footer-links">
-            <div class="footer-column">
-              <h4>Product</h4>
-              <ul>
-                <li><a href="index.html#features">Features</a></li>
-                <li><a href="index.html#download">Download</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="documentation.html">Documentation</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="releases.html">Release Notes</a></li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h4>Support</h4>
-              <ul>
-                <li><a href="mailto:memories@cardkeep.app">Contact Us</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="terms.html">Terms of Service</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h4>Connect</h4>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.instagram.com/cardkeepapp/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Instagram</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://x.com/CardKeepAppApp"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >X (Twitter)</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2024 CardKeepApp. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
-</html>
+.faq-btn::before {
+	display: none !important;
+}
+						        </style>
+						        <div style="text-align: center; margin: 2rem 0; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;">
+									<div style="flex-shrink: 0;"><a
+							              href="documentation.html"
+							              class="btn btn-primary faq-btn"
+							              >Read Full Documentation</a></div>
+									
+									<div style="flex-shrink: 0;"><a
+							              href="index.html"
+							              class="btn btn-primary faq-btn"
+							              >← Back to Home</a></div>
+								</div>
+							</div>
+							</main>
+							
+							<footer id="contact" class="footer" role="contentinfo">
+								<div class="container">
+									<div class="footer-content">
+										<div class="footer-brand">
+											<h3>CardKeepApp ♡</h3>
+											
+											<p>Making card collection management simple, beautiful, and
+									              absolutely delightful!</p>
+										</div>
+										
+										<div class="footer-links">
+											<div class="footer-column">
+												<h4>Product</h4>
+												
+												<ul>
+													<li><a href="index.html#features">Features</a></li>
+													<li><a href="index.html#download">Download</a></li>
+													<li><a href="index.html#about">About</a></li>
+													<li><a href="documentation.html">Documentation</a></li>
+													<li><a href="faq.html">FAQ</a></li>
+													<li><a href="releases.html">Release Notes</a></li>
+												</ul>
+											</div>
+											
+											<div class="footer-column">
+												<h4>Support</h4>
+												
+												<ul>
+													<li><a href="mailto:memories@cardkeep.app">Contact Us</a></li>
+													<li><a href="privacy.html">Privacy Policy</a></li>
+													<li><a href="terms.html">Terms of Service</a></li>
+													<li><a href="faq.html">FAQ</a></li>
+												</ul>
+											</div>
+											
+											<div class="footer-column">
+												<h4>Connect</h4>
+												
+												<ul>
+													<li><a
+									                    href="https://www.instagram.com/cardkeepapp/"
+									                    target="_blank"
+									                    rel="noopener noreferrer"
+									                    >Instagram</a
+										                  ></li>
+													<li><a
+									                    href="https://x.com/CardKeepAppApp"
+									                    target="_blank"
+									                    rel="noopener noreferrer"
+									                    >X (Twitter)</a
+										                  ></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									
+									<div class="footer-bottom">
+										<p>&copy; 2024 CardKeepApp. All rights reserved.</p>
+									</div>
+								</div>
+							</footer>
+							
+							    <script src="script.js"></script>
+							  </body>
+							</html>

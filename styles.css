@@ -20,24 +20,30 @@ body {
 }
 
 :root {
-  --primary-color: #e0b6ba;
-  --primary-hover: #d4a5aa;
-  --secondary-color: #fdf8fc;
-  --accent-color: #b496c2;
-  --cute-lavender: #e0b6ba;
-  --cute-purple: #b496c2;
-  --cute-soft: #f5f0f8;
-  --text-primary: #2d1f2a;
-  --text-secondary: #6b5b73;
-  --text-light: #a695b3;
+  /* CardKeep App Colors - Light Mode */
+  --primary-color: #2c1f21;
+  --primary-hover: #3a2835;
+  --secondary-color: #f5e1e4;
+  --accent-color: #2c1f21;
+  --text-primary: #2c1f21;
+  --text-secondary: rgb(107, 82, 102);
+  --text-light: rgb(230, 230, 230);
+  --background-primary: #f5e1e4;
+  --background-secondary: #fef8e9;
   --background: #ffffff;
-  --surface: #fdf8fc;
-  --border: #f0e6f5;
-  --shadow: 0 8px 32px rgba(224, 182, 186, 0.15);
-  --shadow-lg: 0 20px 40px rgba(224, 182, 186, 0.2);
-  --shadow-cute: 0 4px 20px rgba(180, 150, 194, 0.15);
-  --gradient: linear-gradient(135deg, #e0b6ba 0%, #b496c2 50%, #d4a5aa 100%);
-  --gradient-soft: linear-gradient(135deg, #fdf8fc 0%, #f0e6f5 100%);
+  --surface: #ffffff;
+  --card-bg: #ffffff;
+  --border: rgba(153, 102, 128, 0.2);
+  --border-color: rgba(153, 102, 128, 0.2);
+  --shadow: 0 8px 32px rgba(153, 102, 128, 0.15);
+  --shadow-lg: 0 20px 40px rgba(153, 102, 128, 0.2);
+  --shadow-cute: rgba(153, 102, 128, 0.15);
+  --gradient: linear-gradient(135deg, #2c1f21 0%, #3a2835 50%, #2c1f21 100%);
+  --gradient-soft: linear-gradient(135deg, #f5e1e4 0%, #fef8e9 100%);
+  --gradient-start: #2c1f21;
+  --gradient-mid: #3a2835;
+  --gradient-end: #2c1f21;
+  --gradient-start-alpha: rgba(245, 225, 228, 0.4);
   --border-radius: 20px;
   --border-radius-small: 12px;
   --transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -60,7 +66,7 @@ body {
     sans-serif;
   line-height: 1.6;
   color: var(--text-primary);
-  background: linear-gradient(135deg, #fff 0%, #fdf8fc 50%, #f0e6f5 100%);
+  background: linear-gradient(135deg, #fff 0%, #f5e1e4 50%, #fef8e9 100%);
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -165,11 +171,11 @@ body {
 
 /* Hero Section */
 .hero {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
-  padding: 6rem 2rem 2rem;
-  background: linear-gradient(135deg, #fdf8fc 0%, #f0e6f5 50%, #f5f0f8 100%);
+  padding: 4rem 2rem 2rem;
+  background: linear-gradient(135deg, #f5e1e4 0%, #fef8e9 50%, #f5e1e4 100%);
   position: relative;
   overflow: hidden;
 }
@@ -217,7 +223,7 @@ body {
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  margin-top: 5%;
+  margin-top: 0;
 }
 
 .highlight {
@@ -251,15 +257,23 @@ body {
 .btn-primary {
   background: var(--gradient);
   color: white;
-  box-shadow: var(--shadow-cute);
+  box-shadow: var(--shadow-lg);
   position: relative;
+  border: 2px solid transparent;
+}
+
+.btn-primary:focus {
+  border-color: white;
+  box-shadow:
+    var(--shadow-lg),
+    0 0 0 4px rgba(44, 31, 33, 0.3);
 }
 
 .btn-large {
   padding: 1.25rem 3rem;
   font-size: 1.25rem;
   font-weight: 700;
-  min-width: 250px;
+  min-width: 280px;
   overflow: hidden;
 }
 
@@ -280,9 +294,10 @@ body {
 }
 
 .btn-primary:hover {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 15px 35px rgba(224, 182, 186, 0.4);
-  animation: buttonGlow 0.6s ease-in-out;
+  background: var(--primary-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(153, 102, 128, 0.3);
 }
 
 .btn-primary:hover::before {
@@ -398,17 +413,17 @@ body {
 
 .card-stack:hover .card-1 {
   transform: rotate(-15deg) translateY(40px) translateX(-30px) scale(1.05);
-  box-shadow: 0 25px 50px rgba(224, 182, 186, 0.3);
+  box-shadow: 0 25px 50px rgba(44, 31, 33, 0.25);
 }
 
 .card-stack:hover .card-2 {
   transform: rotate(0deg) translateY(-15px) scale(1.1);
-  box-shadow: 0 30px 60px rgba(180, 150, 194, 0.3);
+  box-shadow: 0 30px 60px rgba(44, 31, 33, 0.3);
 }
 
 .card-stack:hover .card-3 {
   transform: rotate(15deg) translateY(-40px) translateX(30px) scale(1.05);
-  box-shadow: 0 25px 50px rgba(200, 166, 211, 0.3);
+  box-shadow: 0 25px 50px rgba(44, 31, 33, 0.25);
 }
 
 .floating-hearts {
@@ -513,7 +528,9 @@ body {
   margin-bottom: 1.5rem;
   display: block;
   animation: bounce 2s ease-in-out infinite;
-  filter: drop-shadow(0 4px 8px rgba(224, 182, 186, 0.2));
+  filter: drop-shadow(0 4px 8px rgba(44, 31, 33, 0.15));
+  color: var(--primary-color);
+  text-shadow: 0 2px 4px rgba(44, 31, 33, 0.1);
 }
 
 .feature-card h3 {
@@ -724,7 +741,7 @@ body {
 /* Download Section */
 .download {
   padding: 6rem 0;
-  background: white;
+  background: linear-gradient(135deg, #f5e1e4 0%, #fef8e9 50%, #f5e1e4 100%);
   text-align: center;
 }
 
@@ -746,18 +763,17 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 1.5rem 2rem;
-  background: linear-gradient(135deg, white 0%, #fef7ff 100%);
-  border: 3px solid transparent;
-  background-clip: padding-box;
+  background: white;
+  border: 2px solid var(--primary-color);
   border-radius: var(--border-radius);
   text-decoration: none;
-  color: var(--text-primary);
+  color: var(--primary-color);
   transition: var(--transition);
   cursor: pointer;
-  min-width: 250px;
+  min-width: 280px;
   position: relative;
   overflow: hidden;
-  box-shadow: var(--shadow-cute);
+  box-shadow: var(--shadow-lg);
 }
 
 .download-btn::before {
@@ -780,22 +796,13 @@ body {
   right: -8px;
   background: var(--gradient);
   color: white;
-  padding: 0.3rem 0.6rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 20px;
   font-size: 0.75rem;
   font-weight: 700;
   box-shadow: var(--shadow);
   animation: pulse 2s ease-in-out infinite;
-}
-
-.download-btn:hover {
-  transform: translateY(-8px) scale(1.05);
-  box-shadow: 0 25px 50px rgba(224, 182, 186, 0.25);
-  color: white;
-}
-
-.download-btn:hover::before {
-  opacity: 1;
+  z-index: 2;
 }
 
 .download-btn:hover .download-badge {
@@ -804,23 +811,88 @@ body {
 
 .download-icon {
   font-size: 2rem;
+  z-index: 1;
+  position: relative;
 }
 
 .download-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  z-index: 1;
+  position: relative;
 }
 
 .download-label {
   font-size: 0.875rem;
-  color: var(--text-light);
+  color: var(--primary-color);
+  font-weight: 500;
+  transition: var(--transition);
 }
 
 .download-platform {
   font-size: 1.125rem;
-  font-weight: 600;
-  color: var(--text-primary);
+  font-weight: 700;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.download-btn:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(44, 31, 33, 0.3);
+  border-color: var(--primary-color);
+}
+
+.download-btn:hover span.download-label,
+.download-btn:hover span.download-platform,
+.download-btn:hover div.download-text,
+.download-btn:hover span.download-icon,
+.download-btn:hover .download-label,
+.download-btn:hover .download-platform,
+.download-btn:hover .download-text,
+.download-btn:hover .download-icon {
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+}
+
+/* Safari-specific fixes */
+@supports (-webkit-appearance: none) {
+  .download-btn:hover {
+    color: white !important;
+  }
+
+  .download-btn:hover .download-label {
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+  }
+
+  .download-btn:hover .download-platform {
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+  }
+
+  .download-btn:hover .download-text * {
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+  }
+
+  .download-btn:hover * {
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+  }
+}
+
+/* Edge-specific button fixes */
+@supports (-ms-ime-align: auto) {
+  .btn-primary:hover {
+    animation: none !important;
+  }
+
+  .btn-primary:hover::before {
+    transition: none !important;
+  }
 }
 
 /* Footer */
@@ -944,6 +1016,12 @@ body {
   .download-buttons {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+  }
+
+  .download-btn {
+    min-width: 100%;
+    max-width: 320px;
   }
 
   .card-stack {
@@ -1638,8 +1716,16 @@ body {
 .download-btn:focus,
 .privacy-close:focus,
 .terms-close:focus {
-  outline: 2px solid var(--primary-color);
-  outline-offset: 2px;
+  outline: 3px solid var(--primary-color);
+  outline-offset: 3px;
+}
+
+.download-btn:focus {
+  border-color: var(--primary-color);
+  box-shadow:
+    var(--shadow-lg),
+    0 0 0 4px rgba(44, 31, 33, 0.2);
+  outline: none;
 }
 
 /* High contrast mode support */

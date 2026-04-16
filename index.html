@@ -1,702 +1,805 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
-	<meta
-    name="description"
-    content="CardKeepApp v1.3.0 - Edit your cards and choose photos from your library! The beautiful way to preserve greeting card memories with full editing capabilities. iOS app for managing card collections." />
-	
-	<meta
-    name="keywords"
-    content="greeting card organiser, card editing app, photo library selection, birthday card keeper, digital card storage, card collection manager, memory keeper, editable card collection, photo import, greeting card editor" />
-	
-	<meta name="author" content="CardKeepApp Team" />
-	
-	<meta name="robots" content="index, follow" />
-	
-	<meta name="language" content="English" />
-	
-	<meta name="theme-color" content="#2C1F21" />
-	
-	<meta
-    http-equiv="Content-Security-Policy"
-    content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self';" />
-	
-	<meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
-	
-	<meta http-equiv="X-Content-Type-Options" content="nosniff" />
-	
-	<meta
-    http-equiv="Referrer-Policy"
-    content="strict-origin-when-cross-origin" />
-	
-	<meta
-    http-equiv="Permissions-Policy"
-    content="camera=(), microphone=(), geolocation=(), payment=()" />
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="CardKeepApp helps you save, organise, and revisit greeting cards on iPhone and iPad with photos, notes, tags, and reliable backup options."
+    />
+
+    <meta
+      name="keywords"
+      content="greeting card organiser, card editing app, photo library selection, birthday card keeper, digital card storage, card collection manager, memory keeper, editable card collection, photo import, greeting card editor"
+    />
+
+    <meta name="author" content="CardKeepApp Team" />
+
+    <meta name="robots" content="index, follow" />
+
+    <meta name="language" content="English" />
+
+    <meta name="theme-color" content="#2C1F21" />
+
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self';"
+    />
+
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+    <meta
+      http-equiv="Referrer-Policy"
+      content="strict-origin-when-cross-origin"
+    />
+
+    <meta
+      http-equiv="Permissions-Policy"
+      content="camera=(), microphone=(), geolocation=(), payment=()"
+    />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-	
-	<meta property="og:url" content="https://cardkeep.app/" />
-	
-	<meta
-    property="og:title"
-    content="CardKeepApp - Your Digital Card Collection Manager" />
-	
-	<meta
-    property="og:description"
-    content="The beautiful way to preserve your precious greeting card memories! Digitally store birthday cards, thank you notes, congratulations cards with photos and memories." />
-	
-	<meta property="og:image" content="https://cardkeep.app/og-image.jpg" />
-	
-	<meta property="og:site_name" content="CardKeepApp" />
+
+    <meta property="og:url" content="https://cardkeep.app/" />
+
+    <meta
+      property="og:title"
+      content="CardKeepApp - Your Digital Card Collection Manager"
+    />
+
+    <meta
+      property="og:description"
+      content="Save, organise, and revisit greeting cards on iPhone and iPad with photos, notes, tags, and reliable backups."
+    />
+
+    <meta property="og:image" content="https://cardkeep.app/og-image.jpg" />
+
+    <meta property="og:site_name" content="CardKeepApp" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-	
-	<meta property="twitter:url" content="https://cardkeep.app/" />
-	
-	<meta
-    property="twitter:title"
-    content="CardKeepApp - Your Digital Card Collection Manager" />
-	
-	<meta
-    property="twitter:description"
-    content="The beautiful way to preserve your precious greeting card memories! Digitally store birthday cards, thank you notes, congratulations cards." />
-	
-	<meta
-    property="twitter:image"
-    content="https://cardkeep.app/twitter-card.jpg" />
-	
-	<title>CardKeepApp - Your Digital Card Collection Manager | Card Organiser App</title>
-	
-	<link rel="preload" href="styles.css" as="style" />
-	
-	<link rel="stylesheet" href="styles.css" />
-	
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	
-	<link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
-	
-	<link rel="icon" type="image/x-icon" href="favicon.ico" />
-	
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-	
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-	
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-	
-	<link rel="manifest" href="site.webmanifest" />
-	
-	<link rel="canonical" href="https://cardkeep.app/" />
-</head>
-<body role="document"><a href="#main" class="skip-link">Skip to main content</a>
+
+    <meta property="twitter:url" content="https://cardkeep.app/" />
+
+    <meta
+      property="twitter:title"
+      content="CardKeepApp - Your Digital Card Collection Manager"
+    />
+
+    <meta
+      property="twitter:description"
+      content="Save, organise, and revisit greeting cards on iPhone and iPad with photos, notes, tags, and reliable backups."
+    />
+
+    <meta
+      property="twitter:image"
+      content="https://cardkeep.app/twitter-card.jpg"
+    />
+
+    <title>
+      CardKeepApp - Your Digital Card Collection Manager | Card Organiser App
+    </title>
+
+    <link rel="preload" href="styles.css" as="style" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
+    <link rel="manifest" href="site.webmanifest" />
+
+    <link rel="canonical" href="https://cardkeep.app/" />
+  </head>
+  <body role="document">
+    <a href="#main" class="skip-link">Skip to main content</a>
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
       {
-	"@context": "https://schema.org",
-	"@type": "SoftwareApplication",
-	"name": "CardKeepApp",
-	"description": "The beautiful way to preserve your precious greeting card memories! Digitally store and organise birthday cards, thank you notes, congratulations cards and more with photos and memories.",
-	"url": "https://cardkeep.app/",
-	"downloadUrl": "https://cardkeep.app/#download",
-	"operatingSystem": ["iOS", "Android", "Web"],
-		"applicationCategory": "ProductivityApplication",
-	"offers": {
-		"@type": "Offer",
-		"price": "3.99",
-		"priceCurrency": "GBP"
-	},
-	"publisher": {
-		"@type": "Organisation",
-		"name": "CardKeepApp Team"
-	},
-	"screenshot": "https://cardkeep.app/app-screenshot.jpg",
-	"featureList": [
-        "Full card editing - change sender, occasion, dates, notes, tags and photos", "Photo library selection - choose existing photos or take new ones", "Smart photo management prevents duplicates while maintaining organization", "Enhanced multi-photo storage with Front/Inside/Back/Extra labelling", "Beautiful greeting card organisation", "Local data storage with privacy protection and comprehensive error handling", "Advanced search by sender, occasion, date, and tags", "Custom tags and notes system for each card", "iOS 16.0+ optimised interface for iPhone and iPad", "Dual backup system: Quick (lightweight) & Complete (with photos) backup types", "Weekly backup reminders after 7+ days or 5+ new cards", "Choose your backup type: Quick (~1KB) or Complete (includes photos)", "Professional Core Data integration with backward compatibility", "8+ language localization support", "Enhanced performance with 90% storage optimisation"
-    ]
-}
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "CardKeepApp",
+        "description": "Save, organise, and revisit greeting cards on iPhone and iPad with photos, notes, tags, and reliable backup options.",
+        "url": "https://cardkeep.app/",
+        "downloadUrl": "https://apps.apple.com/us/app/cardkeep/id6749583192",
+        "operatingSystem": "iOS",
+        "applicationCategory": "ProductivityApplication",
+        "publisher": {
+          "@type": "Organization",
+          "name": "CardKeepApp Team"
+        },
+        "screenshot": "https://cardkeep.app/app-screenshot.jpg",
+        "featureList": [
+          "Full card editing - change sender, occasion, dates, notes, tags and photos",
+          "Photo library selection - choose existing photos or take new ones",
+          "Smart photo management prevents duplicates while maintaining organization",
+          "Enhanced multi-photo storage with Front/Inside/Back/Extra labelling",
+          "Beautiful greeting card organisation",
+          "Local data storage with privacy protection and comprehensive error handling",
+          "Advanced search by sender, occasion, date, and tags",
+          "Custom tags and notes system for each card",
+          "iOS 16.0+ optimised interface for iPhone and iPad",
+          "Dual backup system: Quick (lightweight) & Complete (with photos) backup types",
+          "Weekly backup reminders after 7+ days or 5+ new cards",
+          "Choose your backup type: Quick (~1KB) or Complete (includes photos)",
+          "Professional Core Data integration with backward compatibility",
+          "8+ language localization support",
+          "Enhanced performance with 90% storage optimisation"
+        ]
+      }
     </script>
     <header class="header" role="banner">
-		<nav class="nav" role="navigation" aria-label="Main navigation">
-			<div class="nav-brand">
-				<h1 class="logo" aria-label="CardKeepApp - Home">CardKeepApp</h1>
-			</div>
-			
-			<ul class="nav-menu" id="nav-menu" role="menubar">
-				<li role="none"><a href="#features" class="nav-link" role="menuitem">Features</a></li>
-				<li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
-				<li role="none"><a href="#download" class="nav-link" role="menuitem">Download</a></li>
-				<li role="none"><a href="documentation.html" class="nav-link" role="menuitem"
-		              >Documentation</a
-		            ></li>
-				<li role="none"><a href="faq.html" class="nav-link" role="menuitem">FAQ</a></li>
-				<li role="none"><a href="releases.html" class="nav-link" role="menuitem"
-		              >Releases</a
-		            ></li>
-				<li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
-			</ul>
-			
-			<button
-	          class="hamburger"
-	          aria-label="Toggle navigation menu"
-	          aria-expanded="false"
-	          aria-controls="nav-menu"
-	        ><span aria-hidden="true"></span>
-		          <span aria-hidden="true"></span>
-		          <span aria-hidden="true"></span></button>
-		</nav>
-	</header>
-	
-	<main role="main" id="main">
-		<section class="hero" aria-labelledby="hero-title">
-			<div class="hero-content">
-				<h1 class="hero-title" id="hero-title">Keep Your <span class="highlight">Precious Memories</span> Forever</h1>
-				
-				<p class="hero-subtitle">The beautiful way to preserve your greeting card memories! Digitally
-		            store birthday cards, thank you notes, congratulations cards, and
-		            all the heartfelt messages that matter most to you.♡
-		            <a
-		              href="documentation.html"
-		              style="
-		                color: var(--gradient-start);
-		                text-decoration: none;
-		                font-weight: 600;
-		              "
-		              >Learn how it works →</a
-		            ></p>
-				
-				<div style="display: flex; justify-content: center; margin: 2rem 0"><a
-		              href="https://apps.apple.com/us/app/cardkeep/id6749583192"
-		              target="_blank"
-		              rel="noopener noreferrer"
-		              class="btn btn-primary btn-large"
-		              aria-describedby="download-desc"
-		              >Download Now!</a
-		            ></div>
-				
-				<div id="download-desc" class="sr-only">Navigate to download section</div>
-			</div>
-			
-			<div
-	          class="hero-visual"
-	          role="img"
-	          aria-label="Stack of greeting cards showing birthday, wedding, and thank you cards"
-	        >
-				<div class="card-stack">
-					<div class="card card-1">
-						<div class="card-content">
-							<img
-			                  src="Screenshots/card_collection_screen.png?v=1.3.0"
-			                  alt="CardKeepApp v1.3.0 card collection view displaying saved birthday and greeting cards in an elegant grid layout"
-			                  class="card-image-real"
-			                  loading="lazy" />
-							
-							<div class="card-name">Your Cards</div>
-						</div>
-					</div>
-					
-					<div class="card card-2">
-						<div class="card-content">
-							<img
-			                  src="Screenshots/photo_selection_screen.png?v=1.3.0"
-			                  alt="CardKeepApp v1.3.0 photo selection screen with camera and photo library options for choosing card photos"
-			                  class="card-image-real"
-			                  loading="lazy" />
-							
-							<div class="card-name">Choose Photos</div>
-						</div>
-					</div>
-					
-					<div class="card card-3">
-						<div class="card-content">
-							<img
-			                  src="Screenshots/initial_screen.png?v=1.3.0"
-			                  alt="CardKeepApp v1.3.0 Your Memory Box welcome screen with Add New Card and Import Previous Backup options"
-			                  class="card-image-real app-preview"
-			                  loading="lazy" />
-							
-							<div class="card-name">Your Memory Box</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="floating-hearts"><span class="heart heart-1">♡</span>
-		            <span class="heart heart-2">♡</span>
-		            <span class="heart heart-3">♡</span></div>
-			</div>
-		</section>
-		
-		<section id="features" class="features" aria-labelledby="features-title">
-			<div class="container">
-				<h2 class="section-title" id="features-title">★ Beautiful Features for Your Memories</h2>
-				
-				<div class="features-grid">
-					<div class="feature-card">
-						<div class="feature-icon">♡</div>
-						
-						<h3>Beautiful Interface</h3>
-						
-						<p>Gorgeous design with enhanced dark mode support! iOS 16.0+
-			                optimised for iPhone/iPad with professional architecture, smart
-			                caching, and a warm, cosy aesthetic</p>
-					</div>
-					
-					<div class="feature-card">
-						<div class="feature-icon">★</div>
-						
-						<h3>Occasion Tracking</h3>
-						
-						<p>Save birthdays, anniversaries, thank you cards, congratulations
-			                and more! Perfect for remembering all your special moments.</p>
-					</div>
-					
-					<div class="feature-card">
-						<div class="feature-icon">♡</div>
-						
-						<h3>Photo Library & Camera</h3>
-						
-						<p>Choose existing photos from your library or take new ones! Smart
-			                photo management prevents duplicates while supporting the same
-			                Front/Inside/Back organisation system. Perfect for adding older
-			                cards to your collection.</p>
-					</div>
-					
-					<div class="feature-card">
-						<div class="feature-icon">★</div>
-						
-						<h3>Custom Tags & Notes</h3>
-						
-						<p>Add personal touches with custom tags and notes. Remember who
-			                sent it, what the occasion was, and why it's special to you.
-							<br /><a
-			                  href="documentation.html#tags-organisation"
-			                  style="
-			                    color: var(--gradient-start);
-			                    font-size: 1em;
-			                    text-decoration: none;
-			                  "
-			                  >Organisation guide →</a
-			                ></p>
-					</div>
-					
-					<div class="feature-card">
-						<div class="feature-icon">♡</div>
-						
-						<h3>Full Card Editing</h3>
-						
-						<p>Edit any saved card! Change sender, occasion, dates, notes,
-			                tags, and even swap out photos. Made a typo or want to add more
-			                details? No need to delete and recreate cards anymore. Complete
-			                flexibility for your memories.</p>
-					</div>
-					
-					<div class="feature-card">
-						<div class="feature-icon">★</div>
-						
-						<h3>Smart Search</h3>
-						
-						<p>Find any card instantly! Search by sender, occasion, date
-			                received, or custom tags. Never lose track of precious memories
-			                again.
-							<br /><a
-			                  href="documentation.html#search-features"
-			                  style="
-			                    color: var(--gradient-start);
-			                    font-size: 1em;
-			                    text-decoration: none;
-			                  "
-			                  >See search tips →</a
-			                ></p>
-					</div>
-					
-					<div class="feature-card">
-						<div class="feature-icon">♡</div>
-						
-						<h3>Backup & Export</h3>
-						
-						<p>Dual backup system: Quick Backup (tiny, 1KB per card) or
-			                Complete Backup (includes photos, ~400KB per card, guaranteed
-			                restoration). Choose what fits your needs!
-							<br /><a
-			                  href="documentation.html#backup-export"
-			                  style="
-			                    color: var(--gradient-start);
-			                    font-size: 1em;
-			                    text-decoration: none;
-			                  "
-			                  >Backup guide →</a
-			                ></p>
-					</div>
-					
-					<div class="feature-card">
-						<div class="feature-icon">★</div>
-						
-						<h3>Private & Secure</h3>
-						
-						<p>Your memories stay yours! All data is stored locally on your
-			                device with no cloud sync required. Complete privacy for your
-			                personal cards.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<section id="about" class="about" aria-labelledby="about-title">
-			<div class="container">
-				<div class="about-content">
-					<div class="about-text">
-						<h2 id="about-title">Why CardKeepApp Touches Hearts? ♡</h2>
-						
-						<p>CardKeepApp was born from a love of preserving precious
-			                memories! We all have those special greeting cards - birthday
-			                wishes from loved ones, thank you notes from friends,
-			                congratulations cards that made our day. CardKeepApp helps you
-			                keep these treasured memories safe forever.
-							<br /><a
-			                  href="documentation.html"
-			                  style="
-			                    color: var(--gradient-start);
-			                    text-decoration: none;
-			                    font-weight: 600;
-			                  "
-			                  >Read our complete guide</a
-			                >
-			                to discover all the features and get the most from your app
-			                experience!</p>
-						
-						<ul class="about-features">
-							<li>Beautiful and intuitive iOS 16.0+ design with enhanced photo
-				                  organisation</li>
-							<li>Complete privacy with professional-grade error handling and
-				                  security</li>
-							<li>Low Cost, High Value</li>
-							<li>Perfect for birthday, thank you, and congratulations cards</li>
-							<li>Made specifically for iPhone/iPad</li>
-							<li>Fully localised interface available in 8+ languages</li>
-							<li>Smart date handling that adapts to your region's format</li>
-							<li>90% storage optimisation with backward compatibility for
-				                  existing cards</li>
-							<li>Professional Photos integration with robust reference system</li>
-							<li>Costs less than a standard greeting card</li>
-						</ul>
-					</div>
-					
-					<div class="about-visual">
-						<div class="screenshot-showcase">
-							<img
-			                  src="Screenshots/card_collection_screen.png?v=1.3.0"
-			                  alt="CardKeepApp v1.3.0 collection view displaying saved birthday and thinking of you cards in a beautiful grid layout"
-			                  class="app-screenshot main-screenshot"
-			                  loading="lazy" />
-							
-							<img
-			                  src="Screenshots/add_new_screen.png?v=1.3.0"
-			                  alt="CardKeepApp v1.3.0 add new card form with photo capture, sender details, and editing capabilities"
-			                  class="app-screenshot secondary-screenshot"
-			                  loading="lazy" />
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<section class="app-preview" aria-labelledby="preview-title">
-			<div class="container">
-				<h2 class="section-title" id="preview-title">♡ See CardKeepApp in Action</h2>
-				
-				<p class="preview-subtitle">Real screenshots from the actual app - beautifully designed for your
-		            precious memories</p>
-				
-				<div
-		            class="app-video-container"
-		            style="text-align: center; margin: 2rem 0"
-		          >
-					<video
-		              controls
-		              autoplay
-		              muted
-		              loop
-		              playsinline
-		              style="
-		                max-width: 350px;
-		                width: 100%;
-		                border-radius: 20px;
-		                box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
-		              "
-		              poster="Screenshots/initial_screen.png?v=1.3.0"
-		            >
-						<source
-		                src="Screenshots/app_preview_iphone.mp4"
-		                type="video/mp4" />Your browser does not support the video tag.
-					</video>
-					
-					<p
-		              style="
-		                font-style: italic;
-		                color: var(--text-secondary);
-		                margin-top: 1rem;
-		                font-size: 0.9rem;
-		              "
-		            >CardKeepApp in action</p>
-				</div>
-				
-				<div class="screenshot-gallery">
-					<div class="screenshot-item">
-						<img
-		                src="Screenshots/initial_screen.png?v=1.3.0"
-		                alt="CardKeepApp v1.3.0 first launch screen showing app introduction and getting started guide"
-		                class="gallery-screenshot"
-		                loading="lazy" />
-						
-						<div class="screenshot-caption">
-							<h4>First Launch</h4>
-							
-							<p>Welcome guide when you first open CardKeepApp with helpful
-				                  introduction</p>
-						</div>
-					</div>
-					
-					<div class="screenshot-item">
-						<img
-		                src="Screenshots/first_open_page.png?v=1.3.0"
-		                alt="CardKeepApp v1.3.0 main screen with Add New Card and Import Backup options"
-		                class="gallery-screenshot"
-		                loading="lazy" />
-						
-						<div class="screenshot-caption">
-							<h4>Main Screen</h4>
-							
-							<p>Your Memory Box with options to add new cards or import
-				                  previous backups</p>
-						</div>
-					</div>
-					
-					<div class="screenshot-item">
-						<img
-		                src="Screenshots/photo_selection_screen.png?v=1.3.0"
-		                alt="CardKeepApp v1.3.0 photo capture interface with camera and photo library options"
-		                class="gallery-screenshot"
-		                loading="lazy" />
-						
-						<div class="screenshot-caption">
-							<h4>Take Photos</h4>
-							
-							<p>Capture card photos or choose from your library with multiple
-				                  photo type options</p>
-						</div>
-					</div>
-					
-					<div class="screenshot-item">
-						<img
-		                src="Screenshots/card_collection_screen.png?v=1.3.0"
-		                alt="CardKeepApp v1.3.0 card collection grid view showing saved greeting cards"
-		                class="gallery-screenshot"
-		                loading="lazy" />
-						
-						<div class="screenshot-caption">
-							<h4>Your Collection</h4>
-							
-							<p>Beautiful grid layout displaying your saved cards with
-				                  occasions and dates</p>
-						</div>
-					</div>
-					
-					<div class="screenshot-item">
-						<img
-		                src="Screenshots/card_detail_screen.png?v=1.3.0"
-		                alt="CardKeepApp v1.3.0 card detail view showing full card information and photos"
-		                class="gallery-screenshot"
-		                loading="lazy" />
-						
-						<div class="screenshot-caption">
-							<h4>Card Details</h4>
-							
-							<p>View full card details, photos, and memories with edit options</p>
-						</div>
-					</div>
-					
-					<div class="screenshot-item">
-						<img
-		                src="Screenshots/edit_vcard_page.png?v=1.3.0"
-		                alt="CardKeepApp v1.3.0 card editing interface for modifying card details"
-		                class="gallery-screenshot"
-		                loading="lazy" />
-						
-						<div class="screenshot-caption">
-							<h4>Edit Cards</h4>
-							
-							<p>Full card editing - change sender, occasion, dates, notes,
-				                  tags, and photos</p>
-						</div>
-					</div>
-					
-					<div class="screenshot-item">
-						<img
-		                src="Screenshots/backup_screen.png?v=1.3.0"
-		                alt="CardKeepApp v1.3.0 dual backup system showing Quick and Complete backup options"
-		                class="gallery-screenshot"
-		                loading="lazy" />
-						
-						<div class="screenshot-caption">
-							<h4>Dual Backup System</h4>
-							
-							<p>Choose Quick Backup for speed or Complete Backup for
-				                  guaranteed restoration</p>
-						</div>
-					</div>
-					
-					<div class="screenshot-item">
-						<img
-		                src="Screenshots/successfull_import_page.png?v=1.3.0"
-		                alt="CardKeepApp v1.3.0 successful backup import confirmation screen"
-		                class="gallery-screenshot"
-		                loading="lazy" />
-						
-						<div class="screenshot-caption">
-							<h4>Import Success</h4>
-							
-							<p>Successful backup restoration with confirmation of imported
-				                  cards</p>
-						</div>
-					</div>
-					
-					<div class="screenshot-item">
-						<img
-		                src="Screenshots/about_screen.png?v=1.3.0"
-		                alt="CardKeepApp v1.3.0 about page showing app information and version details"
-		                class="gallery-screenshot"
-		                loading="lazy" />
-						
-						<div class="screenshot-caption">
-							<h4>About & Info</h4>
-							
-							<p>App information, version details, and helpful links</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<section id="download" class="download" aria-labelledby="download-title">
-			<div class="container">
-				<h2 class="section-title" id="download-title">♡ Start Preserving Your Memories!</h2>
-				
-				<p class="download-subtitle">Available for iPhone and iPad - Low Cost, your memories forever!
-		            ♡
-					<br /><a
-		              href="documentation.html"
-		              style="
-		                color: var(--gradient-start);
-		                text-decoration: none;
-		                font-weight: 600;
-		                font-size: 1.1em;
-		              "
-		              >Read our docs first</a
-		            >
-		            to understand all the amazing features before downloading!</p>
-				
-				<div class="download-buttons"><a
-		              href="https://apps.apple.com/us/app/cardkeep/id6749583192"
-		              target="_blank"
-		              rel="noopener noreferrer"
-		              class="download-btn ios"
-		              aria-label="Download CardKeepApp for iOS on App Store"
-		            >
-		              <span class="download-icon" aria-hidden="true">🍎</span>
-					
-					<div class="download-text"><span class="download-label">Available on</span>
-		                <span class="download-platform">App Store</span></div>
-					
-					<div class="download-badge" aria-hidden="true">iOS</div>
-					</a>
-					
-					<button
-		              class="download-btn android"
-		              style="opacity: 0.6; cursor: not-allowed"
-		              aria-label="Coming to Android - Not yet available"
-		              disabled
-		            ><span class="download-icon" aria-hidden="true">🤖</span>
-						
-						<div class="download-text"><span class="download-label">Coming to</span>
-			                <span class="download-platform">Android</span></div>
-						
-						<div class="download-badge" aria-hidden="true">🔜 Soon</div>
-					</button>
-				</div>
-			</div>
-		</section>
-	</main>
-	
-	<footer id="contact" class="footer" role="contentinfo">
-		<div class="container">
-			<div class="footer-content">
-				<div class="footer-brand">
-					<h3>CardKeepApp</h3>
-					
-					<p>Making card collection management simple, beautiful, and
-			              absolutely delightful!</p>
-				</div>
-				
-				<div class="footer-links">
-					<div class="footer-column">
-						<h4>Product</h4>
-						
-						<ul>
-							<li><a href="#features">Features</a></li>
-							<li><a href="#download">Download</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="documentation.html">Documentation</a></li>
-							<li><a href="faq.html">FAQ</a></li>
-							<li><a href="releases.html">Release Notes</a></li>
-						</ul>
-					</div>
-					
-					<div class="footer-column">
-						<h4>Support</h4>
-						
-						<ul>
-							<li><a href="mailto:memories@cardkeep.app">Contact Us</a></li>
-							<li><a href="privacy.html">Privacy Policy</a></li>
-							<li><a href="terms.html">Terms of Service</a></li>
-							<li><a href="faq.html">FAQ</a></li>
-						</ul>
-					</div>
-					
-					<div class="footer-column">
-						<h4>Connect</h4>
-						
-						<ul>
-							<li><a
-			                    href="https://www.instagram.com/cardkeepapp/"
-			                    target="_blank"
-			                    rel="noopener noreferrer"
-			                    >Instagram</a
-				                  ></li>
-							<li><a
-			                    href="https://x.com/CardKeepAppApp"
-			                    target="_blank"
-			                    rel="noopener noreferrer"
-			                    >X (Twitter)</a
-				                  ></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			
-			<div class="footer-bottom">
-				<p>&copy; 2024 CardKeepApp. All rights reserved.</p>
-			</div>
-		</div>
-	</footer>
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-brand">
+          <h1 class="logo" aria-label="CardKeepApp - Home">CardKeepApp</h1>
+        </div>
+
+        <ul class="nav-menu" id="nav-menu" role="menubar">
+          <li role="none">
+            <a href="#features" class="nav-link" role="menuitem">Features</a>
+          </li>
+          <li role="none">
+            <a href="#about" class="nav-link" role="menuitem">About</a>
+          </li>
+          <li role="none">
+            <a href="#download" class="nav-link" role="menuitem">Download</a>
+          </li>
+          <li role="none">
+            <a href="documentation.html" class="nav-link" role="menuitem"
+              >Documentation</a
+            >
+          </li>
+          <li role="none">
+            <a href="faq.html" class="nav-link" role="menuitem">FAQ</a>
+          </li>
+          <li role="none">
+            <a href="releases.html" class="nav-link" role="menuitem"
+              >Releases</a
+            >
+          </li>
+          <li role="none">
+            <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+          </li>
+        </ul>
+
+        <button
+          class="hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main role="main" id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <h1 class="hero-title" id="hero-title">
+            Keep the Cards You Never Want to
+            <span class="highlight">Forget</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            CardKeepApp helps you save, organise, and revisit your greeting
+            cards on iPhone and iPad with photos, notes, tags, and backup
+            options.
+            <a
+              href="documentation.html"
+              style="
+                color: var(--gradient-start);
+                text-decoration: none;
+                font-weight: 600;
+              "
+              >Learn how it works →</a
+            >
+          </p>
+
+          <div style="display: flex; justify-content: center; margin: 2rem 0">
+            <a
+              href="https://apps.apple.com/us/app/cardkeep/id6749583192"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary btn-large"
+              aria-describedby="download-desc"
+              >Download on the App Store</a
+            >
+          </div>
+
+          <div id="download-desc" class="sr-only">
+            Navigate to download section
+          </div>
+        </div>
+
+        <div
+          class="hero-visual"
+          role="img"
+          aria-label="Stack of greeting cards showing birthday, wedding, and thank you cards"
+        >
+          <div class="card-stack">
+            <div class="card card-1">
+              <div class="card-content">
+                <img
+                  src="Screenshots/card_collection_screen.png?v=1.3.0"
+                  alt="CardKeepApp v1.3.0 card collection view displaying saved birthday and greeting cards in an elegant grid layout"
+                  class="card-image-real"
+                  loading="lazy"
+                />
+
+                <div class="card-name">Your Cards</div>
+              </div>
+            </div>
+
+            <div class="card card-2">
+              <div class="card-content">
+                <img
+                  src="Screenshots/photo_selection_screen.png?v=1.3.0"
+                  alt="CardKeepApp v1.3.0 photo selection screen with camera and photo library options for choosing card photos"
+                  class="card-image-real"
+                  loading="lazy"
+                />
+
+                <div class="card-name">Choose Photos</div>
+              </div>
+            </div>
+
+            <div class="card card-3">
+              <div class="card-content">
+                <img
+                  src="Screenshots/initial_screen.png?v=1.3.0"
+                  alt="CardKeepApp v1.3.0 Your Memory Box welcome screen with Add New Card and Import Previous Backup options"
+                  class="card-image-real app-preview"
+                  loading="lazy"
+                />
+
+                <div class="card-name">Your Memory Box</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-hearts">
+            <span class="heart heart-1">♡</span>
+            <span class="heart heart-2">♡</span>
+            <span class="heart heart-3">♡</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features" aria-labelledby="features-title">
+        <div class="container">
+          <h2 class="section-title" id="features-title">
+            Features That Make CardKeepApp Easy to Use
+          </h2>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">♡</div>
+
+              <h3>Designed for iPhone and iPad</h3>
+
+              <p>
+                A clean, simple interface that keeps your collection easy to
+                browse, edit, and enjoy on iPhone and iPad.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">★</div>
+
+              <h3>Occasion Tracking</h3>
+
+              <p>
+                Keep birthdays, anniversaries, thank you cards, congratulations,
+                and everyday notes organised in one place.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">♡</div>
+
+              <h3>Photo Library & Camera</h3>
+
+              <p>
+                Use your camera or choose images from your photo library to
+                capture the front, inside, and back of each card.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">★</div>
+
+              <h3>Custom Tags & Notes</h3>
+
+              <p>
+                Add tags and notes so you can remember who sent each card, what
+                it was for, and why it matters. <br /><a
+                  href="documentation.html#tags-organisation"
+                  style="
+                    color: var(--gradient-start);
+                    font-size: 1em;
+                    text-decoration: none;
+                  "
+                  >Organisation guide →</a
+                >
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">♡</div>
+
+              <h3>Full Card Editing</h3>
+
+              <p>
+                Update saved cards at any time. Change names, occasions, dates,
+                notes, tags, and photos without starting over.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">★</div>
+
+              <h3>Smart Search</h3>
+
+              <p>
+                Find cards quickly by sender, occasion, date received, or custom
+                tags. <br /><a
+                  href="documentation.html#search-features"
+                  style="
+                    color: var(--gradient-start);
+                    font-size: 1em;
+                    text-decoration: none;
+                  "
+                  >See search tips →</a
+                >
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">♡</div>
+
+              <h3>Backup & Export</h3>
+
+              <p>
+                Choose between a lightweight backup for speed or a complete
+                backup that includes photos when you want a fuller copy of your
+                collection. <br /><a
+                  href="documentation.html#backup-export"
+                  style="
+                    color: var(--gradient-start);
+                    font-size: 1em;
+                    text-decoration: none;
+                  "
+                  >Backup guide →</a
+                >
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">★</div>
+
+              <h3>Private & Secure</h3>
+
+              <p>
+                Your collection stays on your device, giving you a more private
+                way to keep personal cards and notes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2 id="about-title">Why People Use CardKeepApp</h2>
+
+              <p>
+                Some cards are hard to throw away. CardKeepApp gives you a
+                simple way to keep the messages, photos, and details that still
+                matter without needing to store every paper card forever.
+                <br /><a
+                  href="documentation.html"
+                  style="
+                    color: var(--gradient-start);
+                    text-decoration: none;
+                    font-weight: 600;
+                  "
+                  >Read the guide</a
+                >
+                to see how the app works in more detail.
+              </p>
+
+              <ul class="about-features">
+                <li>
+                  Built for iPhone and iPad with a simple card-first layout
+                </li>
+                <li>
+                  Keep sender details, occasions, notes, tags, and photos
+                  together
+                </li>
+                <li>
+                  Works well for birthday, thank you, congratulations, and
+                  everyday cards
+                </li>
+                <li>Private by design with data stored on your device</li>
+                <li>Available on the App Store in supported regions</li>
+                <li>Fully localised interface available in 8+ languages</li>
+                <li>Smart date handling that adapts to your region's format</li>
+                <li>
+                  Flexible backups to help you move or restore your collection
+                </li>
+                <li>Easy photo capture and library import for older cards</li>
+                <li>
+                  Made for keeping meaningful cards accessible, not tucked away
+                </li>
+              </ul>
+            </div>
+
+            <div class="about-visual">
+              <div class="screenshot-showcase">
+                <img
+                  src="Screenshots/card_collection_screen.png?v=1.3.0"
+                  alt="CardKeepApp v1.3.0 collection view displaying saved birthday and thinking of you cards in a beautiful grid layout"
+                  class="app-screenshot main-screenshot"
+                  loading="lazy"
+                />
+
+                <img
+                  src="Screenshots/add_new_screen.png?v=1.3.0"
+                  alt="CardKeepApp v1.3.0 add new card form with photo capture, sender details, and editing capabilities"
+                  class="app-screenshot secondary-screenshot"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-preview" aria-labelledby="preview-title">
+        <div class="container">
+          <h2 class="section-title" id="preview-title">
+            ♡ See CardKeepApp in Action
+          </h2>
+
+          <p class="preview-subtitle">
+            Real screenshots from the app so you can see how it works before you
+            download.
+          </p>
+
+          <div
+            class="app-video-container"
+            style="text-align: center; margin: 2rem 0"
+          >
+            <video
+              controls
+              autoplay
+              muted
+              loop
+              playsinline
+              style="
+                max-width: 350px;
+                width: 100%;
+                border-radius: 20px;
+                box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+              "
+              poster="Screenshots/initial_screen.png?v=1.3.0"
+            >
+              <source
+                src="Screenshots/app_preview_iphone.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+
+            <p
+              style="
+                font-style: italic;
+                color: var(--text-secondary);
+                margin-top: 1rem;
+                font-size: 0.9rem;
+              "
+            >
+              CardKeepApp in action
+            </p>
+          </div>
+
+          <div class="screenshot-gallery">
+            <div class="screenshot-item">
+              <img
+                src="Screenshots/initial_screen.png?v=1.3.0"
+                alt="CardKeepApp v1.3.0 first launch screen showing app introduction and getting started guide"
+                class="gallery-screenshot"
+                loading="lazy"
+              />
+
+              <div class="screenshot-caption">
+                <h4>First Launch</h4>
+
+                <p>
+                  Welcome guide when you first open CardKeepApp with helpful
+                  introduction
+                </p>
+              </div>
+            </div>
+
+            <div class="screenshot-item">
+              <img
+                src="Screenshots/first_open_page.png?v=1.3.0"
+                alt="CardKeepApp v1.3.0 main screen with Add New Card and Import Backup options"
+                class="gallery-screenshot"
+                loading="lazy"
+              />
+
+              <div class="screenshot-caption">
+                <h4>Main Screen</h4>
+
+                <p>
+                  Your Memory Box with options to add new cards or import
+                  previous backups
+                </p>
+              </div>
+            </div>
+
+            <div class="screenshot-item">
+              <img
+                src="Screenshots/photo_selection_screen.png?v=1.3.0"
+                alt="CardKeepApp v1.3.0 photo capture interface with camera and photo library options"
+                class="gallery-screenshot"
+                loading="lazy"
+              />
+
+              <div class="screenshot-caption">
+                <h4>Take Photos</h4>
+
+                <p>
+                  Capture card photos or choose from your library with multiple
+                  photo type options
+                </p>
+              </div>
+            </div>
+
+            <div class="screenshot-item">
+              <img
+                src="Screenshots/card_collection_screen.png?v=1.3.0"
+                alt="CardKeepApp v1.3.0 card collection grid view showing saved greeting cards"
+                class="gallery-screenshot"
+                loading="lazy"
+              />
+
+              <div class="screenshot-caption">
+                <h4>Your Collection</h4>
+
+                <p>
+                  Beautiful grid layout displaying your saved cards with
+                  occasions and dates
+                </p>
+              </div>
+            </div>
+
+            <div class="screenshot-item">
+              <img
+                src="Screenshots/card_detail_screen.png?v=1.3.0"
+                alt="CardKeepApp v1.3.0 card detail view showing full card information and photos"
+                class="gallery-screenshot"
+                loading="lazy"
+              />
+
+              <div class="screenshot-caption">
+                <h4>Card Details</h4>
+
+                <p>
+                  View full card details, photos, and memories with edit options
+                </p>
+              </div>
+            </div>
+
+            <div class="screenshot-item">
+              <img
+                src="Screenshots/edit_vcard_page.png?v=1.3.0"
+                alt="CardKeepApp v1.3.0 card editing interface for modifying card details"
+                class="gallery-screenshot"
+                loading="lazy"
+              />
+
+              <div class="screenshot-caption">
+                <h4>Edit Cards</h4>
+
+                <p>
+                  Full card editing - change sender, occasion, dates, notes,
+                  tags, and photos
+                </p>
+              </div>
+            </div>
+
+            <div class="screenshot-item">
+              <img
+                src="Screenshots/backup_screen.png?v=1.3.0"
+                alt="CardKeepApp v1.3.0 dual backup system showing Quick and Complete backup options"
+                class="gallery-screenshot"
+                loading="lazy"
+              />
+
+              <div class="screenshot-caption">
+                <h4>Dual Backup System</h4>
+
+                <p>
+                  Choose Quick Backup for speed or Complete Backup for
+                  guaranteed restoration
+                </p>
+              </div>
+            </div>
+
+            <div class="screenshot-item">
+              <img
+                src="Screenshots/successfull_import_page.png?v=1.3.0"
+                alt="CardKeepApp v1.3.0 successful backup import confirmation screen"
+                class="gallery-screenshot"
+                loading="lazy"
+              />
+
+              <div class="screenshot-caption">
+                <h4>Import Success</h4>
+
+                <p>
+                  Successful backup restoration with confirmation of imported
+                  cards
+                </p>
+              </div>
+            </div>
+
+            <div class="screenshot-item">
+              <img
+                src="Screenshots/about_screen.png?v=1.3.0"
+                alt="CardKeepApp v1.3.0 about page showing app information and version details"
+                class="gallery-screenshot"
+                loading="lazy"
+              />
+
+              <div class="screenshot-caption">
+                <h4>About & Info</h4>
+
+                <p>App information, version details, and helpful links</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="download" aria-labelledby="download-title">
+        <div class="container">
+          <h2 class="section-title" id="download-title">
+            Keep Your Collection Close
+          </h2>
+
+          <p class="download-subtitle">
+            Available for iPhone and iPad on the App Store.
+            <br /><a
+              href="documentation.html"
+              style="
+                color: var(--gradient-start);
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 1.1em;
+              "
+              >Read the guide first</a
+            >
+            if you want a closer look at the app before downloading.
+          </p>
+
+          <div class="download-buttons">
+            <a
+              href="https://apps.apple.com/us/app/cardkeep/id6749583192"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="download-btn ios"
+              aria-label="Download CardKeepApp for iOS on App Store"
+            >
+              <span class="download-icon" aria-hidden="true">🍎</span>
+
+              <div class="download-text">
+                <span class="download-label">Available on</span>
+                <span class="download-platform">App Store</span>
+              </div>
+
+              <div class="download-badge" aria-hidden="true">iOS</div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>CardKeepApp</h3>
+
+            <p>
+              A simple, thoughtful way to keep the greeting cards that still
+              mean something.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Product</h4>
+
+              <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="releases.html">Release Notes</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>Support</h4>
+
+              <ul>
+                <li><a href="mailto:memories@cardkeep.app">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>Connect</h4>
+
+              <ul>
+                <li>
+                  <a
+                    href="https://www.instagram.com/cardkeepapp/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://x.com/CardKeepAppApp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >X (Twitter)</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 CardKeepApp. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 
     <!-- First Visit Welcome Popup -->
     <div
@@ -707,45 +810,48 @@
       aria-labelledby="welcome-title"
       aria-modal="true"
     >
-		<div class="welcome-popup-content">
-			<div class="welcome-header"><span class="welcome-emoji"></span>
-				
-				<h3 id="welcome-title">Welcome to CardKeepApp!</h3>
-				
-				<button
-	            class="welcome-close"
-	            onclick="closeWelcomePopup.welcome-popup()"
-	            aria-label="Close welcome popup"
-	          ></button>
-			</div>
-			
-			<div class="welcome-content">
-				<p>Hey there, lovely! 👋</p>
-				
-				<p>Welcome to CardKeepApp v1.3.0! We've just launched our revolutionary
-		            <strong>dual backup system</strong> that finally solves cross-device
-		            photo restoration.</p>
-				
-				<p>for guaranteed photo restoration when moving to new devices!</p>
-				
-				<div class="welcome-actions"><a href="documentation.html#backup-export" class="welcome-docs-btn">
-		              Learn About Dual Backup System
-		            </a>
-		            <a href="faq.html" class="welcome-docs-btn">
-		              ❓ Got Questions? Check Our FAQ
-		            </a>
-		            <a href="releases.html" class="welcome-docs-btn">
-		              Explore v1.3.0 Features
-		            </a></div>
-				
-				<p class="welcome-note"><em
-		              >This popup should only show once - we promise we won't bug you
-		              again!</em
-		            ></p>
-			</div>
-		</div>
-	</div>
-	
-	    <script src="script.js"></script>
-</body>
+      <div class="welcome-popup-content">
+        <div class="welcome-header">
+          <span class="welcome-emoji"></span>
+
+          <h3 id="welcome-title">Welcome to CardKeepApp!</h3>
+
+          <button
+            class="welcome-close"
+            onclick="closeWelcomePopup()"
+            aria-label="Close welcome popup"
+          ></button>
+        </div>
+
+        <div class="welcome-content">
+          <p>Thanks for visiting CardKeepApp.</p>
+
+          <p>
+            Version 1.3.0 adds <strong>dual backup options</strong> and full
+            card editing, making it easier to protect and update your
+            collection.
+          </p>
+
+          <p>
+            Use Quick Backup for a lightweight copy, or Complete Backup when you
+            want to include your photos too.
+          </p>
+
+          <div class="welcome-actions">
+            <a href="documentation.html#backup-export" class="welcome-docs-btn">
+              Learn about backup options
+            </a>
+            <a href="faq.html" class="welcome-docs-btn"> Read the FAQ </a>
+            <a href="releases.html" class="welcome-docs-btn">
+              See what changed in v1.3.0
+            </a>
+          </div>
+
+          <p class="welcome-note"><em>This message is only shown once.</em></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

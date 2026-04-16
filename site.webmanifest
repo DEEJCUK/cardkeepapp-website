@@ -1,7 +1,7 @@
 {
   "name": "CardKeepApp - Digital Card Collection Manager",
   "short_name": "CardKeepApp",
-  "description": "The beautiful way to preserve your precious greeting card memories! Digitally store birthday cards, thank you notes, congratulations cards and more.",
+  "description": "Save, organise, and revisit greeting cards on iPhone and iPad with photos, notes, tags, and backup options.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,7 +19,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#6366f1",
+  "theme_color": "#2C1F21",
   "background_color": "#ffffff",
   "display": "browser",
   "orientation": "portrait-primary",
